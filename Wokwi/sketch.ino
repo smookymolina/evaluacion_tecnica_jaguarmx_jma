@@ -123,11 +123,18 @@ const char* STATE_NAMES[] = {
 State currentState = STATE_INIT;
 float temp_int = 0.0;                 // Última temperatura interna (°C)
 float temp_ext = 0.0;                 // Última temperatura externa (°C)
+float simulated_heat_offset = 0.0;    // Offset térmico simulado
+bool startup_heat_initialized = false;// Bandera para inicio en 30°C
 int error_counter = 0;                // Lecturas inválidas consecutivas
 unsigned long ticks_error = 0;        // millis() al entrar a ERROR/LOCKOUT
 int recoveries_count = 0;             // Intentos de recovery realizados
 unsigned long ticks_cooling_start = 0;// millis() al iniciar enfriamiento
 int lockout_setpoint = -1;            // Setpoint capturado al entrar a LOCKOUT
+
+// Variables para la inyección de temperatura por cambio de DIP
+int last_dip_setpoint = -1;
+int dip_change_stage = 0; 
+int dip_delay_counter = 0;
 
 constexpr int MAX_ERRORES_CONSEC = 3;         // Errores antes de ERROR
 constexpr unsigned long RECOVERY_MS = 30000;  // Safe state 30 s antes de recovery
@@ -185,7 +192,10 @@ int readDIPCode() {
 }
 
 int readSetpoint() {
-  return 40 + readDIPCode() * 5;  // 0→40, 1→45, ..., 7→75 (tabla oficial)
+  int code = readDIPCode();
+  // Mapeo estricto a la tabla de valores estandarizados del PDF
+  const int setpoints[8] = {40, 45, 50, 55, 60, 65, 70, 75};
+  return setpoints[code];
 }
 
 void getDIPStatusStr(char* out, size_t len) {
@@ -379,6 +389,43 @@ void transitionTo(State newState) {
 void run_fsm_step() {
   watchdog_update();  // Alimentar WDT (timeout 8 s) al inicio de cada step
 
+  // --- INICIO DE LÓGICA DE INYECCIÓN DE TEMPERATURA ---
+  bool fsm_eval_blocked = false;
+  bool inject_temperature = false;
+  int current_setpoint = readSetpoint();
+  
+  if (last_dip_setpoint == -1) {
+    last_dip_setpoint = current_setpoint;
+  } else if (current_setpoint != last_dip_setpoint && dip_change_stage == 0) {
+    dip_change_stage = 1;
+    dip_delay_counter = 0;
+    last_dip_setpoint = current_setpoint;
+    logFSM("Cambio de DIP detectado. Iniciando retardo 1 (2 muestras)...");
+  }
+
+  if (dip_change_stage == 1) {
+    fsm_eval_blocked = true;
+    dip_delay_counter++;
+    if (dip_delay_counter >= 2) {
+      dip_change_stage = 2;
+      dip_delay_counter = 0;
+      logFSM("Retardo 1 completado. Inyectando temperatura...");
+    }
+  } else if (dip_change_stage == 2) {
+    inject_temperature = true;
+    fsm_eval_blocked = true;
+    dip_delay_counter++;
+    if (dip_delay_counter >= 2) {
+      dip_change_stage = 3;
+      dip_delay_counter = 0;
+      logFSM("Retardo 2 completado. Evaluando accion de control...");
+    }
+  } else if (dip_change_stage == 3) {
+    inject_temperature = true;
+    dip_change_stage = 0; // Termina la secuencia, permitiendo la evaluación FSM
+  }
+  // --- FIN DE LÓGICA DE INYECCIÓN ---
+
   // -- INIT: aplicar safe state y pasar a READING (como _paso_init) ----
   if (currentState == STATE_INIT) {
     stopMotorAndFan();
@@ -446,9 +493,45 @@ void run_fsm_step() {
   temp_int = readTemperature(PIN_TEMP_INT, buf_int, buf_int_count, buf_int_index);
   temp_ext = readTemperature(PIN_TEMP_EXT, buf_ext, buf_ext_count, buf_ext_index);
 
-  // Validación de rango físico del NTC (TEMP_INVALID=-999 también cae fuera)
+  // Validación de rango físico del NTC usando valor crudo
   bool ok_int = (temp_int >= TEMP_MIN_C && temp_int <= TEMP_MAX_C);
   bool ok_ext = (temp_ext >= TEMP_MIN_C && temp_ext <= TEMP_MAX_C);
+  
+  if (ok_int) {
+    if (!startup_heat_initialized) {
+      simulated_heat_offset = 30.0 - temp_int; // Forzar inicio en 30°C
+      startup_heat_initialized = true;
+    }
+
+    if (fan_on && damper_abierta) {
+      // Enfriamiento activo
+      if (temp_int + simulated_heat_offset >= 60.0) {
+        simulated_heat_offset -= 3.0; // Desciende más rápido (3°C/s)
+      } else {
+        simulated_heat_offset -= 1.0; // Regresa a la normalidad (1°C/s)
+      }
+      
+      // No enfriar por debajo de la temperatura externa
+      if (temp_int + simulated_heat_offset < temp_ext) {
+        simulated_heat_offset = temp_ext - temp_int;
+      }
+    } else {
+      // Calentamiento natural lento
+      simulated_heat_offset += 0.5; // Sube 0.5°C por segundo
+      // Tope de calentamiento a 85°C
+      if (temp_int + simulated_heat_offset > 85.0) {
+        simulated_heat_offset = 85.0 - temp_int;
+      }
+    }
+    
+    // Inyección de temperatura para la prueba (sobrescribe la lectura)
+    if (inject_temperature) {
+      float target_temp = (float)current_setpoint + 2.0;
+      simulated_heat_offset = target_temp - temp_int; 
+    }
+
+    temp_int += simulated_heat_offset; // Aplicar simulacion
+  }
 
   // Delta térmica físicamente imposible entre interior y exterior
   bool delta_invalida = false;
@@ -490,18 +573,20 @@ void run_fsm_step() {
            temp_int, temp_ext, th_lo, th_hi, dipBuf);
   logFSM(logBuf);
 
-  // Lógica de histéresis (idéntica a fsm.py):
-  //  - Desactivar COOLING: basta UNA condición (conservador)
-  //  - Activar COOLING: AMBAS condiciones (setpoint Y comparación INT/EXT)
-  if (currentState == STATE_COOLING) {
-    if (temp_int <= th_lo || temp_int <= temp_ext) {
-      transitionTo(STATE_IDLE);
-    }
-  } else {  // STATE_READING o STATE_IDLE
-    if (temp_int > th_hi && temp_int > temp_ext) {
-      transitionTo(STATE_COOLING);
-    } else {
-      transitionTo(STATE_IDLE);
+  // Lógica de control:
+  //  - Activar COOLING: TEMP_INT supera el setpoint (th_hi) Y TEMP_INT > TEMP_EXT
+  //  - Desactivar COOLING: TEMP_INT baja hasta igualar o ser menor a TEMP_EXT
+  if (!fsm_eval_blocked) {
+    if (currentState == STATE_COOLING) {
+      if (temp_int <= temp_ext) {
+        transitionTo(STATE_IDLE);
+      }
+    } else {  // STATE_READING o STATE_IDLE
+      if (temp_int > th_hi && temp_int > temp_ext) {
+        transitionTo(STATE_COOLING);
+      } else if (currentState == STATE_READING) {
+        transitionTo(STATE_IDLE);
+      }
     }
   }
 }
@@ -576,6 +661,16 @@ void loop() {
       last_step_time = millis();          // Ciclo extendido: realinear base
     } else {
       last_step_time += STEP_INTERVAL;    // Ciclo normal: sin deriva acumulada
+    }
+  }
+
+  // Efecto visual: ventilador a capacidad máxima (parpadeo) en alta temperatura (>= 60°C)
+  if (fan_on) {
+    if (temp_int >= 60.0) {
+      // Reducimos la frecuencia de parpadeo (150ms) para que sea claramente visible en Wokwi
+      digitalWrite(PIN_VENT, ((millis() / 150) % 2 == 0) ? HIGH : LOW);
+    } else {
+      digitalWrite(PIN_VENT, HIGH);
     }
   }
 }
