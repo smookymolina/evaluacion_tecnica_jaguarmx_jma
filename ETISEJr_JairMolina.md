@@ -8,7 +8,7 @@
 
 ## 1. Simulación en Wokwi
 
-*   **URL del proyecto:** [https://wokwi.com/projects/468207977283145729](https://wokwi.com/projects/468207977283145729) *(Plantilla base extendida para validación local y en la plataforma)*
+*   **URL del proyecto:** [https://wokwi.com/projects/468449090390286337](https://wokwi.com/projects/468449090390286337) *(Plantilla base extendida para validación local y en la plataforma)*
 *   **Archivo de conexión local:** [diagram.json](file:///C:/Users/GIRTEC/Claude/Projects/Jaguar%20MX/diagram.json)
 
 ### Descripción de la simulación y componentes equivalentes

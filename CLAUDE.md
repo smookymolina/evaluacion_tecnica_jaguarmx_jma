@@ -165,7 +165,7 @@ ETISEJr_JairMolina.zip
 
 > **Nota:** La carpeta `datasheets/` (referencias técnicas + links de PDFs) es un recurso de trabajo interno del proyecto y no forma parte del ZIP de entrega. Contiene un `.md` por componente con specs verificadas contra datasheets reales.
 
-Plantilla Wokwi base: https://wokwi.com/projects/468207977283145729
+Plantilla Wokwi base: https://wokwi.com/projects/468449090390286337
 Entrega: software@jaguar.mx — "Evaluación Técnica — Jair Molina Arce"
 
 ---
