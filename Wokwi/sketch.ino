@@ -136,6 +136,11 @@ int last_dip_setpoint = -1;
 int dip_change_stage = 0; 
 int dip_delay_counter = 0;
 
+// Variables para comandos manuales por puerto Serial
+int override_setpoint = -1;
+float manual_temp_inject = 0.0;
+bool do_manual_temp_inject = false;
+
 constexpr int MAX_ERRORES_CONSEC = 3;         // Errores antes de ERROR
 constexpr unsigned long RECOVERY_MS = 30000;  // Safe state 30 s antes de recovery
 constexpr int MAX_RECOVERIES = 5;             // Máx recoveries antes de LOCKOUT
@@ -192,6 +197,9 @@ int readDIPCode() {
 }
 
 int readSetpoint() {
+  if (override_setpoint != -1) {
+    return override_setpoint;
+  }
   int code = readDIPCode();
   // Mapeo estricto a la tabla de valores estandarizados del PDF
   const int setpoints[8] = {40, 45, 50, 55, 60, 65, 70, 75};
@@ -200,9 +208,15 @@ int readSetpoint() {
 
 void getDIPStatusStr(char* out, size_t len) {
   int code = readDIPCode();
-  snprintf(out, len, "DIP=0b%d%d%d SP=%dC +/-%.0fC",
-           (code >> 2) & 1, (code >> 1) & 1, code & 1,
-           readSetpoint(), HYSTERESIS_C);
+  if (override_setpoint != -1) {
+    snprintf(out, len, "DIP=0b%d%d%d SP=%dC(OVR) +/-%.0fC",
+             (code >> 2) & 1, (code >> 1) & 1, code & 1,
+             readSetpoint(), HYSTERESIS_C);
+  } else {
+    snprintf(out, len, "DIP=0b%d%d%d SP=%dC +/-%.0fC",
+             (code >> 2) & 1, (code >> 1) & 1, code & 1,
+             readSetpoint(), HYSTERESIS_C);
+  }
 }
 
 // ---------------------------------------------------------------------
@@ -530,6 +544,12 @@ void run_fsm_step() {
       simulated_heat_offset = target_temp - temp_int; 
     }
 
+    // Inyección manual por comando Serial
+    if (do_manual_temp_inject) {
+      simulated_heat_offset = manual_temp_inject - temp_int;
+      do_manual_temp_inject = false; // Aplicar solo una vez
+    }
+
     temp_int += simulated_heat_offset; // Aplicar simulacion
   }
 
@@ -647,6 +667,29 @@ unsigned long last_step_time = 0;
 constexpr unsigned long STEP_INTERVAL = 1000;  // Loop de control a 1 Hz
 
 void loop() {
+  // --- Procesamiento de comandos Serial ---
+  if (Serial.available() > 0) {
+    String cmd = Serial.readStringUntil('\n');
+    cmd.trim();
+    if (cmd.startsWith("SET:")) {
+      int val = cmd.substring(4).toInt();
+      if (val <= 0) {
+        override_setpoint = -1;
+        Serial.println("Comando recibido: Setpoint manual desactivado (regresa al DIP switch)");
+      } else {
+        override_setpoint = val;
+        Serial.print("Comando recibido: Setpoint manual fijado a ");
+        Serial.println(val);
+      }
+    } else if (cmd.startsWith("TEMP:")) {
+      float val = cmd.substring(5).toFloat();
+      manual_temp_inject = val;
+      do_manual_temp_inject = true;
+      Serial.print("Comando recibido: Inyectando temp interna a ");
+      Serial.println(val);
+    }
+  }
+
   // Temporización NO bloqueante del travel del actuador (~3 s)
   updateMotorTravel();
 
