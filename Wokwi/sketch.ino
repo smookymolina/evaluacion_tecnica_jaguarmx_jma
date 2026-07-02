@@ -131,11 +131,6 @@ int recoveries_count = 0;             // Intentos de recovery realizados
 unsigned long ticks_cooling_start = 0;// millis() al iniciar enfriamiento
 int lockout_setpoint = -1;            // Setpoint capturado al entrar a LOCKOUT
 
-// Variables para la inyección de temperatura por cambio de DIP
-int last_dip_setpoint = -1;
-int dip_change_stage = 0; 
-int dip_delay_counter = 0;
-
 // Variables para comandos manuales por puerto Serial
 int override_setpoint = -1;
 float manual_temp_inject = 0.0;
@@ -404,43 +399,6 @@ void transitionTo(State newState) {
 void run_fsm_step() {
   watchdog_update();  // Alimentar WDT (timeout 8 s) al inicio de cada step
 
-  // --- INICIO DE LÓGICA DE INYECCIÓN DE TEMPERATURA ---
-  bool fsm_eval_blocked = false;
-  bool inject_temperature = false;
-  int current_setpoint = readSetpoint();
-  
-  if (last_dip_setpoint == -1) {
-    last_dip_setpoint = current_setpoint;
-  } else if (current_setpoint != last_dip_setpoint && dip_change_stage == 0) {
-    dip_change_stage = 1;
-    dip_delay_counter = 0;
-    last_dip_setpoint = current_setpoint;
-    logFSM("Cambio de DIP detectado. Iniciando retardo 1 (2 muestras)...");
-  }
-
-  if (dip_change_stage == 1) {
-    fsm_eval_blocked = true;
-    dip_delay_counter++;
-    if (dip_delay_counter >= 2) {
-      dip_change_stage = 2;
-      dip_delay_counter = 0;
-      logFSM("Retardo 1 completado. Inyectando temperatura...");
-    }
-  } else if (dip_change_stage == 2) {
-    inject_temperature = true;
-    fsm_eval_blocked = true;
-    dip_delay_counter++;
-    if (dip_delay_counter >= 2) {
-      dip_change_stage = 3;
-      dip_delay_counter = 0;
-      logFSM("Retardo 2 completado. Evaluando accion de control...");
-    }
-  } else if (dip_change_stage == 3) {
-    inject_temperature = true;
-    dip_change_stage = 0; // Termina la secuencia, permitiendo la evaluación FSM
-  }
-  // --- FIN DE LÓGICA DE INYECCIÓN ---
-
   // -- INIT: aplicar safe state y pasar a READING (como _paso_init) ----
   if (currentState == STATE_INIT) {
     stopMotorAndFan();
@@ -543,12 +501,6 @@ void run_fsm_step() {
       }
     }
     
-    // Inyección de temperatura para la prueba (sobrescribe la lectura)
-    if (inject_temperature) {
-      float target_temp = (float)current_setpoint + 2.0;
-      simulated_heat_offset = target_temp - temp_int; 
-    }
-
     // Inyección manual por comando Serial
     if (do_manual_temp_inject) {
       simulated_heat_offset = manual_temp_inject - temp_int;
@@ -601,17 +553,15 @@ void run_fsm_step() {
   // Lógica de control:
   //  - Activar COOLING: TEMP_INT supera el setpoint (th_hi) Y TEMP_INT > TEMP_EXT
   //  - Desactivar COOLING: TEMP_INT baja hasta igualar o ser menor a TEMP_EXT
-  if (!fsm_eval_blocked) {
-    if (currentState == STATE_COOLING) {
-      if (temp_int <= temp_ext) {
-        transitionTo(STATE_IDLE);
-      }
-    } else {  // STATE_READING o STATE_IDLE
-      if (temp_int > th_hi && temp_int > temp_ext) {
-        transitionTo(STATE_COOLING);
-      } else if (currentState == STATE_READING) {
-        transitionTo(STATE_IDLE);
-      }
+  if (currentState == STATE_COOLING) {
+    if (temp_int <= temp_ext) {
+      transitionTo(STATE_IDLE);
+    }
+  } else {  // STATE_READING o STATE_IDLE
+    if (temp_int > th_hi && temp_int > temp_ext) {
+      transitionTo(STATE_COOLING);
+    } else if (currentState == STATE_READING) {
+      transitionTo(STATE_IDLE);
     }
   }
 }
