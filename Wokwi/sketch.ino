@@ -140,6 +140,7 @@ int dip_delay_counter = 0;
 int override_setpoint = -1;
 float manual_temp_inject = 0.0;
 bool do_manual_temp_inject = false;
+float override_temp_ext = -999.0;
 
 constexpr int MAX_ERRORES_CONSEC = 3;         // Errores antes de ERROR
 constexpr unsigned long RECOVERY_MS = 30000;  // Safe state 30 s antes de recovery
@@ -507,6 +508,10 @@ void run_fsm_step() {
   temp_int = readTemperature(PIN_TEMP_INT, buf_int, buf_int_count, buf_int_index);
   temp_ext = readTemperature(PIN_TEMP_EXT, buf_ext, buf_ext_count, buf_ext_index);
 
+  if (override_temp_ext != -999.0) {
+    temp_ext = override_temp_ext;
+  }
+
   // Validación de rango físico del NTC usando valor crudo
   bool ok_int = (temp_int >= TEMP_MIN_C && temp_int <= TEMP_MAX_C);
   bool ok_ext = (temp_ext >= TEMP_MIN_C && temp_ext <= TEMP_MAX_C);
@@ -687,6 +692,16 @@ void loop() {
       do_manual_temp_inject = true;
       Serial.print("Comando recibido: Inyectando temp interna a ");
       Serial.println(val);
+    } else if (cmd.startsWith("EXT:")) {
+      String valStr = cmd.substring(4);
+      if (valStr.equalsIgnoreCase("AUTO") || valStr.equalsIgnoreCase("OFF")) {
+        override_temp_ext = -999.0;
+        Serial.println("Comando recibido: Temp exterior manual desactivada (usa NTC)");
+      } else {
+        override_temp_ext = valStr.toFloat();
+        Serial.print("Comando recibido: Temp exterior manual fijada a ");
+        Serial.println(override_temp_ext);
+      }
     }
   }
 
