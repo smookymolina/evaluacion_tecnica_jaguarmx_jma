@@ -5425,6 +5425,12 @@
 		(uuid "475525a4-3498-4727-8364-6bb30c4e6a27")
 	)
 	(junction
+		(at 67.31 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ab40b45-ba3f-4120-90d6-061065a2cdfb")
+	)
+	(junction
 		(at 55.88 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5569,12 +5575,6 @@
 		(uuid "d8fac37f-a817-456a-a60e-925c73c54b0b")
 	)
 	(junction
-		(at 67.31 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e509944d-9d3f-493b-b7b5-538969fa6d47")
-	)
-	(junction
 		(at 168.91 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5698,7 +5698,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 222.25) (xy 52.07 224.79)
+			(xy 24.13 208.28) (xy 26.67 208.28)
 		)
 		(stroke
 			(width 0)
@@ -5748,7 +5748,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 222.25) (xy 62.23 224.79)
+			(xy 24.13 223.52) (xy 26.67 223.52)
 		)
 		(stroke
 			(width 0)
@@ -5838,7 +5838,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 222.25) (xy 49.53 224.79)
+			(xy 24.13 204.47) (xy 26.67 204.47)
 		)
 		(stroke
 			(width 0)
@@ -5858,7 +5858,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 222.25) (xy 54.61 224.79)
+			(xy 24.13 212.09) (xy 26.67 212.09)
 		)
 		(stroke
 			(width 0)
@@ -5868,7 +5868,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 222.25) (xy 59.69 224.79)
+			(xy 24.13 219.71) (xy 26.67 219.71)
 		)
 		(stroke
 			(width 0)
@@ -5928,7 +5928,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 76.2) (xy 63.5 76.2)
+			(xy 62.23 76.2) (xy 64.77 76.2)
 		)
 		(stroke
 			(width 0)
@@ -6488,7 +6488,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 222.25) (xy 64.77 224.79)
+			(xy 24.13 227.33) (xy 26.67 227.33)
 		)
 		(stroke
 			(width 0)
@@ -7618,7 +7618,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 222.25) (xy 57.15 224.79)
+			(xy 24.13 215.9) (xy 26.67 215.9)
 		)
 		(stroke
 			(width 0)
@@ -7677,12 +7677,12 @@
 		(uuid "02e24674-9e4a-4137-9fd0-edddace2e9a2")
 	)
 	(label "NET_Q1_GATE"
-		(at 64.77 224.79 270)
+		(at 26.67 227.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "02fd687b-61fb-4b70-8189-9b7db4af6276")
 	)
@@ -7948,12 +7948,12 @@
 		(uuid "498bb2a7-9ec0-45ae-b869-6b8cd3252f8a")
 	)
 	(label "NET_TEMP_EXT_FILT"
-		(at 62.23 224.79 270)
+		(at 26.67 223.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "4adac5a0-30b2-447e-bd7c-18fc13b6e4d8")
 	)
@@ -7988,7 +7988,7 @@
 		(uuid "4fa21a41-53e5-4235-979e-b6a5cf4d9f71")
 	)
 	(label "NET_VENT_GATE"
-		(at 66.04 76.2 180)
+		(at 66.04 76.2 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7998,12 +7998,12 @@
 		(uuid "57f191fb-ac37-4c7b-8f4d-21ce8b8620f1")
 	)
 	(label "NET_3V3_LDO"
-		(at 91.44 36.83 0)
+		(at 91.44 36.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "5a4e76f1-16b1-453c-9959-6053e1278c9c")
 	)
@@ -8028,12 +8028,12 @@
 		(uuid "5ca612a8-6214-4c85-ac81-8e5635d59e7b")
 	)
 	(label "+48V"
-		(at 52.07 224.79 270)
+		(at 26.67 208.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "5cc44ae5-2049-40ab-8800-615219ae85e3")
 	)
@@ -8048,12 +8048,12 @@
 		(uuid "6343b6d7-bb51-4a88-ad6c-662c7fb24f2b")
 	)
 	(label "NET_TEMP_INT_FILT"
-		(at 59.69 224.79 270)
+		(at 26.67 219.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "6544ca13-4cd5-4f9a-a1bf-6226f324b64b")
 	)
@@ -8159,17 +8159,17 @@
 		(uuid "7dc5a155-5e43-4261-963f-5bf8611a43cc")
 	)
 	(label "+5V"
-		(at 49.53 224.79 270)
+		(at 26.67 204.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "7eec4d91-795f-43e7-a487-de63cf5f9b78")
 	)
 	(label "NET_VENT"
-		(at 63.5 76.2 0)
+		(at 64.77 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8249,12 +8249,12 @@
 		(uuid "918661e7-0c40-41f0-a179-195ee462ee42")
 	)
 	(label "PGND"
-		(at 54.61 224.79 270)
+		(at 26.67 212.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "9275dd1d-85fe-40d3-90c9-8951d4f01e67")
 	)
@@ -8580,12 +8580,12 @@
 		(uuid "ea0208d6-25b1-425a-9f06-92d8c30b2956")
 	)
 	(label "AGND"
-		(at 57.15 224.79 270)
+		(at 26.67 215.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "f408f19a-7faa-4fac-b328-e2e33b061ee6")
 	)
@@ -8933,7 +8933,7 @@
 	)
 	(symbol
 		(lib_id "jaguar_power:TestPoint_1.25mm")
-		(at 59.69 222.25 0)
+		(at 24.13 219.71 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8941,10 +8941,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "166bb7a8-beb5-4abd-bdab-30b7fc2c1258")
 		(property "Reference" "TP6"
-			(at 59.69 217.17 0)
+			(at 19.304 217.932 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -8954,7 +8953,7 @@
 			)
 		)
 		(property "Value" "1.25mm"
-			(at 59.69 226.06 0)
+			(at 27.94 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8965,7 +8964,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Connector:TestPoint-1.25mm"
-			(at 59.69 228.6 0)
+			(at 30.48 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8976,7 +8975,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 229.87 0)
+			(at 31.75 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8987,7 +8986,7 @@
 			)
 		)
 		(property "Description" "Test Point"
-			(at 59.69 232.41 0)
+			(at 34.29 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9706,7 +9705,7 @@
 	)
 	(symbol
 		(lib_id "jaguar_power:TestPoint_1.25mm")
-		(at 52.07 222.25 0)
+		(at 24.13 208.28 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9714,10 +9713,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "52612a82-b7ed-4682-a3ee-012e9091b870")
 		(property "Reference" "TP3"
-			(at 52.07 217.17 0)
+			(at 19.812 206.248 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -9727,7 +9725,7 @@
 			)
 		)
 		(property "Value" "1.25mm"
-			(at 52.07 226.06 0)
+			(at 27.94 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9738,7 +9736,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Connector:TestPoint-1.25mm"
-			(at 52.07 228.6 0)
+			(at 30.48 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9749,7 +9747,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 229.87 0)
+			(at 31.75 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9760,7 +9758,7 @@
 			)
 		)
 		(property "Description" "Test Point"
-			(at 52.07 232.41 0)
+			(at 34.29 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9884,10 +9882,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "59017754-93ac-4200-9adb-343a8118174d")
 		(property "Reference" "R6"
-			(at 69.85 69.85 0)
+			(at 71.882 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9897,7 +9894,7 @@
 			)
 		)
 		(property "Value" "330R"
-			(at 69.85 72.39 0)
+			(at 71.882 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10237,7 +10234,7 @@
 	)
 	(symbol
 		(lib_id "jaguar_power:TestPoint_1.25mm")
-		(at 49.53 222.25 0)
+		(at 24.13 204.47 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10245,10 +10242,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7cf0cb75-eb4c-40e1-9c13-e8be7d13fb0a")
 		(property "Reference" "TP2"
-			(at 49.53 217.17 0)
+			(at 19.685 202.311 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -10258,7 +10254,7 @@
 			)
 		)
 		(property "Value" "1.25mm"
-			(at 49.53 226.06 0)
+			(at 27.94 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10269,7 +10265,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Connector:TestPoint-1.25mm"
-			(at 49.53 228.6 0)
+			(at 30.48 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10280,7 +10276,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 229.87 0)
+			(at 31.75 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10291,7 +10287,7 @@
 			)
 		)
 		(property "Description" "Test Point"
-			(at 49.53 232.41 0)
+			(at 34.29 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10426,7 +10422,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 26.67 36.83 0)
+			(at 28.448 38.862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10617,7 +10613,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 66.04 198.12 0)
+			(at 60.706 198.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12229,7 +12225,7 @@
 			)
 		)
 		(property "Value" "Selector_TC4420"
-			(at 57.15 65.66 0)
+			(at 53.594 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12405,7 +12401,7 @@
 	)
 	(symbol
 		(lib_id "jaguar_power:TestPoint_1.25mm")
-		(at 54.61 222.25 0)
+		(at 24.13 212.09 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12413,10 +12409,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b828ddd2-cd7a-492e-87c3-f6cbdfa215c0")
 		(property "Reference" "TP4"
-			(at 54.61 217.17 0)
+			(at 19.558 210.312 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -12426,7 +12421,7 @@
 			)
 		)
 		(property "Value" "1.25mm"
-			(at 54.61 226.06 0)
+			(at 27.94 212.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12437,7 +12432,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Connector:TestPoint-1.25mm"
-			(at 54.61 228.6 0)
+			(at 30.48 212.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12448,7 +12443,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 229.87 0)
+			(at 31.75 212.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12459,7 +12454,7 @@
 			)
 		)
 		(property "Description" "Test Point"
-			(at 54.61 232.41 0)
+			(at 34.29 212.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12667,7 +12662,7 @@
 	)
 	(symbol
 		(lib_id "jaguar_power:TestPoint_1.25mm")
-		(at 57.15 222.25 0)
+		(at 24.13 215.9 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12675,10 +12670,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c405b527-ecb0-4578-9dbd-050128ab244f")
 		(property "Reference" "TP5"
-			(at 57.15 217.17 0)
+			(at 19.558 214.122 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -12688,7 +12682,7 @@
 			)
 		)
 		(property "Value" "1.25mm"
-			(at 57.15 226.06 0)
+			(at 27.94 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12699,7 +12693,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Connector:TestPoint-1.25mm"
-			(at 57.15 228.6 0)
+			(at 30.48 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12710,7 +12704,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 229.87 0)
+			(at 31.75 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12721,7 +12715,7 @@
 			)
 		)
 		(property "Description" "Test Point"
-			(at 57.15 232.41 0)
+			(at 34.29 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12859,7 +12853,7 @@
 	)
 	(symbol
 		(lib_id "jaguar_power:TestPoint_1.25mm")
-		(at 62.23 222.25 0)
+		(at 24.13 223.52 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12867,10 +12861,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d493d83d-dc0c-4707-ae44-15421bc37380")
 		(property "Reference" "TP7"
-			(at 62.23 217.17 0)
+			(at 18.542 221.996 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -12880,7 +12873,7 @@
 			)
 		)
 		(property "Value" "1.25mm"
-			(at 62.23 226.06 0)
+			(at 27.94 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12891,7 +12884,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Connector:TestPoint-1.25mm"
-			(at 62.23 228.6 0)
+			(at 30.48 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12902,7 +12895,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 229.87 0)
+			(at 31.75 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12913,7 +12906,7 @@
 			)
 		)
 		(property "Description" "Test Point"
-			(at 62.23 232.41 0)
+			(at 34.29 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13699,7 +13692,7 @@
 	)
 	(symbol
 		(lib_id "jaguar_power:TestPoint_1.25mm")
-		(at 64.77 222.25 0)
+		(at 24.13 227.33 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13707,10 +13700,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fb19d9b8-8fd5-4841-a6f8-3b13481250b1")
 		(property "Reference" "TP8"
-			(at 64.77 217.17 0)
+			(at 18.288 225.552 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -13720,7 +13712,7 @@
 			)
 		)
 		(property "Value" "1.25mm"
-			(at 64.77 226.06 0)
+			(at 27.94 227.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13731,7 +13723,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Connector:TestPoint-1.25mm"
-			(at 64.77 228.6 0)
+			(at 30.48 227.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13742,7 +13734,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 229.87 0)
+			(at 31.75 227.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13753,7 +13745,7 @@
 			)
 		)
 		(property "Description" "Test Point"
-			(at 64.77 232.41 0)
+			(at 34.29 227.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

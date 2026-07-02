@@ -4,28 +4,30 @@
   "editor": "wokwi",
   "parts": [
     { "type": "wokwi-pi-pico", "id": "pico", "top": 40, "left": 60, "attrs": {} },
-    { "type": "chip-tb6612fng-sim", "id": "hbridge", "top": 50, "left": -300, "attrs": {} },
+    { "type": "chip-tb6612fng-sim", "id": "hbridge", "top": 49.02, "left": -302.4, "attrs": {} },
     {
       "type": "wokwi-ntc-temperature-sensor",
       "id": "ntc_in",
-      "top": -90,
-      "left": 330,
+      "top": -93.4,
+      "left": 325.8,
+      "rotate": 180,
       "attrs": { "temperature": "45", "beta": "3950" }
     },
     {
       "type": "wokwi-ntc-temperature-sensor",
       "id": "ntc_out",
-      "top": 20,
-      "left": 330,
+      "top": 50.2,
+      "left": 355.2,
+      "rotate": 180,
       "attrs": { "temperature": "30", "beta": "3950" }
     },
-    { "type": "wokwi-dip-switch-8", "id": "dip1", "top": 180, "left": 330, "attrs": {} },
+    { "type": "wokwi-dip-switch-8", "id": "dip1", "top": 323.1, "left": 68.7, "attrs": {} },
     {
       "type": "wokwi-led",
       "id": "led_vent",
-      "top": -120,
-      "left": 120,
-      "attrs": { "color": "red", "label": "VENTILADOR" }
+      "top": -157.2,
+      "left": 71.4,
+      "attrs": { "color": "red", "label": "VENTILADOR", "flip": "1" }
     },
     {
       "type": "wokwi-led",
@@ -41,47 +43,61 @@
       "left": -420,
       "attrs": { "color": "red", "label": "MOTOR A CIERRA" }
     },
-    { "type": "wokwi-resistor", "id": "r_vent", "top": -65, "left": 10, "attrs": { "value": "220" } },
-    { "type": "wokwi-resistor", "id": "r_motor_abre", "top": 185, "left": -330, "attrs": { "value": "220" } },
-    { "type": "wokwi-resistor", "id": "r_motor_cierra", "top": 275, "left": -330, "attrs": { "value": "220" } }
+    {
+      "type": "wokwi-resistor",
+      "id": "r_vent",
+      "top": -63.25,
+      "left": 9.6,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_motor_abre",
+      "top": 205.55,
+      "left": -316.8,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_motor_cierra",
+      "top": 301.55,
+      "left": -307.2,
+      "attrs": { "value": "220" }
+    }
   ],
   "connections": [
-    [ "pico:VBUS", "hbridge:VM", "red", [ "v-20", "h-460" ] ],
-    [ "pico:3V3", "hbridge:VCC", "red", [ "v-30", "h-440" ] ],
+    [ "pico:VBUS", "hbridge:VM", "red", [ "v-20", "h-448.8", "v25.83" ] ],
+    [ "pico:3V3", "hbridge:VCC", "red", [ "h21.6", "v-71.95", "h-460.8", "v48.98" ] ],
     [ "hbridge:STBY", "hbridge:VCC", "red", [ "h-10" ] ],
-    [ "pico:GND.1", "hbridge:GND", "black", [ "h-30" ] ],
-    [ "hbridge:PWMB", "hbridge:GND", "black", [ "h10", "v-60" ] ],
-    [ "hbridge:BIN1", "hbridge:GND", "black", [ "h10", "v-70" ] ],
-    [ "hbridge:BIN2", "hbridge:GND", "black", [ "h10", "v-80" ] ],
-
-    [ "pico:GP2", "hbridge:AIN1", "orange", [ "h-40" ] ],
-    [ "pico:GP1", "hbridge:AIN2", "yellow", [ "h-50" ] ],
-    [ "pico:GP3", "hbridge:PWMA", "purple", [ "h-30" ] ],
-
+    [ "pico:GND.1", "hbridge:GND", "black", [ "v-23.95", "h-392.4", "v29.78" ] ],
+    [ "hbridge:PWMB", "hbridge:GND", "black", [ "h10", "v56.62", "h-183.39", "v-75.82" ] ],
+    [ "hbridge:BIN1", "hbridge:GND", "black", [ "h10", "v-87.38", "h-154.59", "v77.78" ] ],
+    [ "hbridge:BIN2", "hbridge:GND", "black", [ "v-106.58", "h-103.79" ] ],
+    [ "pico:GP2", "hbridge:AIN1", "orange", [ "v52.85", "h-392.4", "v-27.82" ] ],
+    [ "pico:GP1", "hbridge:AIN2", "yellow", [ "h-18", "v-23.95", "h-393.6", "v77.78" ] ],
+    [ "pico:GP3", "hbridge:PWMA", "purple", [ "h-37.2", "v52.85", "h-336", "v-47.02" ] ],
     [ "hbridge:AO2", "r_motor_abre:2", "green", [ "h20", "v110" ] ],
     [ "r_motor_abre:1", "led_motor_a_abre:A", "green", [ "h-10" ] ],
     [ "hbridge:AO1", "r_motor_cierra:2", "red", [ "h30", "v200" ] ],
     [ "r_motor_cierra:1", "led_motor_a_cierra:A", "red", [ "h-10" ] ],
-    [ "led_motor_a_abre:C", "led_motor_a_cierra:C", "black", [ "v20" ] ],
-    [ "led_motor_a_cierra:C", "hbridge:GND", "black", [ "v30", "h100" ] ],
-
-    [ "pico:GP4", "r_vent:1", "cyan", [ "h-20", "v-140" ] ],
-    [ "r_vent:2", "led_vent:A", "cyan", [ "h10" ] ],
-    [ "led_vent:C", "pico:GND.8", "black", [ "v20" ] ],
-
-    [ "pico:3V3", "ntc_in:VCC", "red", [ "v-30", "h60" ] ],
-    [ "ntc_out:VCC", "ntc_in:VCC", "red", [ "h-20", "v-60" ] ],
-    [ "pico:GND.7", "ntc_in:GND", "black", [ "h30" ] ],
-    [ "ntc_out:GND", "ntc_in:GND", "black", [ "h-30", "v-60" ] ],
-    [ "pico:GP26", "ntc_in:OUT", "blue", [ "h40" ] ],
-    [ "pico:GP27", "ntc_out:OUT", "green", [ "h30" ] ],
-
-    [ "pico:GP6", "dip1:1a", "blue", [ "h-20", "v160", "h420" ] ],
-    [ "pico:GP7", "dip1:2a", "purple", [ "h-30", "v170", "h450" ] ],
-    [ "pico:GP0", "dip1:3a", "orange", [ "h-40", "v-60", "h500", "v260" ] ],
-    [ "dip1:1b", "dip1:2b", "black", [ "v10" ] ],
-    [ "dip1:2b", "dip1:3b", "black", [ "v10" ] ],
-    [ "dip1:3b", "pico:GND.5", "black", [ "v20", "h-180" ] ]
+    [ "led_motor_a_abre:C", "led_motor_a_cierra:C", "black", [ "h-17.4", "v90" ] ],
+    [ "led_motor_a_cierra:C", "hbridge:GND", "black", [ "h-17.4", "v30", "h105.6", "v-255.2" ] ],
+    [ "pico:GP4", "r_vent:1", "cyan", [ "h-27.6", "v-129" ] ],
+    [ "r_vent:2", "led_vent:A", "cyan", [ "h-0.85", "v-28.15" ] ],
+    [ "led_vent:C", "pico:GND.8", "black", [ "h48", "v177.55" ] ],
+    [ "pico:3V3", "ntc_in:VCC", "red", [ "v-4.75", "h175.2", "v-143.6" ] ],
+    [ "ntc_out:VCC", "ntc_in:VCC", "red", [ "h-38.4", "v-143.6" ] ],
+    [ "pico:GND.7", "ntc_in:GND", "black", [ "h156", "v-167.55" ] ],
+    [ "ntc_out:GND", "ntc_in:GND", "black", [ "h-57.6", "v-143.6" ] ],
+    [ "pico:GP26", "ntc_in:OUT", "blue", [ "h146.4", "v-206.05" ] ],
+    [ "pico:GP27", "ntc_out:OUT", "green", [ "h213.6", "v-52.85" ] ],
+    [ "pico:GP6", "dip1:1a", "blue", [ "h-20", "v254.45", "h30.8" ] ],
+    [ "pico:GP7", "dip1:2a", "purple", [ "h-30", "v254.45", "h50.4" ] ],
+    [ "pico:GP0", "dip1:3a", "orange", [ "h-40", "v-60", "h473.2", "v391.25", "h-403.2" ] ],
+    [ "dip1:1b", "dip1:2b", "black", [ "v-9.3", "h9.6" ] ],
+    [ "dip1:2b", "dip1:3b", "black", [ "v-9.3", "h9.6" ] ],
+    [ "dip1:3b", "pico:GND.5", "black", [ "v-9.3", "h57.6", "v-9.6", "v-91.25" ] ]
   ],
   "dependencies": {}
 }

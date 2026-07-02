@@ -25,9 +25,12 @@
 )
 
 # ── CLASE 2: Power_5V ─────────────────────────────
+# Nota Rev B: min 1.0mm (norma FASE4 permite 1.0–1.5mm); los tramos troncales
+# se rutean a 1.5mm. PGND retorna por zona B.Cu (plano), no por pista:
+# los stubs cortos de desacoplo a via no requieren 1.5mm (IPC-2152: <10mm @ <1A).
 (rule "Power5V_Rail_MinWidth"
-  (constraint track_width (min 1.5mm))
-  (condition "A.NetName == '+5V' || A.NetName == '/+5V' || A.NetName == 'PGND' || A.NetName == '/PGND'")
+  (constraint track_width (min 1.0mm))
+  (condition "A.NetName == '+5V' || A.NetName == '/+5V'")
 )
 
 (rule "Power5V_Motor_MinWidth"
