@@ -5,9 +5,12 @@
 	(uuid "656cb11c-c675-4e3a-bafd-60f129c2bd91")
 	(paper "USLetter" portrait)
 	(title_block
-		(title "PCB")
-		(date "2026-07-01")
+		(title "Evaluación Técnica - Sistemas Embebidos")
+		(date "2026-06-30")
+		(rev "1.1.1")
 		(company "Jaguar MX")
+		(comment 1 "Ing. Jair Molina Arce")
+		(comment 2 "Ingeniero de Sistemas Embebidos Jr.")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x03"
@@ -5376,6 +5379,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Default: 1-2 (Bypass MCU)"
+		(exclude_from_sim no)
+		(at 27.686 74.168 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "90aa7457-e8d4-4344-ae6a-ff240d57708c")
+	)
 	(junction
 		(at 68.58 144.78)
 		(diameter 0)
@@ -7518,7 +7532,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 139.7) (xy 193.04 139.7)
+			(xy 185.42 139.7) (xy 189.23 139.7)
 		)
 		(stroke
 			(width 0)
@@ -7928,7 +7942,7 @@
 		(uuid "43d965f1-0f4a-401d-a22a-a08408755dfe")
 	)
 	(label "NET_MOTOR_EN"
-		(at 193.04 139.7 0)
+		(at 189.23 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9624,7 +9638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e73bc36-87a5-4770-ad93-4f481c7e6480")
-		(property "Reference" "J5"
+		(property "Reference" "J6"
 			(at 22.86 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9634,7 +9648,7 @@
 				)
 			)
 		)
-		(property "Value" "3.5mm"
+		(property "Value" "48V IN"
 			(at 22.86 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9697,7 +9711,7 @@
 		(instances
 			(project "PCB"
 				(path "/656cb11c-c675-4e3a-bafd-60f129c2bd91"
-					(reference "J5")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -11243,7 +11257,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b0000001-0000-4000-8000-000000000003")
-		(property "Reference" "R_LED"
+		(property "Reference" "R_LED1"
 			(at 62.484 125.984 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11304,7 +11318,7 @@
 		(instances
 			(project "PCB"
 				(path "/656cb11c-c675-4e3a-bafd-60f129c2bd91"
-					(reference "R_LED")
+					(reference "R_LED1")
 					(unit 1)
 				)
 			)
@@ -11738,7 +11752,7 @@
 		(dnp no)
 		(uuid "b0000001-0000-4000-8000-000000000009")
 		(property "Reference" "C10"
-			(at 147.32 87.63 0)
+			(at 145.288 89.408 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11749,7 +11763,7 @@
 			)
 		)
 		(property "Value" "100uF/63V"
-			(at 153.67 91.44 0)
+			(at 145.796 92.456 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12137,7 +12151,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b0000001-0000-4000-8000-00000000000e")
-		(property "Reference" "J6"
+		(property "Reference" "J5"
 			(at 22.86 88.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12147,7 +12161,7 @@
 				)
 			)
 		)
-		(property "Value" "3.5mm"
+		(property "Value" "Ventilador"
 			(at 22.86 76.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12197,7 +12211,7 @@
 		(instances
 			(project "PCB"
 				(path "/656cb11c-c675-4e3a-bafd-60f129c2bd91"
-					(reference "J6")
+					(reference "J5")
 					(unit 1)
 				)
 			)

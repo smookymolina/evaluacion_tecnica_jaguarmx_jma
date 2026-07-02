@@ -1,0 +1,5462 @@
+(export
+	(version "E")
+	(design
+		(source "C:\\Users\\GIRTEC\\Claude\\Projects\\Jaguar MX\\kicad\\PCB\\PCB.kicad_sch")
+		(date "2026-07-02T16:51:16")
+		(tool "Eeschema 10.0.4")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "PCB")
+				(company "Jaguar MX")
+				(rev)
+				(date "2026-07-01")
+				(source "PCB.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C1")
+			(value "10uF")
+			(footprint "SparkFun-Capacitor:C_0805_2012Metric")
+			(datasheet "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "PROD_ID") "CAP-20155")
+				(field
+					(name "Voltage") "10V")
+				(field
+					(name "Tolerance") "20%")
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0805_2012Metric")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "10uF_0603_10V_20%")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "CAP-20155")
+			)
+			(property
+				(name "Voltage")
+				(value "10V")
+			)
+			(property
+				(name "Tolerance")
+				(value "20%")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d28bdcc9-22f2-40d2-8dcd-1e616402d41b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "10uF")
+			(footprint "SparkFun-Capacitor:C_0805_2012Metric")
+			(datasheet "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "PROD_ID") "CAP-20155")
+				(field
+					(name "Voltage") "10V")
+				(field
+					(name "Tolerance") "20%")
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0805_2012Metric")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "10uF_0603_10V_20%")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "CAP-20155")
+			)
+			(property
+				(name "Voltage")
+				(value "10V")
+			)
+			(property
+				(name "Tolerance")
+				(value "20%")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "933d6fc0-9052-48ae-83b3-e0a71c5a6fa6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C3")
+			(value "0.1uF")
+			(footprint "SparkFun-Capacitor:C_0402_1005Metric")
+			(datasheet "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "PROD_ID") "CAP-25565")
+				(field
+					(name "Voltage") "16V")
+				(field
+					(name "Tolerance") "10%")
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "0.1uF_0402_16V_10%")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "CAP-25565")
+			)
+			(property
+				(name "Voltage")
+				(value "16V")
+			)
+			(property
+				(name "Tolerance")
+				(value "10%")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun cap capacitor 100nF")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "eef0f50d-1df9-4b00-8fcb-342aab38eab5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C4")
+			(value "0.1uF")
+			(footprint "SparkFun-Capacitor:C_0402_1005Metric")
+			(datasheet "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "PROD_ID") "CAP-25565")
+				(field
+					(name "Voltage") "16V")
+				(field
+					(name "Tolerance") "10%")
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "0.1uF_0402_16V_10%")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "CAP-25565")
+			)
+			(property
+				(name "Voltage")
+				(value "16V")
+			)
+			(property
+				(name "Tolerance")
+				(value "10%")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun cap capacitor 100nF")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "efd12b0c-3a97-4848-8e5b-246a40010ace")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C5")
+			(value "0.1uF")
+			(footprint "SparkFun-Capacitor:C_0402_1005Metric")
+			(datasheet "https://www.vishay.com/docs/40002/293d.pdf")
+			(description "Polarized tantalum capacitor")
+			(fields
+				(field
+					(name "PROD_ID") "CAP-08310")
+				(field
+					(name "Voltage") "10V")
+				(field
+					(name "Tolerance") "10%")
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/40002/293d.pdf")
+				(field
+					(name "Description") "Polarized tantalum capacitor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "0.1uF_0402_16V_10%")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "CAP-08310")
+			)
+			(property
+				(name "Voltage")
+				(value "10V")
+			)
+			(property
+				(name "Tolerance")
+				(value "10%")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun cap capacitor 100nF")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d8a77b6c-06a9-469e-b575-1f42f5d62b60")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C6")
+			(value "0.1uF")
+			(footprint "SparkFun-Capacitor:C_0402_1005Metric")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0402_1005Metric")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "0.1uF_0402_16V_10%")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun cap capacitor 100nF")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-000000000005")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C7")
+			(value "47uF")
+			(footprint "SparkFun-Capacitor:C_0805_2012Metric")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0805_2012Metric")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "47uF_3528_10V_10%")
+				(description "Polarized tantalum capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-000000000006")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C8")
+			(value "0.1uF")
+			(footprint "SparkFun-Capacitor:C_0402_1005Metric")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0402_1005Metric")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "0.1uF_0402_16V_10%")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun cap capacitor 100nF")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-000000000007")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C9")
+			(value "0.1uF")
+			(footprint "SparkFun-Capacitor:C_0402_1005Metric")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0402_1005Metric")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "0.1uF_0402_16V_10%")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun cap capacitor 100nF")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-000000000008")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C10")
+			(value "100uF/63V")
+			(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "CP")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-000000000009")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C11")
+			(value "100nF/63V")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-00000000000a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C12")
+			(value "0.1uF")
+			(footprint "SparkFun-Capacitor:C_0402_1005Metric")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0402_1005Metric")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "0.1uF_0402_16V_10%")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun cap capacitor 100nF")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-00000000000b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C13")
+			(value "0.1uF")
+			(footprint "SparkFun-Capacitor:C_0402_1005Metric")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0402_1005Metric")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "0.1uF_0402_16V_10%")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun cap capacitor 100nF")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-00000000000c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C14")
+			(value "0.1uF")
+			(footprint "SparkFun-Capacitor:C_0402_1005Metric")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0402_1005Metric")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "0.1uF_0402_16V_10%")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun cap capacitor 100nF")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-00000000000d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C15")
+			(value "0.1uF")
+			(footprint "SparkFun-Capacitor:C_0402_1005Metric")
+			(datasheet "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "PROD_ID") "CAP-25565")
+				(field
+					(name "Voltage") "16V")
+				(field
+					(name "Tolerance") "10%")
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "0.1uF_0402_16V_10%")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "CAP-25565")
+			)
+			(property
+				(name "Voltage")
+				(value "16V")
+			)
+			(property
+				(name "Tolerance")
+				(value "10%")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun cap capacitor 100nF")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b1b4b5f3-0996-47f9-902e-aba3ce2c80ba")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D1")
+			(value "BAT54S")
+			(footprint "Package_TO_SOT_SMD:SOT-23")
+			(datasheet "https://www.diodes.com/assets/Datasheets/ds11005.pdf")
+			(description "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323")
+			(fields
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+				(field
+					(name "Datasheet") "https://www.diodes.com/assets/Datasheets/ds11005.pdf")
+				(field
+					(name "Description") "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323")
+			)
+			(libsource
+				(lib "Diode")
+				(part "BAT54S")
+				(description "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "schottky diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SOT?23*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "aa939b38-faeb-4cf1-a10b-2f30e4802bd6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D2")
+			(value "BAT54S")
+			(footprint "Package_TO_SOT_SMD:SOT-23")
+			(datasheet "https://www.diodes.com/assets/Datasheets/ds11005.pdf")
+			(description "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323")
+			(fields
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+				(field
+					(name "Datasheet") "https://www.diodes.com/assets/Datasheets/ds11005.pdf")
+				(field
+					(name "Description") "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323")
+			)
+			(libsource
+				(lib "Diode")
+				(part "BAT54S")
+				(description "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "schottky diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SOT?23*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e25ee7cd-9fc6-4a12-885c-602e5b6667bb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D3")
+			(value "US1M")
+			(footprint "Diode_SMD:D_SMA")
+			(datasheet "https://www.diodes.com/assets/Datasheets/ds16008.pdf")
+			(description "1000V, 1A, General Purpose Rectifier Diode, SMA(DO-214AC)")
+			(fields
+				(field
+					(name "Sim.Device") "D")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+				(field
+					(name "Footprint") "Diode_SMD:D_SMA")
+				(field
+					(name "Datasheet") "https://www.diodes.com/assets/Datasheets/ds16008.pdf")
+				(field
+					(name "Description") "1000V, 1A, General Purpose Rectifier Diode, SMA(DO-214AC)")
+			)
+			(libsource
+				(lib "Diode")
+				(part "US1M")
+				(description "1000V, 1A, General Purpose Rectifier Diode, SMA(DO-214AC)")
+			)
+			(property
+				(name "Sim.Device")
+				(value "D")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=K 2=A")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Ultra Fast")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "D*SMA*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "60366eec-ba0f-4d0d-9a4b-f3821b28c411")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "F1")
+			(value "500mA")
+			(footprint "Fuse:Fuse_1812_4532Metric")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "Fuse:Fuse_1812_4532Metric")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "Polyfuse")
+				(description "Resettable fuse, PTC")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-000000000002")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "JST_2mm")
+			(footprint "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical")
+			(datasheet "https://www.sparkfun.com/datasheets/Prototyping/ePH.pdf")
+			(description "2 Pin 2mm JST Connector")
+			(fields
+				(field
+					(name "PROD_ID") "CONN-09863")
+				(field
+					(name "Footprint") "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical")
+				(field
+					(name "Datasheet") "https://www.sparkfun.com/datasheets/Prototyping/ePH.pdf")
+				(field
+					(name "Description") "2 Pin 2mm JST Connector")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "Conn_01x02_JST_P2.0mm_Horizontal_PTH")
+				(description "2 Pin 2mm JST Connector")
+			)
+			(property
+				(name "PROD_ID")
+				(value "CONN-09863")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "de3872d7-af1a-4fc6-b4de-6b86069a6122")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "JST_2mm")
+			(footprint "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical")
+			(datasheet "https://www.sparkfun.com/datasheets/Prototyping/ePH.pdf")
+			(description "2 Pin 2mm JST Connector")
+			(fields
+				(field
+					(name "PROD_ID") "CONN-09863")
+				(field
+					(name "Footprint") "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical")
+				(field
+					(name "Datasheet") "https://www.sparkfun.com/datasheets/Prototyping/ePH.pdf")
+				(field
+					(name "Description") "2 Pin 2mm JST Connector")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "Conn_01x02_JST_P2.0mm_Horizontal_PTH")
+				(description "2 Pin 2mm JST Connector")
+			)
+			(property
+				(name "PROD_ID")
+				(value "CONN-09863")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "08fcfca9-1ee1-4c31-9444-628b76b9f055")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "3.5mm")
+			(footprint "SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+			(datasheet "https://cdn.sparkfun.com/assets/8/5/e/4/d/ASS_4091_CO.pdf")
+			(description "Screw terminal")
+			(fields
+				(field
+					(name "PROD_ID") "CONN-08399")
+				(field
+					(name "Footprint") "SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/8/5/e/4/d/ASS_4091_CO.pdf")
+				(field
+					(name "Description") "Screw terminal")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+				(description "Screw terminal")
+			)
+			(property
+				(name "PROD_ID")
+				(value "CONN-08399")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun screw terminal")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TerminalBlock*:*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "34c2b381-5b12-41a2-906a-516ca9d94013")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J5")
+			(value "3.5mm")
+			(footprint "SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+				(description "Screw terminal")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun screw terminal")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TerminalBlock*:*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-00000000000e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J6")
+			(value "3.5mm")
+			(footprint "SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+			(datasheet "https://cdn.sparkfun.com/assets/8/5/e/4/d/ASS_4091_CO.pdf")
+			(description "Screw terminal")
+			(fields
+				(field
+					(name "PROD_ID") "CONN-08399")
+				(field
+					(name "Footprint") "SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/8/5/e/4/d/ASS_4091_CO.pdf")
+				(field
+					(name "Description") "Screw terminal")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+				(description "Screw terminal")
+			)
+			(property
+				(name "PROD_ID")
+				(value "CONN-08399")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun screw terminal")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TerminalBlock*:*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4e73bc36-87a5-4770-ad93-4f481c7e6480")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J7")
+			(value "3.5mm")
+			(footprint "SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+			(datasheet "https://cdn.sparkfun.com/assets/8/5/e/4/d/ASS_4091_CO.pdf")
+			(description "Screw terminal")
+			(fields
+				(field
+					(name "PROD_ID") "CONN-08399")
+				(field
+					(name "Footprint") "SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/8/5/e/4/d/ASS_4091_CO.pdf")
+				(field
+					(name "Description") "Screw terminal")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+				(description "Screw terminal")
+			)
+			(property
+				(name "PROD_ID")
+				(value "CONN-08399")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun screw terminal")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TerminalBlock*:*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "bcbd1006-a28c-43f5-9b52-2a5d790b5a48")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J9")
+			(value "Selector_TC4420")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x03")
+				(description "Generic connector, single row, 01x03")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-00000000000f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "LED1")
+			(value "LED_Green")
+			(footprint "LED_SMD:LED_0805_2012Metric")
+			(datasheet "https://cdn.sparkfun.com/assets/e/c/e/c/5/COM-09590-YSL-R531R3D-D2.pdf")
+			(description "Light emitting diode PTH 5mm diameter")
+			(fields
+				(field
+					(name "PROD_ID") "DIO-09862")
+				(field
+					(name "Footprint") "LED_SMD:LED_0805_2012Metric")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/e/c/e/c/5/COM-09590-YSL-R531R3D-D2.pdf")
+				(field
+					(name "Description") "Light emitting diode PTH 5mm diameter")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "LED_Green_5mm_PTH_Silk")
+				(description "Light emitting diode PTH 5mm diameter")
+			)
+			(property
+				(name "PROD_ID")
+				(value "DIO-09862")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun LED diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LED* LED_SMD:* LED_THT:*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1394c127-4793-4a3e-8680-3f4560613927")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "NT1")
+			(value "NetTie_2")
+			(footprint "NetTie:NetTie-2_SMD_Pad0.5mm")
+			(description "Net tie, 2 pins")
+			(fields
+				(field
+					(name "Footprint") "NetTie:NetTie-2_SMD_Pad0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Net tie, 2 pins")
+			)
+			(libsource
+				(lib "Device")
+				(part "NetTie_2")
+				(description "Net tie, 2 pins")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "net tie short")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Net*Tie*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a79ef54c-0734-4923-bbe9-873fdc25d9f5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q1")
+			(value "IRL520N")
+			(footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "Package_TO_SOT_THT:TO-220-3_Vertical")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "Q_NMOS_GDSD")
+				(description "N-MOSFET, gate/drain/source")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-000000000001")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R1")
+			(value "10k 0.1%")
+			(footprint "SparkFun-Resistor:R_0603_1608Metric")
+			(datasheet "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+			(description "Resistor")
+			(fields
+				(field
+					(name "PROD_ID") "RES-14342")
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0603_1608Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "10k_0402")
+				(description "Resistor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "RES-14342")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ef87274d-93e4-4979-a0d1-2723f46ad4b7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "10k 0.1%")
+			(footprint "SparkFun-Resistor:R_0603_1608Metric")
+			(datasheet "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+			(description "Resistor")
+			(fields
+				(field
+					(name "PROD_ID") "RES-...")
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0603_1608Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "10k_0603_0.1%")
+				(description "Resistor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "RES-...")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7eda99b9-30ca-4297-9b73-5824523d8969")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R3")
+			(value "1k")
+			(footprint "SparkFun-Resistor:R_0402_1005Metric")
+			(datasheet "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+			(description "Resistor")
+			(fields
+				(field
+					(name "PROD_ID") "RES-...")
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "1k_0402")
+				(description "Resistor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "RES-...")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "58419cf8-0382-451e-87fa-9297cabe991c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R4")
+			(value "1k")
+			(footprint "SparkFun-Resistor:R_0402_1005Metric")
+			(datasheet "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+			(description "Resistor")
+			(fields
+				(field
+					(name "PROD_ID") "RES-14342")
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "1k_0402")
+				(description "Resistor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "RES-14342")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a7723a2b-352d-4367-997a-362528bd109f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R5")
+			(value "10k")
+			(footprint "SparkFun-Resistor:R_0402_1005Metric")
+			(datasheet "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+			(description "Resistor")
+			(fields
+				(field
+					(name "PROD_ID") "RES-14342")
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "10k_0402")
+				(description "Resistor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "RES-14342")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3319c6a0-3e7c-4e65-b16b-eed124d72bba")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R6")
+			(value "330R")
+			(footprint "SparkFun-Resistor:R_0402_1005Metric")
+			(datasheet "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+			(description "Resistor")
+			(fields
+				(field
+					(name "PROD_ID") "RES-25567")
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "10k_0402")
+				(description "Resistor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "RES-25567")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "59017754-93ac-4200-9adb-343a8118174d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R7")
+			(value "10k")
+			(footprint "SparkFun-Resistor:R_0402_1005Metric")
+			(datasheet "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+			(description "Resistor")
+			(fields
+				(field
+					(name "PROD_ID") "RES-25567")
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "10k_0402")
+				(description "Resistor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "RES-25567")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c39d2313-1c66-40c5-b410-6103c4dd1fb4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R9")
+			(value "10k")
+			(footprint "SparkFun-Resistor:R_0402_1005Metric")
+			(datasheet "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+			(description "Resistor")
+			(fields
+				(field
+					(name "PROD_ID") "RES-25567")
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "10k_0402")
+				(description "Resistor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "RES-25567")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "654b1512-eaa8-4f8a-a28d-79fe5cb3574d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R10")
+			(value "10k")
+			(footprint "SparkFun-Resistor:R_0402_1005Metric")
+			(datasheet "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+			(description "Resistor")
+			(fields
+				(field
+					(name "PROD_ID") "RES-25013")
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "10k_0402")
+				(description "Resistor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "RES-25013")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4734aacd-62b6-49d7-96fe-85ce4e4883e7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R11")
+			(value "10k")
+			(footprint "SparkFun-Resistor:R_0402_1005Metric")
+			(datasheet "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+			(description "Resistor")
+			(fields
+				(field
+					(name "PROD_ID") "RES-25567")
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "10k_0402")
+				(description "Resistor")
+			)
+			(property
+				(name "PROD_ID")
+				(value "RES-25567")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "433c2061-3094-4b3f-9d81-20513f9d12fd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R_LED")
+			(value "1k")
+			(footprint "SparkFun-Resistor:R_0402_1005Metric")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0402_1005Metric")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "1k_0402")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-000000000003")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW1")
+			(value "SW_DIP_x03")
+			(footprint "Button_Switch_THT:SW_DIP_SPSTx03_Slide_9.78x9.8mm_W7.62mm_P2.54mm")
+			(description "3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol")
+			(fields
+				(field
+					(name "Footprint") "Button_Switch_THT:SW_DIP_SPSTx03_Slide_9.78x9.8mm_W7.62mm_P2.54mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_DIP_x03")
+				(description "3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "dip switch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SW?DIP?x3*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3c760929-8919-4f13-92a9-751186a496a8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP1")
+			(value "1.25mm")
+			(footprint "SparkFun-Connector:TestPoint-1.25mm")
+			(description "Test Point")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Connector:TestPoint-1.25mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test Point")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "TestPoint_1.25mm")
+				(description "Test Point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6e7a7608-9350-4a5a-9c0e-5b28a390c1f7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP2")
+			(value "1.25mm")
+			(footprint "SparkFun-Connector:TestPoint-1.25mm")
+			(description "Test Point")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Connector:TestPoint-1.25mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test Point")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "TestPoint_1.25mm")
+				(description "Test Point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7cf0cb75-eb4c-40e1-9c13-e8be7d13fb0a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP3")
+			(value "1.25mm")
+			(footprint "SparkFun-Connector:TestPoint-1.25mm")
+			(description "Test Point")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Connector:TestPoint-1.25mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test Point")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "TestPoint_1.25mm")
+				(description "Test Point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "52612a82-b7ed-4682-a3ee-012e9091b870")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP4")
+			(value "1.25mm")
+			(footprint "SparkFun-Connector:TestPoint-1.25mm")
+			(description "Test Point")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Connector:TestPoint-1.25mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test Point")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "TestPoint_1.25mm")
+				(description "Test Point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b828ddd2-cd7a-492e-87c3-f6cbdfa215c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP5")
+			(value "1.25mm")
+			(footprint "SparkFun-Connector:TestPoint-1.25mm")
+			(description "Test Point")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Connector:TestPoint-1.25mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test Point")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "TestPoint_1.25mm")
+				(description "Test Point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c405b527-ecb0-4578-9dbd-050128ab244f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP6")
+			(value "1.25mm")
+			(footprint "SparkFun-Connector:TestPoint-1.25mm")
+			(description "Test Point")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Connector:TestPoint-1.25mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test Point")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "TestPoint_1.25mm")
+				(description "Test Point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "166bb7a8-beb5-4abd-bdab-30b7fc2c1258")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP7")
+			(value "1.25mm")
+			(footprint "SparkFun-Connector:TestPoint-1.25mm")
+			(description "Test Point")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Connector:TestPoint-1.25mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test Point")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "TestPoint_1.25mm")
+				(description "Test Point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d493d83d-dc0c-4707-ae44-15421bc37380")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP8")
+			(value "1.25mm")
+			(footprint "SparkFun-Connector:TestPoint-1.25mm")
+			(description "Test Point")
+			(fields
+				(field
+					(name "Footprint") "SparkFun-Connector:TestPoint-1.25mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test Point")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "TestPoint_1.25mm")
+				(description "Test Point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fb19d9b8-8fd5-4841-a6f8-3b13481250b1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "XIAO-RP2350-DIP")
+			(footprint "Jaguar_Custom:XIAO-RP2350-DIP")
+			(fields
+				(field
+					(name "Footprint") "Jaguar_Custom:XIAO-RP2350-DIP")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Seeed_Studio_XIAO_Series")
+				(part "XIAO-RP2350-DIP")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4cb626c4-8f9d-4d92-a70e-9198fd5f8646")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "23")
+						)
+						(pin
+							(num "24")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "22")
+						)
+						(pin
+							(num "21")
+						)
+						(pin
+							(num "20")
+						)
+						(pin
+							(num "19")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U2")
+			(value "AP2112K-3.3")
+			(footprint "SparkFun-Semiconductor-Standard:SOT23-5")
+			(datasheet "https://www.diodes.com/assets/Datasheets/AP2112.pdf")
+			(description "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5")
+			(fields
+				(field
+					(name "PROD_ID") "VREG-12457")
+				(field
+					(name "VMax") "6V")
+				(field
+					(name "IMax") "600mA")
+				(field
+					(name "Iq") "55µA")
+				(field
+					(name "Footprint") "SparkFun-Semiconductor-Standard:SOT23-5")
+				(field
+					(name "Datasheet") "https://www.diodes.com/assets/Datasheets/AP2112.pdf")
+				(field
+					(name "Description") "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5")
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "AP2112K-3.3")
+				(description "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5")
+			)
+			(property
+				(name "PROD_ID")
+				(value "VREG-12457")
+			)
+			(property
+				(name "VMax")
+				(value "6V")
+			)
+			(property
+				(name "IMax")
+				(value "600mA")
+			)
+			(property
+				(name "Iq")
+				(value "55µA")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "SparkFun linear regulator ldo fixed positive")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SOT?23?5*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "00dd7062-188b-4688-b8de-310698704570")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U3")
+			(value "TB6612FNG")
+			(footprint "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm")
+			(datasheet "https://toshiba.semicon-storage.com/us/product/linear/motordriver/detail.TB6612FNG.html")
+			(description "Driver IC for Dual DC motor, SSOP-24")
+			(fields
+				(field
+					(name "Footprint") "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm")
+				(field
+					(name "Datasheet") "https://toshiba.semicon-storage.com/us/product/linear/motordriver/detail.TB6612FNG.html")
+				(field
+					(name "Description") "Driver IC for Dual DC motor, SSOP-24")
+			)
+			(libsource
+				(lib "Driver_Motor")
+				(part "TB6612FNG")
+				(description "Driver IC for Dual DC motor, SSOP-24")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "H-bridge motor driver")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SSOP*5.3x8.2mm*P0.65mm*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ab6aa0ed-42de-438a-b33a-988e8d7b6e38")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "23")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "21")
+						)
+						(pin
+							(num "22")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "20")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "24")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U4")
+			(value "TC4420")
+			(footprint "Package_DIP:DIP-8_W7.62mm")
+			(datasheet "~")
+			(fields
+				(field
+					(name "Footprint") "Package_DIP:DIP-8_W7.62mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "jaguar_power")
+				(part "TC4420")
+				(description "6A MOSFET gate driver, non-inverting, DIP-8")
+			)
+			(property
+				(name "Sheetname")
+				(value "Raíz")
+			)
+			(property
+				(name "Sheetfile")
+				(value "PCB.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b0000001-0000-4000-8000-000000000004")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Connector")
+			(part "Conn_01x03")
+			(description "Generic connector, single row, 01x03")
+			(docs "~")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x03")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "Generic connector, single row, 01x03")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "C")
+			(description "Unpolarized capacitor")
+			(docs "~")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "~")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "~")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "CP")
+			(description "Polarized capacitor")
+			(docs "~")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "CP")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "Polarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "~")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "~")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "NetTie_2")
+			(description "Net tie, 2 pins")
+			(footprints
+				(fp "Net*Tie*")
+			)
+			(fields
+				(field
+					(name "Reference") "NT")
+				(field
+					(name "Value") "NetTie_2")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Net tie, 2 pins")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "Polyfuse")
+			(description "Resettable fuse, PTC")
+			(docs "~")
+			(fields
+				(field
+					(name "Reference") "F")
+				(field
+					(name "Value") "Polyfuse")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "Resettable fuse, PTC")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "~")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "~")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "Q_NMOS_GDSD")
+			(description "N-MOSFET, gate/drain/source")
+			(docs "~")
+			(fields
+				(field
+					(name "Reference") "Q")
+				(field
+					(name "Value") "Q_NMOS_GDSD")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "N-MOSFET, gate/drain/source")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "G")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "D")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "S")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Diode")
+			(part "BAT54S")
+			(description "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323")
+			(docs "https://www.diodes.com/assets/Datasheets/ds11005.pdf")
+			(footprints
+				(fp "SOT?23*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "BAT54S")
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+				(field
+					(name "Datasheet") "https://www.diodes.com/assets/Datasheets/ds11005.pdf")
+				(field
+					(name "Description") "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "COM")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Diode")
+			(part "US1M")
+			(description "1000V, 1A, General Purpose Rectifier Diode, SMA(DO-214AC)")
+			(docs "https://www.diodes.com/assets/Datasheets/ds16008.pdf")
+			(footprints
+				(fp "D*SMA*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "US1M")
+				(field
+					(name "Footprint") "Diode_SMD:D_SMA")
+				(field
+					(name "Datasheet") "https://www.diodes.com/assets/Datasheets/ds16008.pdf")
+				(field
+					(name "Description") "1000V, 1A, General Purpose Rectifier Diode, SMA(DO-214AC)")
+				(field
+					(name "Sim.Device") "D")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Driver_Motor")
+			(part "TB6612FNG")
+			(description "Driver IC for Dual DC motor, SSOP-24")
+			(docs "https://toshiba.semicon-storage.com/us/product/linear/motordriver/detail.TB6612FNG.html")
+			(footprints
+				(fp "SSOP*5.3x8.2mm*P0.65mm*")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TB6612FNG")
+				(field
+					(name "Footprint") "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm")
+				(field
+					(name "Datasheet") "https://toshiba.semicon-storage.com/us/product/linear/motordriver/detail.TB6612FNG.html")
+				(field
+					(name "Description") "Driver IC for Dual DC motor, SSOP-24")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "AO1")
+					(type "output")
+				)
+				(pin
+					(num "2")
+					(name "AO1")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "PGND1")
+					(type "power_in")
+				)
+				(pin
+					(num "4")
+					(name "PGND1")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "AO2")
+					(type "output")
+				)
+				(pin
+					(num "6")
+					(name "AO2")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "BO2")
+					(type "output")
+				)
+				(pin
+					(num "8")
+					(name "BO2")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "PGND2")
+					(type "power_in")
+				)
+				(pin
+					(num "10")
+					(name "PGND2")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "BO1")
+					(type "output")
+				)
+				(pin
+					(num "12")
+					(name "BO1")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "VM2")
+					(type "power_in")
+				)
+				(pin
+					(num "14")
+					(name "VM3")
+					(type "power_in")
+				)
+				(pin
+					(num "15")
+					(name "PWMB")
+					(type "input")
+				)
+				(pin
+					(num "16")
+					(name "BIN2")
+					(type "input")
+				)
+				(pin
+					(num "17")
+					(name "BIN1")
+					(type "input")
+				)
+				(pin
+					(num "18")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "19")
+					(name "STBY")
+					(type "input")
+				)
+				(pin
+					(num "20")
+					(name "VCC")
+					(type "power_in")
+				)
+				(pin
+					(num "21")
+					(name "AIN1")
+					(type "input")
+				)
+				(pin
+					(num "22")
+					(name "AIN2")
+					(type "input")
+				)
+				(pin
+					(num "23")
+					(name "PWMA")
+					(type "input")
+				)
+				(pin
+					(num "24")
+					(name "VM1")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "Seeed_Studio_XIAO_Series")
+			(part "XIAO-RP2350-DIP")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "XIAO-RP2350-DIP")
+				(field
+					(name "Footprint") "Jaguar_Custom:XIAO-RP2350-DIP")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "D0")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "D1")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "D2")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "D3")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "D4")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "D5")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "D6")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "D7")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "D8")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "D9")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "D10")
+					(type "passive")
+				)
+				(pin
+					(num "12")
+					(name "3V3_OUT")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "14")
+					(name "VBUS")
+					(type "passive")
+				)
+				(pin
+					(num "15")
+					(name "D11")
+					(type "passive")
+				)
+				(pin
+					(num "16")
+					(name "D12")
+					(type "passive")
+				)
+				(pin
+					(num "17")
+					(name "D13")
+					(type "passive")
+				)
+				(pin
+					(num "18")
+					(name "D14")
+					(type "passive")
+				)
+				(pin
+					(num "19")
+					(name "D15")
+					(type "passive")
+				)
+				(pin
+					(num "20")
+					(name "D16")
+					(type "passive")
+				)
+				(pin
+					(num "21")
+					(name "D17")
+					(type "passive")
+				)
+				(pin
+					(num "22")
+					(name "D18")
+					(type "passive")
+				)
+				(pin
+					(num "23")
+					(name "VBAT")
+					(type "passive")
+				)
+				(pin
+					(num "24")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Switch")
+			(part "SW_DIP_x03")
+			(description "3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol")
+			(footprints
+				(fp "SW?DIP?x3*")
+			)
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "SW_DIP_x03")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "jaguar_power")
+			(part "0.1uF_0402_16V_10%")
+			(description "Unpolarized capacitor")
+			(docs "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "0.1uF")
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+				(field
+					(name "Description") "Unpolarized capacitor")
+				(field
+					(name "PROD_ID") "CAP-25565")
+				(field
+					(name "Voltage") "16V")
+				(field
+					(name "Tolerance") "10%")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "jaguar_power")
+			(part "10k_0402")
+			(description "Resistor")
+			(docs "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "10k")
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+				(field
+					(name "Description") "Resistor")
+				(field
+					(name "PROD_ID") "RES-25567")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "jaguar_power")
+			(part "10k_0603_0.1%")
+			(description "Resistor")
+			(docs "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "10k 0.1%")
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0603_1608Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+				(field
+					(name "Description") "Resistor")
+				(field
+					(name "PROD_ID") "RES-...")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "jaguar_power")
+			(part "10uF_0603_10V_20%")
+			(description "Unpolarized capacitor")
+			(docs "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "10uF")
+				(field
+					(name "Footprint") "SparkFun-Capacitor:C_0603_1608Metric")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf")
+				(field
+					(name "Description") "Unpolarized capacitor")
+				(field
+					(name "PROD_ID") "CAP-20155")
+				(field
+					(name "Voltage") "10V")
+				(field
+					(name "Tolerance") "20%")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "jaguar_power")
+			(part "1k_0402")
+			(description "Resistor")
+			(docs "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "1k")
+				(field
+					(name "Footprint") "SparkFun-Resistor:R_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/20035/dcrcwe3.pdf")
+				(field
+					(name "Description") "Resistor")
+				(field
+					(name "PROD_ID") "RES-14342")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "jaguar_power")
+			(part "47uF_3528_10V_10%")
+			(description "Polarized tantalum capacitor")
+			(docs "https://www.vishay.com/docs/40002/293d.pdf")
+			(footprints
+				(fp "CP_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "47uF")
+				(field
+					(name "Footprint") "SparkFun-Capacitor:EIA-3528")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/40002/293d.pdf")
+				(field
+					(name "Description") "Polarized tantalum capacitor")
+				(field
+					(name "PROD_ID") "CAP-08310")
+				(field
+					(name "Voltage") "10V")
+				(field
+					(name "Tolerance") "10%")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "jaguar_power")
+			(part "AP2112K-3.3")
+			(description "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5")
+			(docs "https://www.diodes.com/assets/Datasheets/AP2112.pdf")
+			(footprints
+				(fp "SOT?23?5*")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "AP2112K-3.3")
+				(field
+					(name "Footprint") "SparkFun-Semiconductor-Standard:SOT23-5")
+				(field
+					(name "Datasheet") "https://www.diodes.com/assets/Datasheets/AP2112.pdf")
+				(field
+					(name "Description") "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5")
+				(field
+					(name "PROD_ID") "VREG-12457")
+				(field
+					(name "VMax") "6V")
+				(field
+					(name "IMax") "600mA")
+				(field
+					(name "Iq") "55µA")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VIN")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "EN")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "NC")
+					(type "no_connect")
+				)
+				(pin
+					(num "5")
+					(name "VOUT")
+					(type "power_out")
+				)
+			)
+		)
+		(libpart
+			(lib "jaguar_power")
+			(part "Conn_01x02_JST_P2.0mm_Horizontal_PTH")
+			(description "2 Pin 2mm JST Connector")
+			(docs "https://www.sparkfun.com/datasheets/Prototyping/ePH.pdf")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "JST_2mm")
+				(field
+					(name "Footprint") "SparkFun-Connector:JST_1x02_P2.0mm_Horizontal_PTH")
+				(field
+					(name "Datasheet") "https://www.sparkfun.com/datasheets/Prototyping/ePH.pdf")
+				(field
+					(name "Description") "2 Pin 2mm JST Connector")
+				(field
+					(name "PROD_ID") "CONN-09863")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "jaguar_power")
+			(part "LED_Green_5mm_PTH_Silk")
+			(description "Light emitting diode PTH 5mm diameter")
+			(docs "https://cdn.sparkfun.com/assets/e/c/e/c/5/COM-09590-YSL-R531R3D-D2.pdf")
+			(footprints
+				(fp "LED*")
+				(fp "LED_SMD:*")
+				(fp "LED_THT:*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "Green")
+				(field
+					(name "Footprint") "SparkFun-LED:LED_5mm_PTH_Green_Silk")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/e/c/e/c/5/COM-09590-YSL-R531R3D-D2.pdf")
+				(field
+					(name "Description") "Light emitting diode PTH 5mm diameter")
+				(field
+					(name "PROD_ID") "DIO-09862")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "jaguar_power")
+			(part "ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+			(description "Screw terminal")
+			(docs "https://cdn.sparkfun.com/assets/8/5/e/4/d/ASS_4091_CO.pdf")
+			(footprints
+				(fp "TerminalBlock*:*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "3.5mm")
+				(field
+					(name "Footprint") "SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black")
+				(field
+					(name "Datasheet") "https://cdn.sparkfun.com/assets/8/5/e/4/d/ASS_4091_CO.pdf")
+				(field
+					(name "Description") "Screw terminal")
+				(field
+					(name "PROD_ID") "CONN-08399")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "jaguar_power")
+			(part "TC4420")
+			(description "6A MOSFET gate driver, non-inverting, DIP-8")
+			(docs "~")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TC4420")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "6A MOSFET gate driver, non-inverting, DIP-8")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "IN")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "VDD")
+					(type "power_in")
+				)
+				(pin
+					(num "6")
+					(name "OUT")
+					(type "output")
+				)
+				(pin
+					(num "7")
+					(name "VDD")
+					(type "power_in")
+				)
+				(pin
+					(num "8")
+					(name "VDD")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "jaguar_power")
+			(part "TestPoint_1.25mm")
+			(description "Test Point")
+			(footprints
+				(fp "Pin*")
+				(fp "Test*")
+			)
+			(fields
+				(field
+					(name "Reference") "TP")
+				(field
+					(name "Value") "1.25mm")
+				(field
+					(name "Footprint") "SparkFun-Connector:TestPoint-1.25mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Test Point")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Connector")
+			(uri "${KICAD10_SYMBOL_DIR}/Connector.kicad_sym")
+		)
+		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		)
+		(library
+			(logical "Diode")
+			(uri "${KICAD10_SYMBOL_DIR}/Diode.kicad_sym")
+		)
+		(library
+			(logical "Driver_Motor")
+			(uri "${KICAD10_SYMBOL_DIR}/Driver_Motor.kicad_sym")
+		)
+		(library
+			(logical "Seeed_Studio_XIAO_Series")
+			(uri "${KIPRJMOD}/../libraries/OPL_Kicad_Library/Seeed Studio XIAO Series Library/Seeed_Studio_XIAO_Series.kicad_sym")
+		)
+		(library
+			(logical "Switch")
+			(uri "${KICAD10_SYMBOL_DIR}/Switch.kicad_sym")
+		)
+		(library
+			(logical "jaguar_power")
+			(uri "${KIPRJMOD}/../libraries/jaguar_power.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "/+3V3")
+			(class "Default")
+			(node
+				(ref "C9")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D1")
+				(pin "2")
+				(pinfunction "K_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D2")
+				(pin "2")
+				(pinfunction "K_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "F1")
+				(pin "2")
+				(pinfunction "~_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R10")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R_LED")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "12")
+				(pinfunction "3V3_OUT_12")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "20")
+				(pinfunction "VCC_20")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "2")
+			(name "/+5V")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C7")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C8")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J7")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "1")
+				(pinfunction "VIN_1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "EN_3")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "13")
+				(pinfunction "VM2_13")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U3")
+				(pin "14")
+				(pinfunction "VM3_14")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U3")
+				(pin "24")
+				(pinfunction "VM1_24")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U4")
+				(pin "5")
+				(pinfunction "VDD_5")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U4")
+				(pin "7")
+				(pinfunction "VDD_7")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U4")
+				(pin "8")
+				(pinfunction "VDD_8")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "3")
+			(name "/+48V")
+			(class "Default")
+			(node
+				(ref "C10")
+				(pin "1")
+				(pinfunction "~_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C11")
+				(pin "1")
+				(pinfunction "~_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D3")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J6")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "4")
+			(name "/AGND")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C12")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C13")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C14")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C9")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D1")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D2")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "LED1")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "NT1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "4")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "6")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "13")
+				(pinfunction "GND_13")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "24")
+				(pinfunction "GND_24")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U3")
+				(pin "15")
+				(pinfunction "PWMB_15")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "16")
+				(pinfunction "BIN2_16")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "17")
+				(pinfunction "BIN1_17")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "18")
+				(pinfunction "GND_18")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "5")
+			(name "/NET_3V3_LDO")
+			(class "Default")
+			(node
+				(ref "C2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "F1")
+				(pin "1")
+				(pinfunction "~_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "5")
+				(pinfunction "VOUT_5")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "6")
+			(name "/NET_AIN1")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "9")
+				(pinfunction "D8_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "21")
+				(pinfunction "AIN1_21")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "7")
+			(name "/NET_AIN2")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "8")
+				(pinfunction "D7_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "22")
+				(pinfunction "AIN2_22")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "8")
+			(name "/NET_AO1")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "1")
+				(pinfunction "AO1_1")
+				(pintype "output")
+			)
+			(node
+				(ref "U3")
+				(pin "2")
+				(pinfunction "AO1_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "/NET_AO2")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "5")
+				(pinfunction "AO2_5")
+				(pintype "output")
+			)
+			(node
+				(ref "U3")
+				(pin "6")
+				(pinfunction "AO2_6")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "10")
+			(name "/NET_FAN_HS")
+			(class "Default")
+			(node
+				(ref "D3")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "2")
+				(pinfunction "D_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "/NET_LED_ANODE")
+			(class "Default")
+			(node
+				(ref "LED1")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R_LED")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "/NET_MOTOR_EN")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "11")
+				(pinfunction "D10_11")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "23")
+				(pinfunction "PWMA_23")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "13")
+			(name "/NET_Q1_GATE")
+			(class "Default")
+			(node
+				(ref "Q1")
+				(pin "1")
+				(pinfunction "G_1")
+				(pintype "input")
+			)
+			(node
+				(ref "R6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP8")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "/NET_STBY")
+			(class "Default")
+			(node
+				(ref "R5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "19")
+				(pinfunction "STBY_19")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "15")
+			(name "/NET_SW1")
+			(class "Default")
+			(node
+				(ref "C12")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "D4_5")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "/NET_SW2")
+			(class "Default")
+			(node
+				(ref "C13")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R10")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "5")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "D5_6")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "/NET_SW3")
+			(class "Default")
+			(node
+				(ref "C14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "7")
+				(pinfunction "D6_7")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
+			(name "/NET_TEMP_EXT_DIV")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "19")
+			(name "/NET_TEMP_EXT_FILT")
+			(class "Default")
+			(node
+				(ref "C6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D2")
+				(pin "3")
+				(pinfunction "COM_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP7")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "D1_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "20")
+			(name "/NET_TEMP_INT_DIV")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "21")
+			(name "/NET_TEMP_INT_FILT")
+			(class "Default")
+			(node
+				(ref "C5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D1")
+				(pin "3")
+				(pinfunction "COM_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP6")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "D0_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "22")
+			(name "/NET_VENT")
+			(class "Default")
+			(node
+				(ref "J9")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "10")
+				(pinfunction "D9_10")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "3")
+				(pinfunction "IN_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "23")
+			(name "/NET_VENT_DRV")
+			(class "Default")
+			(node
+				(ref "J9")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "6")
+				(pinfunction "OUT_6")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "24")
+			(name "/NET_VENT_GATE")
+			(class "Default")
+			(node
+				(ref "J9")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "25")
+			(name "/PGND")
+			(class "Default")
+			(node
+				(ref "C10")
+				(pin "2")
+				(pinfunction "~_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C11")
+				(pin "2")
+				(pinfunction "~_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C8")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J6")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J7")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "NT1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "3")
+				(pinfunction "S_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "10")
+				(pinfunction "PGND2_10")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "3")
+				(pinfunction "PGND1_3")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U3")
+				(pin "4")
+				(pinfunction "PGND1_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "9")
+				(pinfunction "PGND2_9")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U4")
+				(pin "1")
+				(pinfunction "GND_1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U4")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U4")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "26")
+			(name "unconnected-(U1-D2-Pad3)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "D2_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "27")
+			(name "unconnected-(U1-D3-Pad4)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "D3_4")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "28")
+			(name "unconnected-(U1-D11-Pad15)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "15")
+				(pinfunction "D11_15")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "29")
+			(name "unconnected-(U1-D12-Pad16)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "16")
+				(pinfunction "D12_16")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "30")
+			(name "unconnected-(U1-D13-Pad17)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "17")
+				(pinfunction "D13_17")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "31")
+			(name "unconnected-(U1-D14-Pad18)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "18")
+				(pinfunction "D14_18")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "32")
+			(name "unconnected-(U1-D15-Pad19)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "19")
+				(pinfunction "D15_19")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "33")
+			(name "unconnected-(U1-D16-Pad20)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "20")
+				(pinfunction "D16_20")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "34")
+			(name "unconnected-(U1-D17-Pad21)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "21")
+				(pinfunction "D17_21")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "35")
+			(name "unconnected-(U1-D18-Pad22)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "22")
+				(pinfunction "D18_22")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "36")
+			(name "unconnected-(U1-VBAT-Pad23)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "23")
+				(pinfunction "VBAT_23")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "37")
+			(name "unconnected-(U1-VBUS-Pad14)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "14")
+				(pinfunction "VBUS_14")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "38")
+			(name "unconnected-(U2-NC-Pad4)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "4")
+				(pinfunction "NC_4")
+				(pintype "no_connect")
+			)
+		)
+		(net
+			(code "39")
+			(name "unconnected-(U3-BO1-Pad11)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "11")
+				(pinfunction "BO1_11")
+				(pintype "output+no_connect")
+			)
+			(node
+				(ref "U3")
+				(pin "12")
+				(pinfunction "BO1_12")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "40")
+			(name "unconnected-(U3-BO2-Pad7)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "7")
+				(pinfunction "BO2_7")
+				(pintype "output+no_connect")
+			)
+			(node
+				(ref "U3")
+				(pin "8")
+				(pinfunction "BO2_8")
+				(pintype "passive+no_connect")
+			)
+		)
+	)
+)
