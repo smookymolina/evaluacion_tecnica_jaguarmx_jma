@@ -1,0 +1,13 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Jaguar_Custom")(type "KiCad")(uri "${KIPRJMOD}/Jaguar_Custom.pretty")(options "")(descr "Huellas custom Jaguar MX"))
+	(lib (name "Seeed_Studio_XIAO_Series")(type "KiCad")(uri "${KIPRJMOD}/../libraries/OPL_Kicad_Library/Seeed Studio XIAO Series Library")(options "")(descr "Seeed Studio XIAO Series Footprints"))
+	(lib (name "SparkFun-Capacitor")(type "KiCad")(uri "${KIPRJMOD}/../libraries/SparkFun-KiCad-Libraries/footprints/SparkFun-Capacitor.pretty")(options "")(descr "SparkFun Capacitor Footprints"))
+	(lib (name "SparkFun-Connector")(type "KiCad")(uri "${KIPRJMOD}/../libraries/SparkFun-KiCad-Libraries/footprints/SparkFun-Connector.pretty")(options "")(descr "SparkFun Connector Footprints"))
+	(lib (name "SparkFun-Resistor")(type "KiCad")(uri "${KIPRJMOD}/../libraries/SparkFun-KiCad-Libraries/footprints/SparkFun-Resistor.pretty")(options "")(descr "SparkFun Resistor Footprints"))
+	(lib (name "SparkFun-Semiconductor-Standard")(type "KiCad")(uri "${KIPRJMOD}/../libraries/SparkFun-KiCad-Libraries/footprints/SparkFun-Semiconductor-Standard.pretty")(options "")(descr "SparkFun Semiconductor Standard Footprints"))
+	(lib (name "SparkFun-Semiconductor-Nonstandard")(type "KiCad")(uri "${KIPRJMOD}/../libraries/SparkFun-KiCad-Libraries/footprints/SparkFun-Semiconductor-Nonstandard.pretty")(options "")(descr "SparkFun Semiconductor Nonstandard Footprints"))
+	(lib (name "SparkFun-LED")(type "KiCad")(uri "${KIPRJMOD}/../libraries/SparkFun-KiCad-Libraries/footprints/SparkFun-LED.pretty")(options "")(descr "SparkFun LED Footprints"))
+	(lib (name "SparkFun-Switch")(type "KiCad")(uri "${KIPRJMOD}/../libraries/SparkFun-KiCad-Libraries/footprints/SparkFun-Switch.pretty")(options "")(descr "SparkFun Switch Footprints"))
+	(lib (name "SparkFun-Fuse")(type "KiCad")(uri "${KIPRJMOD}/../libraries/SparkFun-KiCad-Libraries/footprints/SparkFun-Fuse.pretty")(options "")(descr "SparkFun Fuse Footprints"))
+)

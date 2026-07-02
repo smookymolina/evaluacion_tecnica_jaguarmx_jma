@@ -1,0 +1,22 @@
+{
+  "name": "tb6612fng-sim",
+  "author": "Jaguar de Mexico",
+  "description": "TB6612FNG simplified H-bridge model for firmware validation. Models logic direction pins, PWM/enable and standby; exposes motor output polarity pins.",
+  "pins": [
+    "VM",
+    "VCC",
+    "GND",
+    "STBY",
+    "PWMA",
+    "AIN1",
+    "AIN2",
+    "AO1",
+    "AO2",
+    "PWMB",
+    "BIN1",
+    "BIN2",
+    "BO1",
+    "BO2"
+  ],
+  "controls": []
+}

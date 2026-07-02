@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "author": "Jaguar de Mexico — Jair Molina Arce",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 40, "left": 60, "attrs": {} },
+    { "type": "chip-tb6612fng-sim", "id": "hbridge", "top": 50, "left": -300, "attrs": {} },
+    {
+      "type": "wokwi-ntc-temperature-sensor",
+      "id": "ntc_in",
+      "top": -90,
+      "left": 330,
+      "attrs": { "temperature": "45", "beta": "3950" }
+    },
+    {
+      "type": "wokwi-ntc-temperature-sensor",
+      "id": "ntc_out",
+      "top": 20,
+      "left": 330,
+      "attrs": { "temperature": "30", "beta": "3950" }
+    },
+    { "type": "wokwi-dip-switch-8", "id": "dip1", "top": 180, "left": 330, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led_vent",
+      "top": -120,
+      "left": 120,
+      "attrs": { "color": "red", "label": "VENTILADOR" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_motor_a_abre",
+      "top": 170,
+      "left": -420,
+      "attrs": { "color": "green", "label": "MOTOR A ABRE" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_motor_a_cierra",
+      "top": 260,
+      "left": -420,
+      "attrs": { "color": "red", "label": "MOTOR A CIERRA" }
+    },
+    { "type": "wokwi-resistor", "id": "r_vent", "top": -65, "left": 10, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r_motor_abre", "top": 185, "left": -330, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r_motor_cierra", "top": 275, "left": -330, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "pico:VBUS", "hbridge:VM", "red", [ "v-20", "h-460" ] ],
+    [ "pico:3V3", "hbridge:VCC", "red", [ "v-30", "h-440" ] ],
+    [ "hbridge:STBY", "hbridge:VCC", "red", [ "h-10" ] ],
+    [ "pico:GND.1", "hbridge:GND", "black", [ "h-30" ] ],
+    [ "hbridge:PWMB", "hbridge:GND", "black", [ "h10", "v-60" ] ],
+    [ "hbridge:BIN1", "hbridge:GND", "black", [ "h10", "v-70" ] ],
+    [ "hbridge:BIN2", "hbridge:GND", "black", [ "h10", "v-80" ] ],
+
+    [ "pico:GP2", "hbridge:AIN1", "orange", [ "h-40" ] ],
+    [ "pico:GP1", "hbridge:AIN2", "yellow", [ "h-50" ] ],
+    [ "pico:GP3", "hbridge:PWMA", "purple", [ "h-30" ] ],
+
+    [ "hbridge:AO2", "r_motor_abre:2", "green", [ "h20", "v110" ] ],
+    [ "r_motor_abre:1", "led_motor_a_abre:A", "green", [ "h-10" ] ],
+    [ "hbridge:AO1", "r_motor_cierra:2", "red", [ "h30", "v200" ] ],
+    [ "r_motor_cierra:1", "led_motor_a_cierra:A", "red", [ "h-10" ] ],
+    [ "led_motor_a_abre:C", "led_motor_a_cierra:C", "black", [ "v20" ] ],
+    [ "led_motor_a_cierra:C", "hbridge:GND", "black", [ "v30", "h100" ] ],
+
+    [ "pico:GP4", "r_vent:1", "cyan", [ "h-20", "v-140" ] ],
+    [ "r_vent:2", "led_vent:A", "cyan", [ "h10" ] ],
+    [ "led_vent:C", "pico:GND.8", "black", [ "v20" ] ],
+
+    [ "pico:3V3", "ntc_in:VCC", "red", [ "v-30", "h60" ] ],
+    [ "ntc_out:VCC", "ntc_in:VCC", "red", [ "h-20", "v-60" ] ],
+    [ "pico:GND.7", "ntc_in:GND", "black", [ "h30" ] ],
+    [ "ntc_out:GND", "ntc_in:GND", "black", [ "h-30", "v-60" ] ],
+    [ "pico:GP26", "ntc_in:OUT", "blue", [ "h40" ] ],
+    [ "pico:GP27", "ntc_out:OUT", "green", [ "h30" ] ],
+
+    [ "pico:GP6", "dip1:1a", "blue", [ "h-20", "v160", "h420" ] ],
+    [ "pico:GP7", "dip1:2a", "purple", [ "h-30", "v170", "h450" ] ],
+    [ "pico:GP0", "dip1:3a", "orange", [ "h-40", "v-60", "h500", "v260" ] ],
+    [ "dip1:1b", "dip1:2b", "black", [ "v10" ] ],
+    [ "dip1:2b", "dip1:3b", "black", [ "v10" ] ],
+    [ "dip1:3b", "pico:GND.5", "black", [ "v20", "h-180" ] ]
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,127 @@
+** Drc report for PCB.kicad_pcb **
+** Created on 2026-07-01T23:28:23 **
+** Report includes: Errors, Warnings **
+
+** Found 1 DRC violations **
+[invalid_outline]: La placa tiene un contorno mal formado (no se han encontrado bordes en la capa Edge.Cuts)
+    Local override; error
+    @(0.0000 mm, 0.0000 mm): PCB
+
+** Found 0 unconnected pads **
+
+** Found 53 Footprint errors **
+[missing_footprint]: Huella faltante C1 (10uF)
+    Local override; warning
+[missing_footprint]: Huella faltante C2 (10uF)
+    Local override; warning
+[missing_footprint]: Huella faltante C3 (0.1uF)
+    Local override; warning
+[missing_footprint]: Huella faltante C4 (0.1uF)
+    Local override; warning
+[missing_footprint]: Huella faltante C5 (0.1uF)
+    Local override; warning
+[missing_footprint]: Huella faltante C6 (0.1uF)
+    Local override; warning
+[missing_footprint]: Huella faltante C7 (47uF)
+    Local override; warning
+[missing_footprint]: Huella faltante C8 (0.1uF)
+    Local override; warning
+[missing_footprint]: Huella faltante C9 (0.1uF)
+    Local override; warning
+[missing_footprint]: Huella faltante C10 (100uF/63V)
+    Local override; warning
+[missing_footprint]: Huella faltante C11 (100nF/63V)
+    Local override; warning
+[missing_footprint]: Huella faltante C12 (0.1uF)
+    Local override; warning
+[missing_footprint]: Huella faltante C13 (0.1uF)
+    Local override; warning
+[missing_footprint]: Huella faltante C14 (0.1uF)
+    Local override; warning
+[missing_footprint]: Huella faltante C15 (0.1uF)
+    Local override; warning
+[missing_footprint]: Huella faltante D1 (BAT54S)
+    Local override; warning
+[missing_footprint]: Huella faltante D2 (BAT54S)
+    Local override; warning
+[missing_footprint]: Huella faltante D3 (US1M)
+    Local override; warning
+[missing_footprint]: Huella faltante F1 (500mA)
+    Local override; warning
+[missing_footprint]: Huella faltante J1 (JST_2mm)
+    Local override; warning
+[missing_footprint]: Huella faltante J2 (JST_2mm)
+    Local override; warning
+[missing_footprint]: Huella faltante J3 (3.5mm)
+    Local override; warning
+[missing_footprint]: Huella faltante J5 (3.5mm)
+    Local override; warning
+[missing_footprint]: Huella faltante J6 (3.5mm)
+    Local override; warning
+[missing_footprint]: Huella faltante J7 (3.5mm)
+    Local override; warning
+[missing_footprint]: Huella faltante J9 (Selector_TC4420)
+    Local override; warning
+[missing_footprint]: Huella faltante LED1 (LED_Green)
+    Local override; warning
+[missing_footprint]: Huella faltante NT1 (NetTie_2)
+    Local override; warning
+[missing_footprint]: Huella faltante Q1 (IRL520N)
+    Local override; warning
+[missing_footprint]: Huella faltante R1 (10k 0.1%)
+    Local override; warning
+[missing_footprint]: Huella faltante R2 (10k 0.1%)
+    Local override; warning
+[missing_footprint]: Huella faltante R3 (1k)
+    Local override; warning
+[missing_footprint]: Huella faltante R4 (1k)
+    Local override; warning
+[missing_footprint]: Huella faltante R5 (10k)
+    Local override; warning
+[missing_footprint]: Huella faltante R6 (330R)
+    Local override; warning
+[missing_footprint]: Huella faltante R7 (10k)
+    Local override; warning
+[missing_footprint]: Huella faltante R9 (10k)
+    Local override; warning
+[missing_footprint]: Huella faltante R10 (10k)
+    Local override; warning
+[missing_footprint]: Huella faltante R11 (10k)
+    Local override; warning
+[missing_footprint]: Huella faltante R_LED (1k)
+    Local override; warning
+[missing_footprint]: Huella faltante SW1 (SW_DIP_x03)
+    Local override; warning
+[missing_footprint]: Huella faltante TP1 (1.25mm)
+    Local override; warning
+[missing_footprint]: Huella faltante TP2 (1.25mm)
+    Local override; warning
+[missing_footprint]: Huella faltante TP3 (1.25mm)
+    Local override; warning
+[missing_footprint]: Huella faltante TP4 (1.25mm)
+    Local override; warning
+[missing_footprint]: Huella faltante TP5 (1.25mm)
+    Local override; warning
+[missing_footprint]: Huella faltante TP6 (1.25mm)
+    Local override; warning
+[missing_footprint]: Huella faltante TP7 (1.25mm)
+    Local override; warning
+[missing_footprint]: Huella faltante TP8 (1.25mm)
+    Local override; warning
+[missing_footprint]: Huella faltante U1 (XIAO-RP2350-DIP)
+    Local override; warning
+[missing_footprint]: Huella faltante U2 (AP2112K-3.3)
+    Local override; warning
+[missing_footprint]: Huella faltante U3 (TB6612FNG)
+    Local override; warning
+[missing_footprint]: Huella faltante U4 (TC4420)
+    Local override; warning
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
