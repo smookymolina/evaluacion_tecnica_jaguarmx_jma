@@ -2065,7 +2065,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "Seeed_Studio_XIAO_Series:XIAO-RP2350-DIP"
+			(property "Footprint" "Jaguar_Custom:XIAO-RP2350-DIP"
 				(at 4.318 26.67 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7666,7 +7666,7 @@
 		)
 		(uuid "00c594e0-b28c-4636-a741-1e6f91d8e1ca")
 	)
-	(label "NET_MOTOR_EN"
+	(label "NET_VENT"
 		(at 187.96 143.51 0)
 		(effects
 			(font
@@ -7927,7 +7927,7 @@
 		)
 		(uuid "43d965f1-0f4a-401d-a22a-a08408755dfe")
 	)
-	(label "NET_VENT"
+	(label "NET_MOTOR_EN"
 		(at 193.04 139.7 0)
 		(effects
 			(font
@@ -9498,7 +9498,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Seeed_Studio_XIAO_Series:XIAO-RP2350-DIP"
+		(property "Footprint" "Jaguar_Custom:XIAO-RP2350-DIP"
 			(at 180.848 124.46 0)
 			(hide yes)
 			(show_name no)
