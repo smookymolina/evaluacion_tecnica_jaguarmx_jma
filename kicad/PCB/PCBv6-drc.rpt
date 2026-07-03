@@ -1,0 +1,596 @@
+** Drc report for PCBv6.kicad_pcb **
+** Created on 2026-07-03T12:25:37 **
+** Report includes: Errors, Warnings **
+
+** Found 189 DRC violations **
+[drill_out_of_range]: Tamaño de agujero fuera del rango (regla 'Power48V_Via' agujero mínimo 0.8000 mm; real 0.3000 mm)
+    Rule: Power48V_Via; error
+    @(166.5000 mm, 74.0000 mm): Via [/NET_FAN_HS] on F.Cu - B.Cu
+[drill_out_of_range]: Tamaño de agujero fuera del rango (regla 'Power48V_Via' agujero mínimo 0.8000 mm; real 0.3000 mm)
+    Rule: Power48V_Via; error
+    @(175.5000 mm, 97.5000 mm): Via [/NET_FAN_HS] on F.Cu - B.Cu
+[track_width]: Ancho de pista (regla 'Power5V_Motor_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Motor_MinWidth; error
+    @(161.5000 mm, 95.9250 mm): Track [/NET_AO1] on F.Cu, length 0.6500 mm
+[track_width]: Ancho de pista (regla 'Power5V_Motor_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Motor_MinWidth; error
+    @(176.5750 mm, 95.9250 mm): Track [/NET_AO1] on F.Cu, length 6.9650 mm
+[track_width]: Ancho de pista (regla 'Power5V_Motor_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Motor_MinWidth; error
+    @(161.5000 mm, 95.9250 mm): Track [/NET_AO1] on F.Cu, length 15.0750 mm
+[track_width]: Ancho de pista (regla 'Power5V_Motor_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Motor_MinWidth; error
+    @(161.5000 mm, 93.3250 mm): Track [/NET_AO2] on F.Cu, length 14.1750 mm
+[track_width]: Ancho de pista (regla 'Power5V_Motor_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Motor_MinWidth; error
+    @(161.5000 mm, 93.3250 mm): Track [/NET_AO2] on F.Cu, length 0.6500 mm
+[track_width]: Ancho de pista (regla 'Power5V_Motor_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Motor_MinWidth; error
+    @(175.6750 mm, 93.3250 mm): Track [/NET_AO2] on F.Cu, length 8.2378 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(140.7500 mm, 73.0000 mm): Track [/+5V] on F.Cu, length 2.8284 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(146.0000 mm, 73.0000 mm): Track [/+5V] on F.Cu, length 3.0000 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(130.5000 mm, 73.8988 mm): Track [/+5V] on F.Cu, length 0.6212 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(155.5099 mm, 96.5750 mm): Track [/+5V] on F.Cu, length 0.3110 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(131.2488 mm, 73.1500 mm): Track [/+5V] on F.Cu, length 1.0590 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(156.0000 mm, 99.4800 mm): Track [/+5V] on F.Cu, length 0.0300 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(155.6900 mm, 99.4800 mm): Track [/+5V] on F.Cu, length 0.3100 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(155.5099 mm, 96.5750 mm): Track [/+5V] on F.Cu, length 1.0099 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(123.9999 mm, 75.0500 mm): Track [/+5V] on F.Cu, length 0.7072 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(129.0000 mm, 75.9024 mm): Track [/+5V] on F.Cu, length 1.9551 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(155.2900 mm, 99.0800 mm): Track [/+5V] on F.Cu, length 0.5657 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(158.5000 mm, 101.9500 mm): Track [/+5V] on F.Cu, length 7.4105 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(123.8749 mm, 74.3750 mm): Track [/+5V] on F.Cu, length 0.9546 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(155.5099 mm, 90.0750 mm): Track [/+5V] on F.Cu, length 0.4810 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(153.5000 mm, 99.4800 mm): Track [/+5V] on F.Cu, length 2.5000 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(162.6100 mm, 113.6100 mm): Track [/+5V] on F.Cu, length 1.6971 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(162.6100 mm, 110.9300 mm): Track [/+5V] on F.Cu, length 2.6800 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(124.5000 mm, 75.5501 mm): Track [/+5V] on F.Cu, length 0.9499 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(146.0000 mm, 73.0000 mm): Track [/+5V] on F.Cu, length 5.2500 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(124.0500 mm, 76.9500 mm): Track [/+5V] on F.Cu, length 0.8501 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(154.0000 mm, 88.9250 mm): Track [/+5V] on F.Cu, length 0.7071 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(146.0000 mm, 76.0000 mm): Track [/+5V] on F.Cu, length 0.7071 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(163.8100 mm, 109.7300 mm): Track [/+5V] on F.Cu, length 1.6971 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(163.8100 mm, 109.7300 mm): Track [/+5V] on F.Cu, length 2.5400 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(129.0000 mm, 75.9500 mm): Track [/+5V] on F.Cu, length 2.2274 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(148.5000 mm, 86.0000 mm): Track [/+5V] on F.Cu, length 5.5000 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(136.9000 mm, 73.1500 mm): Track [/+5V] on F.Cu, length 5.6512 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(124.5000 mm, 76.5000 mm): Track [/+5V] on F.Cu, length 0.6364 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(129.0000 mm, 75.9500 mm): Track [/+5V] on F.Cu, length 0.0476 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(130.3824 mm, 74.5200 mm): Track [/+5V] on F.Cu, length 0.1176 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(155.8500 mm, 90.4151 mm): Track [/+5V] on F.Cu, length 5.8198 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(163.7400 mm, 107.1900 mm): Track [/+5V] on F.Cu, length 0.0700 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(154.5000 mm, 89.4250 mm): Track [/+5V] on F.Cu, length 0.6500 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(123.1999 mm, 75.0500 mm): Track [/+5V] on F.Cu, length 0.8000 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(138.7500 mm, 75.0000 mm): Track [/+5V] on F.Cu, length 2.6163 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(155.2900 mm, 96.7949 mm): Track [/+5V] on F.Cu, length 2.2851 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(155.8500 mm, 96.2349 mm): Track [/+5V] on F.Cu, length 0.4810 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(154.0000 mm, 86.0000 mm): Track [/+5V] on F.Cu, length 2.9250 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(156.0300 mm, 99.4800 mm): Track [/+5V] on F.Cu, length 3.4931 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(154.5000 mm, 90.0750 mm): Track [/+5V] on F.Cu, length 1.0099 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(145.5000 mm, 83.0000 mm): Track [/+5V] on F.Cu, length 4.2426 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(127.4250 mm, 74.3750 mm): Track [/+5V] on F.Cu, length 3.5501 mm
+[track_width]: Ancho de pista (regla 'Power5V_Rail_MinWidth' ancho mínimo 1.0000 mm; real 0.2000 mm)
+    Rule: Power5V_Rail_MinWidth; error
+    @(145.5000 mm, 76.5000 mm): Track [/+5V] on B.Cu, length 6.5000 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(144.5000 mm, 76.4899 mm): Track [/+3V3] on F.Cu, length 0.9899 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(148.1400 mm, 89.5000 mm): Track [/+3V3] on F.Cu, length 6.3922 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(130.5000 mm, 111.0000 mm): Track [/+3V3] on F.Cu, length 0.0100 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(121.2625 mm, 82.4500 mm): Track [/+3V3] on F.Cu, length 5.0205 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(131.5100 mm, 110.0000 mm): Track [/+3V3] on F.Cu, length 2.0000 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(151.5000 mm, 94.0000 mm): Track [/+3V3] on F.Cu, length 0.5000 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(148.1400 mm, 87.6400 mm): Track [/+3V3] on F.Cu, length 1.8600 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(131.5000 mm, 108.0000 mm): Track [/+3V3] on F.Cu, length 0.0141 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(119.5000 mm, 77.8250 mm): Track [/+3V3] on F.Cu, length 2.8625 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(125.0400 mm, 95.4600 mm): Track [/+3V3] on F.Cu, length 5.0053 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(152.5000 mm, 88.5100 mm): Track [/+3V3] on F.Cu, length 3.0100 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(144.5000 mm, 84.0000 mm): Track [/+3V3] on F.Cu, length 5.1477 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(133.9900 mm, 116.4800 mm): Track [/+3V3] on F.Cu, length 2.1001 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(136.4700 mm, 115.5200 mm): Track [/+3V3] on F.Cu, length 3.5072 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(152.5000 mm, 88.5100 mm): Track [/+3V3] on F.Cu, length 0.0100 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(125.0000 mm, 95.5000 mm): Track [/+3V3] on F.Cu, length 0.0566 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(148.5000 mm, 89.5000 mm): Track [/+3V3] on F.Cu, length 0.3600 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(117.5000 mm, 88.0000 mm): Track [/+3V3] on F.Cu, length 3.2125 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(130.5100 mm, 111.0000 mm): Track [/+3V3] on F.Cu, length 1.4142 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(119.5000 mm, 80.6875 mm): Track [/+3V3] on F.Cu, length 2.4926 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(132.5050 mm, 114.9950 mm): Track [/+3V3] on F.Cu, length 1.4071 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(131.4853 mm, 94.0200 mm): Track [/+3V3] on F.Cu, length 12.1347 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(120.7125 mm, 88.0000 mm): Track [/+3V3] on F.Cu, length 0.7778 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(152.0000 mm, 94.0000 mm): Track [/+3V3] on F.Cu, length 0.0354 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(117.7125 mm, 86.0000 mm): Track [/+3V3] on F.Cu, length 0.2125 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(152.4900 mm, 88.5100 mm): Track [/+3V3] on F.Cu, length 1.4001 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(121.0000 mm, 90.6750 mm): Track [/+3V3] on F.Cu, length 0.6750 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(149.4900 mm, 88.5100 mm): Track [/+3V3] on F.Cu, length 1.4001 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(145.4350 mm, 77.4250 mm): Track [/+3V3] on F.Cu, length 1.3224 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(152.0250 mm, 93.9750 mm): Track [/+3V3] on F.Cu, length 2.4750 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(137.0000 mm, 115.5200 mm): Track [/+3V3] on F.Cu, length 0.5300 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(148.0000 mm, 76.8625 mm): Track [/+3V3] on F.Cu, length 0.7955 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(121.2625 mm, 90.4125 mm): Track [/+3V3] on F.Cu, length 0.3712 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(148.0000 mm, 76.8625 mm): Track [/+3V3] on F.Cu, length 2.8625 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(130.0453 mm, 95.4600 mm): Track [/+3V3] on F.Cu, length 2.0365 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(147.4375 mm, 77.4250 mm): Track [/+3V3] on F.Cu, length 2.0025 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(121.2625 mm, 87.4500 mm): Track [/+3V3] on F.Cu, length 2.9625 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(121.0000 mm, 90.0000 mm): Track [/+3V3] on F.Cu, length 1.4142 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(131.5100 mm, 108.0100 mm): Track [/+3V3] on F.Cu, length 1.9900 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(133.9900 mm, 118.0000 mm): Track [/+3V3] on F.Cu, length 1.5200 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(117.5000 mm, 86.0000 mm): Track [/+3V3] on B.Cu, length 2.0000 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(120.0000 mm, 89.0000 mm): Track [/+3V3] on B.Cu, length 7.0711 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(125.0000 mm, 95.5000 mm): Track [/+3V3] on B.Cu, length 2.1213 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(151.5000 mm, 89.5000 mm): Track [/+3V3] on B.Cu, length 4.5000 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(126.5000 mm, 108.0000 mm): Track [/+3V3] on B.Cu, length 5.0000 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(126.5000 mm, 97.0000 mm): Track [/+3V3] on B.Cu, length 11.0000 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(125.0000 mm, 94.0000 mm): Track [/+3V3] on B.Cu, length 1.5000 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(132.5050 mm, 113.0050 mm): Track [/+3V3] on B.Cu, length 2.8355 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(144.5000 mm, 75.5000 mm): Track [/+3V3] on B.Cu, length 8.5000 mm
+[track_width]: Ancho de pista (regla 'Signal_3V3_MinWidth' ancho mínimo 0.4000 mm; real 0.2000 mm)
+    Rule: Signal_3V3_MinWidth; error
+    @(132.5050 mm, 114.9950 mm): Track [/+3V3] on B.Cu, length 1.9900 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(173.2000 mm, 82.2000 mm): Track [/+48V] on F.Cu, length 1.8000 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(176.0000 mm, 83.0000 mm): Track [/+48V] on F.Cu, length 5.5000 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(160.5000 mm, 76.2500 mm): Track [/+48V] on F.Cu, length 6.3640 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(184.9500 mm, 86.4500 mm): Track [/+48V] on F.Cu, length 19.8500 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(165.0000 mm, 80.7500 mm): Track [/+48V] on F.Cu, length 0.5000 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(165.0000 mm, 81.2500 mm): Track [/+48V] on F.Cu, length 1.2500 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(181.5000 mm, 83.0000 mm): Track [/+48V] on F.Cu, length 4.8790 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(175.2000 mm, 82.2000 mm): Track [/+48V] on F.Cu, length 1.1314 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(169.2500 mm, 78.2500 mm): Track [/+48V] on F.Cu, length 5.5861 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(175.0000 mm, 82.2000 mm): Track [/+48V] on F.Cu, length 0.2000 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(184.9500 mm, 106.3000 mm): Track [/+48V] on F.Cu, length 2.7577 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(166.2500 mm, 81.2500 mm): Track [/+48V] on F.Cu, length 4.2426 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(166.5000 mm, 74.0000 mm): Track [/NET_FAN_HS] on F.Cu, length 2.1213 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(177.2525 mm, 104.6675 mm): Track [/NET_FAN_HS] on F.Cu, length 5.4150 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(183.0000 mm, 104.7500 mm): Track [/NET_FAN_HS] on F.Cu, length 5.8300 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(177.1700 mm, 104.7500 mm): Track [/NET_FAN_HS] on F.Cu, length 1.6546 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(165.0000 mm, 75.5000 mm): Track [/NET_FAN_HS] on F.Cu, length 1.7500 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(177.2525 mm, 99.2525 mm): Track [/NET_FAN_HS] on F.Cu, length 2.4784 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(177.1700 mm, 104.7500 mm): Track [/NET_FAN_HS] on F.Cu, length 0.1167 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(166.5000 mm, 88.5000 mm): Track [/NET_FAN_HS] on B.Cu, length 14.5000 mm
+[track_width]: Ancho de pista (regla 'Power48V_MinWidth' ancho mínimo 1.5000 mm; real 0.2000 mm)
+    Rule: Power48V_MinWidth; error
+    @(175.5000 mm, 97.5000 mm): Track [/NET_FAN_HS] on B.Cu, length 12.7279 mm
+[via_diameter]: Diámetro de vía (regla 'Power48V_Via' diámetro mínimo 1.4000 mm; real 0.6000 mm)
+    Rule: Power48V_Via; error
+    @(166.5000 mm, 74.0000 mm): Via [/NET_FAN_HS] on F.Cu - B.Cu
+[via_diameter]: Diámetro de vía (regla 'Power48V_Via' diámetro mínimo 1.4000 mm; real 0.6000 mm)
+    Rule: Power48V_Via; error
+    @(175.5000 mm, 97.5000 mm): Via [/NET_FAN_HS] on F.Cu - B.Cu
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: restricciones de configuración de placa para serigrafía; warning
+    @(111.9500 mm, 69.8400 mm): Segment on Edge.Cuts
+    @(113.5000 mm, 69.3500 mm): Reference field of H1
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: restricciones de configuración de placa para serigrafía; warning
+    @(111.9500 mm, 69.8400 mm): Segment on Edge.Cuts
+    @(186.5000 mm, 69.3500 mm): Reference field of H2
+[lib_footprint_mismatch]: La huella 'SSOP-24_5.3x8.2mm_P0.65mm' no coincide con la copia en la biblioteca 'Package_SO'
+    Local override; warning
+    @(158.0000 mm, 93.0000 mm): Footprint U3
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Resistor' no está habilitada en la configuración actual
+    Local override; warning
+    @(131.0000 mm, 112.0000 mm): Footprint R10
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Capacitor' no está habilitada en la configuración actual
+    Local override; warning
+    @(133.5000 mm, 75.0000 mm): Footprint C4
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Resistor' no está habilitada en la configuración actual
+    Local override; warning
+    @(171.0000 mm, 111.0000 mm): Footprint R7
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Capacitor' no está habilitada en la configuración actual
+    Local override; warning
+    @(125.5000 mm, 86.5000 mm): Footprint C6
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Resistor' no está habilitada en la configuración actual
+    Local override; warning
+    @(121.0000 mm, 91.5000 mm): Footprint R2
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Resistor' no está habilitada en la configuración actual
+    Local override; warning
+    @(134.5000 mm, 118.0000 mm): Footprint R_LED1
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Connector' no está habilitada en la configuración actual
+    Local override; warning
+    @(114.0000 mm, 87.0000 mm): Footprint TP6
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Resistor' no está habilitada en la configuración actual
+    Local override; warning
+    @(123.5000 mm, 90.0000 mm): Footprint R4
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Connector' no está habilitada en la configuración actual
+    Local override; warning
+    @(181.5000 mm, 83.0000 mm): Footprint J6
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Capacitor' no está habilitada en la configuración actual
+    Local override; warning
+    @(133.5000 mm, 112.0000 mm): Footprint C13
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Capacitor' no está habilitada en la configuración actual
+    Local override; warning
+    @(133.5000 mm, 114.0000 mm): Footprint C14
+[lib_footprint_mismatch]: La huella 'SOT-23' no coincide con la copia en la biblioteca 'Package_TO_SOT_SMD'
+    Local override; warning
+    @(122.2000 mm, 86.5000 mm): Footprint D2
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Connector' no está habilitada en la configuración actual
+    Local override; warning
+    @(118.0000 mm, 97.0000 mm): Footprint TP7
+[lib_footprint_mismatch]: La huella 'LED_0805_2012Metric' no coincide con la copia en la biblioteca 'LED_SMD'
+    Local override; warning
+    @(131.0000 mm, 118.0000 mm): Footprint LED1
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Connector' no está habilitada en la configuración actual
+    Local override; warning
+    @(121.0000 mm, 72.5000 mm): Footprint TP5
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Capacitor' no está habilitada en la configuración actual
+    Local override; warning
+    @(153.5000 mm, 99.0000 mm): Footprint C8
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Capacitor' no está habilitada en la configuración actual
+    Local override; warning
+    @(137.0000 mm, 116.0000 mm): Footprint C9
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Resistor' no está habilitada en la configuración actual
+    Local override; warning
+    @(131.0000 mm, 110.0000 mm): Footprint R9
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Resistor' no está habilitada en la configuración actual
+    Local override; warning
+    @(131.0000 mm, 114.0000 mm): Footprint R11
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Capacitor' no está habilitada en la configuración actual
+    Local override; warning
+    @(125.5000 mm, 81.5000 mm): Footprint C5
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Connector' no está habilitada en la configuración actual
+    Local override; warning
+    @(138.7500 mm, 75.0000 mm): Footprint J7
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Connector' no está habilitada en la configuración actual
+    Local override; warning
+    @(148.0000 mm, 74.0000 mm): Footprint TP1
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Capacitor' no está habilitada en la configuración actual
+    Local override; warning
+    @(133.5000 mm, 110.0000 mm): Footprint C12
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Connector' no está habilitada en la configuración actual
+    Local override; warning
+    @(174.0000 mm, 115.0000 mm): Footprint TP8
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Resistor' no está habilitada en la configuración actual
+    Local override; warning
+    @(121.5000 mm, 78.0000 mm): Footprint R3
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Connector' no está habilitada en la configuración actual
+    Local override; warning
+    @(181.5000 mm, 91.0000 mm): Footprint J3
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Connector' no está habilitada en la configuración actual
+    Local override; warning
+    @(146.0000 mm, 73.0000 mm): Footprint TP2
+[lib_footprint_mismatch]: La huella 'CP_Radial_D6.3mm_P2.50mm' no coincide con la copia en la biblioteca 'Capacitor_THT'
+    Local override; warning
+    @(169.2500 mm, 78.2500 mm): Footprint C10
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Capacitor' no está habilitada en la configuración actual
+    Local override; warning
+    @(129.0000 mm, 75.0000 mm): Footprint C1
+[lib_footprint_issues]: La biblioteca de huellas 'Jaguar_Custom' no está habilitada en la configuración actual
+    Local override; warning
+    @(136.0000 mm, 96.5600 mm): Footprint U1
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Semiconductor-Standard' no está habilitada en la configuración actual
+    Local override; warning
+    @(124.5000 mm, 76.0000 mm): Footprint U2
+[lib_footprint_mismatch]: La huella 'TO-220-3_Vertical' no coincide con la copia en la biblioteca 'Package_TO_SOT_THT'
+    Local override; warning
+    @(176.0000 mm, 108.4600 mm): Footprint Q1
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Connector' no está habilitada en la configuración actual
+    Local override; warning
+    @(160.5000 mm, 76.2500 mm): Footprint TP3
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Connector' no está habilitada en la configuración actual
+    Local override; warning
+    @(183.0000 mm, 108.2500 mm): Footprint J5
+[lib_footprint_mismatch]: La huella 'C_0805_2012Metric' no coincide con la copia en la biblioteca 'Capacitor_SMD'
+    Local override; warning
+    @(175.0000 mm, 81.2500 mm): Footprint C11
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Connector' no está habilitada en la configuración actual
+    Local override; warning
+    @(166.0000 mm, 118.5000 mm): Footprint TP4
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Capacitor' no está habilitada en la configuración actual
+    Local override; warning
+    @(132.0000 mm, 75.0000 mm): Footprint C2
+[lib_footprint_mismatch]: La huella 'Fuse_1812_4532Metric' no coincide con la copia en la biblioteca 'Fuse'
+    Local override; warning
+    @(148.0000 mm, 79.0000 mm): Footprint F1
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Capacitor' no está habilitada en la configuración actual
+    Local override; warning
+    @(156.0000 mm, 99.0000 mm): Footprint C15
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Resistor' no está habilitada en la configuración actual
+    Local override; warning
+    @(171.0000 mm, 109.0000 mm): Footprint R6
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Capacitor' no está habilitada en la configuración actual
+    Local override; warning
+    @(130.5000 mm, 75.0000 mm): Footprint C3
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Resistor' no está habilitada en la configuración actual
+    Local override; warning
+    @(119.5000 mm, 77.0000 mm): Footprint R1
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Capacitor' no está habilitada en la configuración actual
+    Local override; warning
+    @(158.5000 mm, 101.0000 mm): Footprint C7
+[lib_footprint_issues]: La biblioteca de huellas 'SparkFun-Resistor' no está habilitada en la configuración actual
+    Local override; warning
+    @(152.5000 mm, 88.0000 mm): Footprint R5
+[text_height]: Altura del texto fuera de rango (restricciones de la configuración de la placa altura del texto de la serigrafía altura mínima 0.8000 mm; real 0.5000 mm)
+    Rule: restricciones de la configuración de la placa altura del texto de la serigrafía; warning
+    @(119.5000 mm, 87.0000 mm): Reference field of D2
+[text_thickness]: Grosor del texto fuera de rango (restricciones de configuración de la placa espesor del texto de la serigrafía grosor mínimo 0.0800 mm; real 0.0750 mm)
+    Rule: restricciones de configuración de la placa espesor del texto de la serigrafía; warning
+    @(116.0000 mm, 89.5000 mm): Reference field of J2
+[text_height]: Altura del texto fuera de rango (restricciones de la configuración de la placa altura del texto de la serigrafía altura mínima 0.8000 mm; real 0.3000 mm)
+    Rule: restricciones de la configuración de la placa altura del texto de la serigrafía; warning
+    @(116.0000 mm, 89.5000 mm): Reference field of J2
+[text_thickness]: Grosor del texto fuera de rango (restricciones de configuración de la placa espesor del texto de la serigrafía grosor mínimo 0.0800 mm; real 0.0750 mm)
+    Rule: restricciones de configuración de la placa espesor del texto de la serigrafía; warning
+    @(149.5000 mm, 118.0000 mm): Reference field of NT1
+[text_height]: Altura del texto fuera de rango (restricciones de la configuración de la placa altura del texto de la serigrafía altura mínima 0.8000 mm; real 0.3000 mm)
+    Rule: restricciones de la configuración de la placa altura del texto de la serigrafía; warning
+    @(149.5000 mm, 118.0000 mm): Reference field of NT1
+[text_thickness]: Grosor del texto fuera de rango (restricciones de configuración de la placa espesor del texto de la serigrafía grosor mínimo 0.0800 mm; real 0.0750 mm)
+    Rule: restricciones de configuración de la placa espesor del texto de la serigrafía; warning
+    @(116.5000 mm, 79.0000 mm): Reference field of J1
+[text_height]: Altura del texto fuera de rango (restricciones de la configuración de la placa altura del texto de la serigrafía altura mínima 0.8000 mm; real 0.3000 mm)
+    Rule: restricciones de la configuración de la placa altura del texto de la serigrafía; warning
+    @(116.5000 mm, 79.0000 mm): Reference field of J1
+[text_thickness]: Grosor del texto fuera de rango (restricciones de configuración de la placa espesor del texto de la serigrafía grosor mínimo 0.0800 mm; real 0.0750 mm)
+    Rule: restricciones de configuración de la placa espesor del texto de la serigrafía; warning
+    @(176.5000 mm, 80.5000 mm): Reference field of C11
+[text_height]: Altura del texto fuera de rango (restricciones de la configuración de la placa altura del texto de la serigrafía altura mínima 0.8000 mm; real 0.3000 mm)
+    Rule: restricciones de la configuración de la placa altura del texto de la serigrafía; warning
+    @(176.5000 mm, 80.5000 mm): Reference field of C11
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(121.4400 mm, 84.9400 mm): Segment of D2 on F.Silkscreen
+    @(121.2625 mm, 85.5500 mm): Pad 1 [/AGND] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(121.4400 mm, 84.9900 mm): Segment of D2 on F.Silkscreen
+    @(121.2625 mm, 85.5500 mm): Pad 1 [/AGND] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(121.4400 mm, 86.8900 mm): Segment of D2 on F.Silkscreen
+    @(121.2625 mm, 87.4500 mm): Pad 2 [/+3V3] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(121.4400 mm, 86.8900 mm): Segment of D2 on F.Silkscreen
+    @(121.2625 mm, 85.5500 mm): Pad 1 [/AGND] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(122.9600 mm, 84.9400 mm): Segment of D2 on F.Silkscreen
+    @(123.1375 mm, 86.5000 mm): Pad 3 [/NET_TEMP_EXT_FILT] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(122.9600 mm, 87.0600 mm): Segment of D2 on F.Silkscreen
+    @(123.1375 mm, 86.5000 mm): Pad 3 [/NET_TEMP_EXT_FILT] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(122.9600 mm, 88.0600 mm): Segment of D2 on F.Silkscreen
+    @(121.2625 mm, 87.4500 mm): Pad 2 [/+3V3] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(121.4400 mm, 88.0600 mm): Segment of D2 on F.Silkscreen
+    @(121.2625 mm, 87.4500 mm): Pad 2 [/+3V3] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(120.9000 mm, 86.1200 mm): Polygon of D2 on F.Silkscreen
+    @(121.2625 mm, 85.5500 mm): Pad 1 [/AGND] of D2 on F.Cu
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

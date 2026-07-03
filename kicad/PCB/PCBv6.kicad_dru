@@ -1,0 +1,97 @@
+(version 1)
+
+# ══════════════════════════════════════════════════
+#  JAGUAR EXTRACTOR — KiCad Custom Design Rules
+#  IPC-2152 / IPC-2221B | Cu 1oz | ΔT_max = 10°C
+#  Rev A — 2026-07-01 (sintaxis corregida: tokens con guion_bajo;
+#  condiciones aceptan nombre de net con y sin prefijo '/')
+# ══════════════════════════════════════════════════
+
+# ── CLASE 1: Power_48V ────────────────────────────
+(rule "Power48V_MinWidth"
+  (constraint track_width (min 1.5mm))
+  (condition "A.NetName == '+48V' || A.NetName == '/+48V' || A.NetName == 'NET_FAN_HS' || A.NetName == '/NET_FAN_HS'")
+)
+
+(rule "Power48V_Clearance"
+  (constraint clearance (min 0.6mm))
+  (condition "A.NetName == '+48V' || A.NetName == '/+48V' || B.NetName == '+48V' || B.NetName == '/+48V'")
+)
+
+(rule "Power48V_Via"
+  (constraint via_diameter (min 1.4mm))
+  (constraint hole_size (min 0.8mm))
+  (condition "A.Type == 'Via' && (A.NetName == '+48V' || A.NetName == '/+48V' || A.NetName == 'NET_FAN_HS' || A.NetName == '/NET_FAN_HS')")
+)
+
+# ── CLASE 2: Power_5V ─────────────────────────────
+# Nota Rev B: min 1.0mm (norma FASE4 permite 1.0–1.5mm); los tramos troncales
+# se rutean a 1.5mm. PGND retorna por zona B.Cu (plano), no por pista:
+# los stubs cortos de desacoplo a via no requieren 1.5mm (IPC-2152: <10mm @ <1A).
+(rule "Power5V_Rail_MinWidth"
+  (constraint track_width (min 1.0mm))
+  (condition "A.NetName == '+5V' || A.NetName == '/+5V'")
+)
+
+(rule "Power5V_Motor_MinWidth"
+  (constraint track_width (min 1.0mm))
+  (condition "A.NetName == 'NET_AO1' || A.NetName == '/NET_AO1' || A.NetName == 'NET_AO2' || A.NetName == '/NET_AO2'")
+)
+
+(rule "Power5V_Clearance"
+  (constraint clearance (min 0.3mm))
+  (condition "A.NetName == '+5V' || A.NetName == '/+5V' || B.NetName == '+5V' || B.NetName == '/+5V'")
+)
+
+# ── CLASE 3: Signal_Logic ─────────────────────────
+(rule "Signal_3V3_MinWidth"
+  (constraint track_width (min 0.4mm))
+  (condition "A.NetName == '+3V3' || A.NetName == '/+3V3'")
+)
+
+(rule "Signal_Logic_MinWidth"
+  (constraint track_width (min 0.2mm))
+  (condition "A.NetClass == 'Signal_Logic'")
+)
+
+(rule "Signal_Logic_Clearance"
+  (constraint clearance (min 0.15mm))
+  (condition "A.NetClass == 'Signal_Logic' && B.NetClass == 'Signal_Logic'")
+)
+
+# ── AISLAMIENTO CRÍTICO: 48V vs. resto ────────────
+(rule "HV_to_Logic_Isolation"
+  (constraint clearance (min 0.6mm))
+  (condition "(A.NetName == '+48V' || A.NetName == '/+48V' || A.NetName == 'NET_FAN_HS' || A.NetName == '/NET_FAN_HS') && (B.NetClass == 'Signal_Logic' || B.NetName == '+3V3' || B.NetName == '/+3V3')")
+)
+
+# ── RUTAS ANALÓGICAS: máximo 1 vía ────────────────
+(rule "Analog_MaxVias_INT"
+  (constraint via_count (max 1))
+  (condition "A.NetName == 'NET_TEMP_INT_FILT' || A.NetName == '/NET_TEMP_INT_FILT'")
+)
+
+(rule "Analog_MaxVias_EXT"
+  (constraint via_count (max 1))
+  (condition "A.NetName == 'NET_TEMP_EXT_FILT' || A.NetName == '/NET_TEMP_EXT_FILT'")
+)
+
+# ── SEPARACIÓN ANALÓGICA vs. CONMUTACIÓN ──────────
+(rule "Analog_vs_PWM_Spacing"
+  (constraint clearance (min 0.5mm))
+  (condition "(A.NetName == 'NET_TEMP_INT_FILT' || A.NetName == '/NET_TEMP_INT_FILT' || A.NetName == 'NET_TEMP_EXT_FILT' || A.NetName == '/NET_TEMP_EXT_FILT') && (B.NetName == 'NET_VENT' || B.NetName == '/NET_VENT' || B.NetName == 'NET_VENT_GATE' || B.NetName == '/NET_VENT_GATE' || B.NetName == 'NET_VENT_DRV' || B.NetName == '/NET_VENT_DRV' || B.NetName == 'NET_MOTOR_EN' || B.NetName == '/NET_MOTOR_EN')")
+)
+
+# ── TIERRA: separación de zonas ───────────────────
+(rule "AGND_vs_PGND_Clearance"
+  (constraint clearance (min 0.5mm))
+  (condition "(A.NetName == 'AGND' || A.NetName == '/AGND') && (B.NetName == 'PGND' || B.NetName == '/PGND')")
+)
+
+# ── EXCEPCIÓN: pads adyacentes dentro del propio U3 (SSOP-24, pitch 0.65mm) ──
+# El clearance de netclass (0.3mm) es físicamente imposible entre pads vecinos
+# del encapsulado; 0.2mm cumple el límite de fabricación (0.15mm).
+(rule "SSOP24_intra"
+  (constraint clearance (min 0.2mm))
+  (condition "A.Reference == 'U3' && B.Reference == 'U3'")
+)
