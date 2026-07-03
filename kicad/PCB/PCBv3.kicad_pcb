@@ -143,7 +143,7 @@
 	(footprint "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm"
 		(layer "F.Cu")
 		(uuid "055ade3e-abf0-41aa-9ac0-23c08c5a2d06")
-		(at 162 90)
+		(at 165 95 180)
 		(descr "SSOP, 24 Pin (JEDEC MO-150 variation AG, 1.75mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MO-150, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BQ.pdf#page=398, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/ssop_24_05-08-1640.pdf)")
 		(tags "SSOP SO")
 		(property "Reference" "U3"
@@ -676,7 +676,7 @@
 	(footprint "SparkFun-Resistor:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "08152965-8042-4188-9f43-d2ed1b2e7fe3")
-		(at 125.61 104.96 180)
+		(at 129 111.5)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun resistor")
 		(property "Reference" "R10"
@@ -888,7 +888,7 @@
 	(footprint "SparkFun-Capacitor:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "0be10184-b999-45ed-bc06-6c969f8809e0")
-		(at 129.5 88.03 -90)
+		(at 129.9 84 90)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun capacitor")
 		(property "Reference" "C4"
@@ -1126,7 +1126,7 @@
 	(footprint "SparkFun-Resistor:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "10b1c15c-9c0b-4c90-b477-f438a944ab51")
-		(at 180.99 113.5 180)
+		(at 180 111 90)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun resistor")
 		(property "Reference" "R7"
@@ -1338,7 +1338,7 @@
 	(footprint "SparkFun-Capacitor:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "122b1300-639c-4c77-bd12-7b13cdeed8df")
-		(at 132 80.02 90)
+		(at 129 105.2 90)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun capacitor")
 		(property "Reference" "C6"
@@ -1537,7 +1537,7 @@
 	(footprint "SparkFun-Resistor:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "194925d6-10ee-4d59-abc3-a885415a4d21")
-		(at 119.325 106)
+		(at 123 102)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun resistor")
 		(property "Reference" "R2"
@@ -1749,7 +1749,7 @@
 	(footprint "Diode_SMD:D_SMA"
 		(layer "F.Cu")
 		(uuid "2bf3dac6-c0a6-4f3d-9675-9911cc5de358")
-		(at 175.5 77 90)
+		(at 174 117)
 		(descr "Diode SMA (DO-214AC)")
 		(tags "Diode SMA (DO-214AC)")
 		(property "Reference" "D3"
@@ -2055,7 +2055,7 @@
 	(footprint "SparkFun-Resistor:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "2f04d41f-e414-4d7d-a214-a9e82fc80a35")
-		(at 139.13 109.46)
+		(at 120.5 115.5)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun resistor")
 		(property "Reference" "R_LED1"
@@ -2254,7 +2254,7 @@
 	(footprint "SparkFun-Connector:TestPoint-1.25mm"
 		(layer "F.Cu")
 		(uuid "2fa5e592-5bd2-47ae-8743-074010e57be4")
-		(at 130 73.5)
+		(at 124 85)
 		(tags "SparkFun")
 		(property "Reference" "TP6"
 			(at 0 -1.27 0)
@@ -2344,7 +2344,7 @@
 	(footprint "SparkFun-Resistor:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "31ed8fd9-0ffa-4a73-80bf-a8145d01c8ec")
-		(at 122.51 80)
+		(at 120 102)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun resistor")
 		(property "Reference" "R4"
@@ -2556,7 +2556,7 @@
 	(footprint "SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black"
 		(layer "F.Cu")
 		(uuid "36226b12-ddac-483a-95fe-598e3e1853e8")
-		(at 182 98.25 90)
+		(at 182 75.5 90)
 		(tags "SparkFun Screw Terminal")
 		(property "Reference" "J6"
 			(at 0 -1.5 90)
@@ -2854,7 +2854,7 @@
 	(footprint "SparkFun-Capacitor:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "3734b08e-0b4c-4a05-aff8-d13eeff407ea")
-		(at 129.1 104.96)
+		(at 133 111.5)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun capacitor")
 		(property "Reference" "C13"
@@ -3053,7 +3053,7 @@
 	(footprint "SparkFun-Capacitor:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "4541e0ae-95d6-40a1-b61b-f86ff462622a")
-		(at 118.1 115.46)
+		(at 133 115)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun capacitor")
 		(property "Reference" "C14"
@@ -3252,7 +3252,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
 		(uuid "4cc793e1-4f35-4adc-97e5-1870ef94551f")
-		(at 148.55 112.5625 90)
+		(at 128 102)
 		(descr "SOT, 3 Pin (JEDEC TO-236 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=TO-236)")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "D2"
@@ -3634,7 +3634,7 @@
 	(footprint "SparkFun-Connector:TestPoint-1.25mm"
 		(layer "F.Cu")
 		(uuid "507dbe0e-ef08-42f2-9496-1c85d20d1d9a")
-		(at 133.5 73.5)
+		(at 124 105)
 		(tags "SparkFun")
 		(property "Reference" "TP7"
 			(at 0 -1.27 0)
@@ -3724,7 +3724,7 @@
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "539233d9-5319-494d-a492-864a669c65e6")
-		(at 140.6825 114.46 180)
+		(at 115.5 115.5)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "LED")
 		(property "Reference" "LED1"
@@ -3946,7 +3946,7 @@
 	(footprint "SparkFun-Connector:TestPoint-1.25mm"
 		(layer "F.Cu")
 		(uuid "5525205f-1734-446b-8cf4-7c5e37f62d68")
-		(at 126 75.5)
+		(at 141 72)
 		(tags "SparkFun")
 		(property "Reference" "TP5"
 			(at 0 -1.27 0)
@@ -4036,7 +4036,7 @@
 	(footprint "SparkFun-Capacitor:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "5a391f5f-bc0e-44bc-a514-8c887fa3b40d")
-		(at 161.98 96.5 180)
+		(at 165 89 90)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun capacitor")
 		(property "Reference" "C8"
@@ -4235,7 +4235,7 @@
 	(footprint "SparkFun-Capacitor:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "62fd43bb-3b83-4463-9949-299162039bb8")
-		(at 153 82.02 -90)
+		(at 136 82)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun capacitor")
 		(property "Reference" "C9"
@@ -4434,7 +4434,7 @@
 	(footprint "SparkFun-Resistor:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "6665c9db-6be5-47c8-80db-63ccd3dd6cd8")
-		(at 115.12 111.46 -90)
+		(at 129 108)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun resistor")
 		(property "Reference" "R9"
@@ -4646,7 +4646,7 @@
 	(footprint "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 		(layer "F.Cu")
 		(uuid "69935e3f-3618-4439-8af1-dfd7917e40ee")
-		(at 116 100.5)
+		(at 126 120)
 		(descr "JST PH series connector, B2B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf)")
 		(tags "connector JST PH vertical")
 		(property "Reference" "J2"
@@ -5032,7 +5032,7 @@
 	(footprint "SparkFun-Resistor:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "6bb47d15-4c1d-4557-84c4-f8b80dc1c56b")
-		(at 115.12 115.95 90)
+		(at 129 115)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun resistor")
 		(property "Reference" "R11"
@@ -5244,7 +5244,7 @@
 	(footprint "SparkFun-Capacitor:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "78cfab0a-993d-4437-9d9d-1c48760acdb2")
-		(at 128.98 79.5)
+		(at 129 91.2 90)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun capacitor")
 		(property "Reference" "C5"
@@ -5581,7 +5581,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "85b41607-b6ae-4fb5-a896-417d62686aa2")
-		(at 172.5 100.42)
+		(at 170 75.5)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J9"
@@ -5832,7 +5832,7 @@
 	(footprint "Package_DIP:DIP-8_W7.62mm"
 		(layer "F.Cu")
 		(uuid "86d25b42-5609-4279-acbd-54d78bffc2e2")
-		(at 163.69 74.88)
+		(at 159.5 111)
 		(descr "8-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
 		(property "Reference" "U4"
@@ -6146,7 +6146,7 @@
 	(footprint "SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black"
 		(layer "F.Cu")
 		(uuid "8cdf0eb7-0923-4fe8-8011-574e7876c1d8")
-		(at 117 84.5 -90)
+		(at 118.5 75.5 90)
 		(tags "SparkFun Screw Terminal")
 		(property "Reference" "J7"
 			(at -2.5 -0.5 90)
@@ -6444,7 +6444,7 @@
 	(footprint "SparkFun-Connector:TestPoint-1.25mm"
 		(layer "F.Cu")
 		(uuid "96a94074-07a4-4354-b3e6-1ae3e3ffbeb4")
-		(at 115.5 75.5)
+		(at 131 72)
 		(tags "SparkFun")
 		(property "Reference" "TP1"
 			(at 0 -1.27 0)
@@ -6534,7 +6534,7 @@
 	(footprint "SparkFun-Capacitor:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "9e447859-0e9e-4ec3-aaec-28848382d41f")
-		(at 118.1 111.46)
+		(at 133 108)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun capacitor")
 		(property "Reference" "C12"
@@ -6733,7 +6733,7 @@
 	(footprint "SparkFun-Connector:TestPoint-1.25mm"
 		(layer "F.Cu")
 		(uuid "a1091916-f30f-4e0e-b4e3-5545d790e410")
-		(at 174 113)
+		(at 174 114)
 		(tags "SparkFun")
 		(property "Reference" "TP8"
 			(at 0 -1.27 0)
@@ -6823,7 +6823,7 @@
 	(footprint "SparkFun-Resistor:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "a6096e53-82ce-4695-9871-e48f1b1a90bc")
-		(at 129.01 101.5)
+		(at 120 88)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun resistor")
 		(property "Reference" "R3"
@@ -7035,7 +7035,7 @@
 	(footprint "SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black"
 		(layer "F.Cu")
 		(uuid "af2b0934-515c-4143-984a-d81311b9e650")
-		(at 182 88.25 90)
+		(at 182 119 90)
 		(tags "SparkFun Screw Terminal")
 		(property "Reference" "J3"
 			(at 0 -1.5 90)
@@ -7333,7 +7333,7 @@
 	(footprint "SparkFun-Connector:TestPoint-1.25mm"
 		(layer "F.Cu")
 		(uuid "b177d14b-dad4-453b-9c2e-13847bf4d156")
-		(at 120.5 75.5)
+		(at 136 72)
 		(tags "SparkFun")
 		(property "Reference" "TP2"
 			(at 0 -1.27 0)
@@ -7423,7 +7423,7 @@
 	(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "b2adcd94-b24c-4cab-b0e1-df17ca59675d")
-		(at 174 94.5 90)
+		(at 176 82)
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, diameter=6.3mm, height=7mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm diameter 6.3mm height 7mm Electrolytic Capacitor")
 		(property "Reference" "C10"
@@ -8956,7 +8956,7 @@
 	(footprint "SparkFun-Capacitor:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "b6963f0b-7ac0-4084-8037-59c0b175004d")
-		(at 124.5 85.05 -90)
+		(at 120 80 90)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "SparkFun capacitor")
 		(property "Reference" "C1"
@@ -9194,7 +9194,7 @@
 	(footprint "Jaguar_Custom:XIAO-RP2350-DIP"
 		(layer "F.Cu")
 		(uuid "bea25d4e-23cd-4b19-9208-e279439d1984")
-		(at 142.5 86.19)
+		(at 140 95)
 		(property "Reference" "U1"
 			(at 0.5 0 90)
 			(layer "F.SilkS")
@@ -9574,7 +9574,7 @@
 	(footprint "SparkFun-Semiconductor-Standard:SOT23-5"
 		(layer "F.Cu")
 		(uuid "c1515d26-4eab-4247-87f0-7269202f16a6")
-		(at 128.6999 85)
+		(at 126 82)
 		(tags "SparkFun")
 		(property "Reference" "U2"
 			(at 0 -2 0)
@@ -10162,7 +10162,7 @@
 	(footprint "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 		(layer "F.Cu")
 		(uuid "c76e4384-b85a-42a6-a842-340184157b12")
-		(at 116 94)
+		(at 116 120)
 		(descr "JST PH series connector, B2B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf)")
 		(tags "connector JST PH vertical")
 		(property "Reference" "J1"
@@ -10548,7 +10548,7 @@
 	(footprint "SparkFun-Connector:TestPoint-1.25mm"
 		(layer "F.Cu")
 		(uuid "cfe84599-a8c5-46df-ab2a-5bc2e3859569")
-		(at 167 102)
+		(at 174 82)
 		(tags "SparkFun")
 		(property "Reference" "TP3"
 			(at 0 -1.27 0)
@@ -10638,7 +10638,7 @@
 	(footprint "SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black"
 		(layer "F.Cu")
 		(uuid "d63f5d93-7420-4e73-ae5e-62f3d0698b9c")
-		(at 182.25 78.75 90)
+		(at 170 119 90)
 		(tags "SparkFun Screw Terminal")
 		(property "Reference" "J5"
 			(at 0 -1.5 90)
@@ -10923,7 +10923,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "db35fb23-2366-4467-ae2f-ffd2f57e2c71")
-		(at 182.5 102.45 -90)
+		(at 178 86)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C11"
@@ -11082,7 +11082,7 @@
 	(footprint "SparkFun-Connector:TestPoint-1.25mm"
 		(layer "F.Cu")
 		(uuid "db5d24e0-e054-4dce-ab36-0753a1c63c7c")
-		(at 181.5 119.5)
+		(at 116 82)
 		(tags "SparkFun")
 		(property "Reference" "TP4"
 			(at 0 -1.27 0)
@@ -11172,7 +11172,7 @@
 	(footprint "SparkFun-Capacitor:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "df9aec44-601f-43c3-b997-67d58dcc3ff9")
-		(at 124.5 89.05 90)
+		(at 130 80 90)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "SparkFun capacitor")
 		(property "Reference" "C2"
@@ -11410,7 +11410,7 @@
 	(footprint "Fuse:Fuse_1812_4532Metric"
 		(layer "F.Cu")
 		(uuid "e2ae410c-29b6-49af-84c5-0d4a2e27139a")
-		(at 126.5 95)
+		(at 126 92)
 		(descr "Fuse SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf)")
 		(tags "fuse")
 		(property "Reference" "F1"
@@ -11569,7 +11569,7 @@
 	(footprint "SparkFun-Capacitor:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "e4d2f405-bb4c-4976-8eaa-8351263c5fcd")
-		(at 174.5 85.98 -90)
+		(at 116 79 90)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun capacitor")
 		(property "Reference" "C15"
@@ -11807,7 +11807,7 @@
 	(footprint "SparkFun-Resistor:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "e627ebc2-8614-445b-a7b5-fe67cbbead50")
-		(at 177.51 102.5)
+		(at 174 105)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun resistor")
 		(property "Reference" "R6"
@@ -12019,7 +12019,7 @@
 	(footprint "SparkFun-Capacitor:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "f1b09f64-ff39-4b34-8949-4529c5d961de")
-		(at 127.5 88.05 90)
+		(at 120 84 90)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun capacitor")
 		(property "Reference" "C3"
@@ -12257,7 +12257,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
 		(uuid "f1b15647-f074-44e3-9ad2-1f163258bbef")
-		(at 145.4375 103.05)
+		(at 128 88)
 		(descr "SOT, 3 Pin (JEDEC TO-236 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=TO-236)")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "D1"
@@ -12639,7 +12639,7 @@
 	(footprint "Button_Switch_THT:SW_DIP_SPSTx03_Slide_9.78x9.8mm_W7.62mm_P2.54mm"
 		(layer "F.Cu")
 		(uuid "f79f0b08-01a1-4628-86ea-2364f5d01cdb")
-		(at 122 111.42)
+		(at 139 120)
 		(descr "3x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x9.8mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)")
 		(tags "DIP Switch SPST Slide 7.62mm 300mil")
 		(property "Reference" "SW1"
@@ -13128,7 +13128,7 @@
 	(footprint "SparkFun-Resistor:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "fad2bfbe-bc4a-4a5d-96f4-9e6125ea3ade")
-		(at 125.825 101.5)
+		(at 123 88)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun resistor")
 		(property "Reference" "R1"
@@ -13340,7 +13340,7 @@
 	(footprint "SparkFun-Capacitor:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "fce7a969-88e0-45fc-ada8-01b68fe9db90")
-		(at 156 100.05 90)
+		(at 158.8 89 90)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "SparkFun capacitor")
 		(property "Reference" "C7"
@@ -13539,7 +13539,7 @@
 	(footprint "SparkFun-Resistor:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "fe58924e-4f34-481f-85de-dcfa54f6bde5")
-		(at 169 89.51 -90)
+		(at 172 95)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "SparkFun resistor")
 		(property "Reference" "R5"

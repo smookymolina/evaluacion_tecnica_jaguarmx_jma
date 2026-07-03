@@ -2254,7 +2254,7 @@
 	(footprint "SparkFun-Connector:TestPoint-1.25mm"
 		(layer "F.Cu")
 		(uuid "2fa5e592-5bd2-47ae-8743-074010e57be4")
-		(at 130 73.5)
+		(at 130.0 73.5 0)
 		(tags "SparkFun")
 		(property "Reference" "TP6"
 			(at 0 -1.27 0)
@@ -3634,7 +3634,7 @@
 	(footprint "SparkFun-Connector:TestPoint-1.25mm"
 		(layer "F.Cu")
 		(uuid "507dbe0e-ef08-42f2-9496-1c85d20d1d9a")
-		(at 133.5 73.5)
+		(at 133.5 73.5 0)
 		(tags "SparkFun")
 		(property "Reference" "TP7"
 			(at 0 -1.27 0)
@@ -5482,7 +5482,7 @@
 	(footprint "NetTie:NetTie-2_SMD_Pad0.5mm"
 		(layer "F.Cu")
 		(uuid "7e4c1b13-b256-45d3-a579-829622c72d33")
-		(at 150 105)
+		(at 150.0 105.0 0)
 		(descr "Net tie, 2 pin, 0.5mm square SMD pads")
 		(tags "net tie")
 		(property "Reference" "NT1"

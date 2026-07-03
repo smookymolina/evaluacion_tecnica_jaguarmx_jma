@@ -1,0 +1,725 @@
+Info: Procesando el símbolo 'C1:SparkFun-Capacitor:C_0805_2012Metric'.
+Info: Procesando el símbolo 'C10:Capacitor_THT:CP_Radial_D6.3mm_P2.50mm'.
+Info: Procesando el símbolo 'C6:SparkFun-Capacitor:C_0402_1005Metric'.
+Info: Procesando el símbolo 'C12:SparkFun-Capacitor:C_0402_1005Metric'.
+Info: Procesando el símbolo 'Q1:Package_TO_SOT_THT:TO-220-3_Vertical'.
+Info: Procesando el símbolo 'R2:SparkFun-Resistor:R_0603_1608Metric'.
+Info: Procesando el símbolo 'C4:SparkFun-Capacitor:C_0402_1005Metric'.
+Info: Procesando el símbolo 'J1:Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical'.
+Info: Procesando el símbolo 'J2:Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical'.
+Info: Procesando el símbolo 'C14:SparkFun-Capacitor:C_0402_1005Metric'.
+Info: Procesando el símbolo 'F1:Fuse:Fuse_1812_4532Metric'.
+Info: Procesando el símbolo 'R1:SparkFun-Resistor:R_0603_1608Metric'.
+Info: Procesando el símbolo 'C2:SparkFun-Capacitor:C_0805_2012Metric'.
+Info: Procesando el símbolo 'D3:Diode_SMD:D_SMA'.
+Info: Procesando el símbolo 'J3:SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black'.
+Info: Procesando el símbolo 'C9:SparkFun-Capacitor:C_0402_1005Metric'.
+Info: Procesando el símbolo 'C7:SparkFun-Capacitor:C_0805_2012Metric'.
+Info: Procesando el símbolo 'C11:Capacitor_SMD:C_0805_2012Metric'.
+Info: Procesando el símbolo 'D2:Package_TO_SOT_SMD:SOT-23'.
+Info: Procesando el símbolo 'C5:SparkFun-Capacitor:C_0402_1005Metric'.
+Info: Procesando el símbolo 'J9:Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical'.
+Info: Procesando el símbolo 'C13:SparkFun-Capacitor:C_0402_1005Metric'.
+Info: Procesando el símbolo 'J7:SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black'.
+Info: Procesando el símbolo 'D1:Package_TO_SOT_SMD:SOT-23'.
+Info: Procesando el símbolo 'C3:SparkFun-Capacitor:C_0402_1005Metric'.
+Info: Procesando el símbolo 'J5:SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black'.
+Info: Procesando el símbolo 'NT1:NetTie:NetTie-2_SMD_Pad0.5mm'.
+Info: Procesando el símbolo 'LED1:LED_SMD:LED_0805_2012Metric'.
+Info: Procesando el símbolo 'C15:SparkFun-Capacitor:C_0402_1005Metric'.
+Info: Procesando el símbolo 'J6:SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black'.
+Info: Procesando el símbolo 'C8:SparkFun-Capacitor:C_0402_1005Metric'.
+Info: Procesando el símbolo 'R3:SparkFun-Resistor:R_0402_1005Metric'.
+Info: Procesando el símbolo 'R4:SparkFun-Resistor:R_0402_1005Metric'.
+Info: Procesando el símbolo 'R5:SparkFun-Resistor:R_0402_1005Metric'.
+Info: Procesando el símbolo 'R6:SparkFun-Resistor:R_0402_1005Metric'.
+Info: Procesando el símbolo 'R7:SparkFun-Resistor:R_0402_1005Metric'.
+Info: Procesando el símbolo 'R9:SparkFun-Resistor:R_0402_1005Metric'.
+Info: Procesando el símbolo 'R10:SparkFun-Resistor:R_0402_1005Metric'.
+Info: Procesando el símbolo 'R11:SparkFun-Resistor:R_0402_1005Metric'.
+Info: Procesando el símbolo 'R_LED1:SparkFun-Resistor:R_0402_1005Metric'.
+Info: Procesando el símbolo 'SW1:Button_Switch_THT:SW_DIP_SPSTx03_Slide_9.78x9.8mm_W7.62mm_P2.54mm'.
+Info: Procesando el símbolo 'TP1:SparkFun-Connector:TestPoint-1.25mm'.
+Info: Procesando el símbolo 'TP2:SparkFun-Connector:TestPoint-1.25mm'.
+Info: Procesando el símbolo 'TP3:SparkFun-Connector:TestPoint-1.25mm'.
+Info: Procesando el símbolo 'TP4:SparkFun-Connector:TestPoint-1.25mm'.
+Info: Procesando el símbolo 'TP5:SparkFun-Connector:TestPoint-1.25mm'.
+Info: Procesando el símbolo 'TP6:SparkFun-Connector:TestPoint-1.25mm'.
+Info: Procesando el símbolo 'TP7:SparkFun-Connector:TestPoint-1.25mm'.
+Info: Procesando el símbolo 'TP8:SparkFun-Connector:TestPoint-1.25mm'.
+Info: Procesando el símbolo 'U1:Jaguar_Custom:XIAO-RP2350-DIP'.
+Info: Procesando el símbolo 'U2:SparkFun-Semiconductor-Standard:SOT23-5'.
+Info: Procesando el símbolo 'U3:Package_SO:SSOP-24_5.3x8.2mm_P0.65mm'.
+Info: Procesando el símbolo 'U4:Package_DIP:DIP-8_W7.62mm'.
+Agregado C3 (huella 'SparkFun-Capacitor:C_0402_1005Metric').
+Indicador de referencia cambiado de REF** a C3.
+Valor C3 cambiado de C_0402_1005Metric a 0.1uF.
+Asociación de símbolos C3 actualizada de  a /eef0f50d-1df9-4b00-8fcb-342aab38eab5.
+Actualizar campos C3.
+Se actualizó el nombre de la hoja C3 a '/'.
+Se actualizó el archivo de hoja C3 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de C3 a 'C_*'.
+C3 pin 1 conectado a /AGND.
+C3 pin 2 conectado a /+5V.
+Se actualizaron los metadatos de unidad de C3.
+Agregado C4 (huella 'SparkFun-Capacitor:C_0402_1005Metric').
+Indicador de referencia cambiado de REF** a C4.
+Valor C4 cambiado de C_0402_1005Metric a 0.1uF.
+Asociación de símbolos C4 actualizada de  a /efd12b0c-3a97-4848-8e5b-246a40010ace.
+Actualizar campos C4.
+Se actualizó el nombre de la hoja C4 a '/'.
+Se actualizó el archivo de hoja C4 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de C4 a 'C_*'.
+C4 pin 1 conectado a /NET_3V3_LDO.
+C4 pin 2 conectado a /AGND.
+Se actualizaron los metadatos de unidad de C4.
+Agregado C5 (huella 'SparkFun-Capacitor:C_0402_1005Metric').
+Indicador de referencia cambiado de REF** a C5.
+Valor C5 cambiado de C_0402_1005Metric a 0.1uF.
+Asociación de símbolos C5 actualizada de  a /d8a77b6c-06a9-469e-b575-1f42f5d62b60.
+Actualizar campos C5.
+Se actualizó el nombre de la hoja C5 a '/'.
+Se actualizó el archivo de hoja C5 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de C5 a 'C_*'.
+C5 pin 1 conectado a /AGND.
+C5 pin 2 conectado a /NET_TEMP_INT_FILT.
+Se actualizaron los metadatos de unidad de C5.
+Agregado C6 (huella 'SparkFun-Capacitor:C_0402_1005Metric').
+Indicador de referencia cambiado de REF** a C6.
+Valor C6 cambiado de C_0402_1005Metric a 0.1uF.
+Asociación de símbolos C6 actualizada de  a /b0000001-0000-4000-8000-000000000005.
+Actualizar campos C6.
+Se actualizó el nombre de la hoja C6 a '/'.
+Se actualizó el archivo de hoja C6 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de C6 a 'C_*'.
+C6 pin 1 conectado a /NET_TEMP_EXT_FILT.
+C6 pin 2 conectado a /AGND.
+Se actualizaron los metadatos de unidad de C6.
+Agregado C7 (huella 'SparkFun-Capacitor:C_0805_2012Metric').
+Indicador de referencia cambiado de REF** a C7.
+Valor C7 cambiado de C_0805_2012Metric a 47uF.
+Asociación de símbolos C7 actualizada de  a /b0000001-0000-4000-8000-000000000006.
+Actualizar campos C7.
+Se actualizó el nombre de la hoja C7 a '/'.
+Se actualizó el archivo de hoja C7 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de C7 a 'CP_*'.
+C7 pin 2 conectado a /PGND.
+C7 pin 1 conectado a /+5V.
+Se actualizaron los metadatos de unidad de C7.
+Agregado C8 (huella 'SparkFun-Capacitor:C_0402_1005Metric').
+Indicador de referencia cambiado de REF** a C8.
+Valor C8 cambiado de C_0402_1005Metric a 0.1uF.
+Asociación de símbolos C8 actualizada de  a /b0000001-0000-4000-8000-000000000007.
+Actualizar campos C8.
+Se actualizó el nombre de la hoja C8 a '/'.
+Se actualizó el archivo de hoja C8 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de C8 a 'C_*'.
+C8 pin 2 conectado a /PGND.
+C8 pin 1 conectado a /+5V.
+Se actualizaron los metadatos de unidad de C8.
+Agregado C9 (huella 'SparkFun-Capacitor:C_0402_1005Metric').
+Indicador de referencia cambiado de REF** a C9.
+Valor C9 cambiado de C_0402_1005Metric a 0.1uF.
+Asociación de símbolos C9 actualizada de  a /b0000001-0000-4000-8000-000000000008.
+Actualizar campos C9.
+Se actualizó el nombre de la hoja C9 a '/'.
+Se actualizó el archivo de hoja C9 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de C9 a 'C_*'.
+C9 pin 1 conectado a /AGND.
+C9 pin 2 conectado a /+3V3.
+Se actualizaron los metadatos de unidad de C9.
+Agregado C10 (huella 'Capacitor_THT:CP_Radial_D6.3mm_P2.50mm').
+Indicador de referencia cambiado de REF** a C10.
+Valor C10 cambiado de CP_Radial_D6.3mm_P2.50mm a 100uF/63V.
+Asociación de símbolos C10 actualizada de  a /b0000001-0000-4000-8000-000000000009.
+Actualizar campos C10.
+Se actualizó el nombre de la hoja C10 a '/'.
+Se actualizó el archivo de hoja C10 a 'PCB.kicad_sch'.
+C10 pin 2 conectado a /PGND.
+C10 pin 1 conectado a /+48V.
+Se actualizaron los metadatos de unidad de C10.
+Agregado C11 (huella 'Capacitor_SMD:C_0805_2012Metric').
+Indicador de referencia cambiado de REF** a C11.
+Valor C11 cambiado de C_0805_2012Metric a 100nF/63V.
+Asociación de símbolos C11 actualizada de  a /b0000001-0000-4000-8000-00000000000a.
+Actualizar campos C11.
+Se actualizó el nombre de la hoja C11 a '/'.
+Se actualizó el archivo de hoja C11 a 'PCB.kicad_sch'.
+C11 pin 1 conectado a /+48V.
+C11 pin 2 conectado a /PGND.
+Se actualizaron los metadatos de unidad de C11.
+Agregado C12 (huella 'SparkFun-Capacitor:C_0402_1005Metric').
+Indicador de referencia cambiado de REF** a C12.
+Valor C12 cambiado de C_0402_1005Metric a 0.1uF.
+Asociación de símbolos C12 actualizada de  a /b0000001-0000-4000-8000-00000000000b.
+Actualizar campos C12.
+Se actualizó el nombre de la hoja C12 a '/'.
+Se actualizó el archivo de hoja C12 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de C12 a 'C_*'.
+C12 pin 1 conectado a /NET_SW1.
+C12 pin 2 conectado a /AGND.
+Se actualizaron los metadatos de unidad de C12.
+Agregado C13 (huella 'SparkFun-Capacitor:C_0402_1005Metric').
+Indicador de referencia cambiado de REF** a C13.
+Valor C13 cambiado de C_0402_1005Metric a 0.1uF.
+Asociación de símbolos C13 actualizada de  a /b0000001-0000-4000-8000-00000000000c.
+Actualizar campos C13.
+Se actualizó el nombre de la hoja C13 a '/'.
+Se actualizó el archivo de hoja C13 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de C13 a 'C_*'.
+C13 pin 2 conectado a /AGND.
+C13 pin 1 conectado a /NET_SW2.
+Se actualizaron los metadatos de unidad de C13.
+Agregado C14 (huella 'SparkFun-Capacitor:C_0402_1005Metric').
+Indicador de referencia cambiado de REF** a C14.
+Valor C14 cambiado de C_0402_1005Metric a 0.1uF.
+Asociación de símbolos C14 actualizada de  a /b0000001-0000-4000-8000-00000000000d.
+Actualizar campos C14.
+Se actualizó el nombre de la hoja C14 a '/'.
+Se actualizó el archivo de hoja C14 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de C14 a 'C_*'.
+C14 pin 2 conectado a /AGND.
+C14 pin 1 conectado a /NET_SW3.
+Se actualizaron los metadatos de unidad de C14.
+Agregado C15 (huella 'SparkFun-Capacitor:C_0402_1005Metric').
+Indicador de referencia cambiado de REF** a C15.
+Valor C15 cambiado de C_0402_1005Metric a 0.1uF.
+Asociación de símbolos C15 actualizada de  a /b1b4b5f3-0996-47f9-902e-aba3ce2c80ba.
+Actualizar campos C15.
+Se actualizó el nombre de la hoja C15 a '/'.
+Se actualizó el archivo de hoja C15 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de C15 a 'C_*'.
+Agregar el atributo de fabricación 'no colocar' C15.
+C15 pin 1 conectado a /+5V.
+C15 pin 2 conectado a /PGND.
+Se actualizaron los metadatos de unidad de C15.
+Agregado D1 (huella 'Package_TO_SOT_SMD:SOT-23').
+Indicador de referencia cambiado de REF** a D1.
+Valor D1 cambiado de SOT-23 a BAT54S.
+Asociación de símbolos D1 actualizada de  a /aa939b38-faeb-4cf1-a10b-2f30e4802bd6.
+Actualizar campos D1.
+Se actualizó el nombre de la hoja D1 a '/'.
+Se actualizó el archivo de hoja D1 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de D1 a 'SOT?23*'.
+D1 pin 1 conectado a /AGND.
+D1 pin 2 conectado a /+3V3.
+D1 pin 3 conectado a /NET_TEMP_INT_FILT.
+Se actualizaron los metadatos de unidad de D1.
+Agregado D2 (huella 'Package_TO_SOT_SMD:SOT-23').
+Indicador de referencia cambiado de REF** a D2.
+Valor D2 cambiado de SOT-23 a BAT54S.
+Asociación de símbolos D2 actualizada de  a /e25ee7cd-9fc6-4a12-885c-602e5b6667bb.
+Actualizar campos D2.
+Se actualizó el nombre de la hoja D2 a '/'.
+Se actualizó el archivo de hoja D2 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de D2 a 'SOT?23*'.
+D2 pin 3 conectado a /NET_TEMP_EXT_FILT.
+D2 pin 2 conectado a /+3V3.
+D2 pin 1 conectado a /AGND.
+Se actualizaron los metadatos de unidad de D2.
+Agregado D3 (huella 'Diode_SMD:D_SMA').
+Indicador de referencia cambiado de REF** a D3.
+Valor D3 cambiado de D_SMA a US1M.
+Asociación de símbolos D3 actualizada de  a /60366eec-ba0f-4d0d-9a4b-f3821b28c411.
+Actualizar campos D3.
+Se actualizó el nombre de la hoja D3 a '/'.
+Se actualizó el archivo de hoja D3 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de D3 a 'D*SMA*'.
+D3 pin 2 conectado a /NET_FAN_HS.
+D3 pin 1 conectado a /+48V.
+Se actualizaron los metadatos de unidad de D3.
+Agregado F1 (huella 'Fuse:Fuse_1812_4532Metric').
+Indicador de referencia cambiado de REF** a F1.
+Valor F1 cambiado de Fuse_1812_4532Metric a 500mA.
+Asociación de símbolos F1 actualizada de  a /b0000001-0000-4000-8000-000000000002.
+Actualizar campos F1.
+Se actualizó el nombre de la hoja F1 a '/'.
+Se actualizó el archivo de hoja F1 a 'PCB.kicad_sch'.
+F1 pin 1 conectado a /NET_3V3_LDO.
+F1 pin 2 conectado a /+3V3.
+Se actualizaron los metadatos de unidad de F1.
+Agregado J1 (huella 'Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical').
+Indicador de referencia cambiado de REF** a J1.
+Valor J1 cambiado de JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical a JST_2mm.
+Asociación de símbolos J1 actualizada de  a /de3872d7-af1a-4fc6-b4de-6b86069a6122.
+Actualizar campos J1.
+Se actualizó el nombre de la hoja J1 a '/'.
+Se actualizó el archivo de hoja J1 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de J1 a 'Connector*:*_1x??_*'.
+J1 pin 2 conectado a /AGND.
+J1 pin 1 conectado a /NET_TEMP_INT_DIV.
+Se actualizaron los metadatos de unidad de J1.
+Agregado J2 (huella 'Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical').
+Indicador de referencia cambiado de REF** a J2.
+Valor J2 cambiado de JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical a JST_2mm.
+Asociación de símbolos J2 actualizada de  a /08fcfca9-1ee1-4c31-9444-628b76b9f055.
+Actualizar campos J2.
+Se actualizó el nombre de la hoja J2 a '/'.
+Se actualizó el archivo de hoja J2 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de J2 a 'Connector*:*_1x??_*'.
+J2 pin 2 conectado a /NET_TEMP_EXT_DIV.
+J2 pin 1 conectado a /AGND.
+Se actualizaron los metadatos de unidad de J2.
+Agregado J3 (huella 'SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black').
+Indicador de referencia cambiado de REF** a J3.
+Valor J3 cambiado de Screw_Terminal_3.5mm-2 a 3.5mm.
+Asociación de símbolos J3 actualizada de  a /34c2b381-5b12-41a2-906a-516ca9d94013.
+Actualizar campos J3.
+Se actualizó el nombre de la hoja J3 a '/'.
+Se actualizó el archivo de hoja J3 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de J3 a 'TerminalBlock*:*'.
+J3 pin 1 conectado a /NET_AO1.
+J3 pin 2 conectado a /NET_AO2.
+Se actualizaron los metadatos de unidad de J3.
+Agregado J5 (huella 'SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black').
+Indicador de referencia cambiado de REF** a J5.
+Valor J5 cambiado de Screw_Terminal_3.5mm-2 a Ventilador.
+Asociación de símbolos J5 actualizada de  a /b0000001-0000-4000-8000-00000000000e.
+Se actualizó el nombre de la hoja J5 a '/'.
+Se actualizó el archivo de hoja J5 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de J5 a 'TerminalBlock*:*'.
+J5 pin 1 conectado a /+48V.
+J5 pin 2 conectado a /NET_FAN_HS.
+Se actualizaron los metadatos de unidad de J5.
+Agregado J6 (huella 'SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black').
+Indicador de referencia cambiado de REF** a J6.
+Valor J6 cambiado de Screw_Terminal_3.5mm-2 a 48V IN.
+Asociación de símbolos J6 actualizada de  a /4e73bc36-87a5-4770-ad93-4f481c7e6480.
+Actualizar campos J6.
+Se actualizó el nombre de la hoja J6 a '/'.
+Se actualizó el archivo de hoja J6 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de J6 a 'TerminalBlock*:*'.
+J6 pin 1 conectado a /+48V.
+J6 pin 2 conectado a /PGND.
+Se actualizaron los metadatos de unidad de J6.
+Agregado J7 (huella 'SparkFun-Connector:ScrewTerminal_1x02_P3.5mm_Horizontal_Black').
+Indicador de referencia cambiado de REF** a J7.
+Valor J7 cambiado de Screw_Terminal_3.5mm-2 a 3.5mm.
+Asociación de símbolos J7 actualizada de  a /bcbd1006-a28c-43f5-9b52-2a5d790b5a48.
+Actualizar campos J7.
+Se actualizó el nombre de la hoja J7 a '/'.
+Se actualizó el archivo de hoja J7 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de J7 a 'TerminalBlock*:*'.
+J7 pin 2 conectado a /PGND.
+J7 pin 1 conectado a /+5V.
+Se actualizaron los metadatos de unidad de J7.
+Agregado J9 (huella 'Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical').
+Indicador de referencia cambiado de REF** a J9.
+Valor J9 cambiado de PinHeader_1x03_P2.54mm_Vertical a Selector_TC4420.
+Asociación de símbolos J9 actualizada de  a /b0000001-0000-4000-8000-00000000000f.
+Actualizar campos J9.
+Se actualizó el nombre de la hoja J9 a '/'.
+Se actualizó el archivo de hoja J9 a 'PCB.kicad_sch'.
+J9 pin 1 conectado a /NET_VENT.
+J9 pin 3 conectado a /NET_VENT_DRV.
+J9 pin 2 conectado a /NET_VENT_GATE.
+Se actualizaron los metadatos de unidad de J9.
+Agregado LED1 (huella 'LED_SMD:LED_0805_2012Metric').
+Indicador de referencia cambiado de REF** a LED1.
+Valor LED1 cambiado de LED_0805_2012Metric a LED_Green.
+Asociación de símbolos LED1 actualizada de  a /1394c127-4793-4a3e-8680-3f4560613927.
+Actualizar campos LED1.
+Se actualizó el nombre de la hoja LED1 a '/'.
+Se actualizó el archivo de hoja LED1 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de LED1 a 'LED* LED_SMD:* LED_THT:*'.
+LED1 pin 2 conectado a /NET_LED_ANODE.
+LED1 pin 1 conectado a /AGND.
+Se actualizaron los metadatos de unidad de LED1.
+Agregado NT1 (huella 'NetTie:NetTie-2_SMD_Pad0.5mm').
+Indicador de referencia cambiado de REF** a NT1.
+Valor NT1 cambiado de NetTie-2_SMD_Pad0.5mm a NetTie_2.
+Asociación de símbolos NT1 actualizada de  a /a79ef54c-0734-4923-bbe9-873fdc25d9f5.
+Actualizar campos NT1.
+Se actualizó el nombre de la hoja NT1 a '/'.
+Se actualizó el archivo de hoja NT1 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de NT1 a 'Net*Tie*'.
+Atributo de fabricación 'excluir de los archivos de posición' NT1 eliminado.
+NT1 pin 2 conectado a /PGND.
+NT1 pin 1 conectado a /AGND.
+Se actualizaron los metadatos de unidad de NT1.
+Agregado Q1 (huella 'Package_TO_SOT_THT:TO-220-3_Vertical').
+Indicador de referencia cambiado de REF** a Q1.
+Valor Q1 cambiado de TO-220-3_Vertical a IRL520N.
+Asociación de símbolos Q1 actualizada de  a /b0000001-0000-4000-8000-000000000001.
+Actualizar campos Q1.
+Se actualizó el nombre de la hoja Q1 a '/'.
+Se actualizó el archivo de hoja Q1 a 'PCB.kicad_sch'.
+Q1 pin 3 conectado a /PGND.
+Q1 pin 1 conectado a /NET_Q1_GATE.
+Q1 pin 2 conectado a /NET_FAN_HS.
+Se actualizaron los metadatos de unidad de Q1.
+Agregado R1 (huella 'SparkFun-Resistor:R_0603_1608Metric').
+Indicador de referencia cambiado de REF** a R1.
+Valor R1 cambiado de R_0603_1608Metric a 10k 0.1%.
+Asociación de símbolos R1 actualizada de  a /ef87274d-93e4-4979-a0d1-2723f46ad4b7.
+Actualizar campos R1.
+Se actualizó el nombre de la hoja R1 a '/'.
+Se actualizó el archivo de hoja R1 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de R1 a 'R_*'.
+R1 pin 2 conectado a /NET_TEMP_INT_DIV.
+R1 pin 1 conectado a /+3V3.
+Se actualizaron los metadatos de unidad de R1.
+Agregado R2 (huella 'SparkFun-Resistor:R_0603_1608Metric').
+Indicador de referencia cambiado de REF** a R2.
+Valor R2 cambiado de R_0603_1608Metric a 10k 0.1%.
+Asociación de símbolos R2 actualizada de  a /7eda99b9-30ca-4297-9b73-5824523d8969.
+Actualizar campos R2.
+Se actualizó el nombre de la hoja R2 a '/'.
+Se actualizó el archivo de hoja R2 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de R2 a 'R_*'.
+R2 pin 2 conectado a /+3V3.
+R2 pin 1 conectado a /NET_TEMP_EXT_DIV.
+Se actualizaron los metadatos de unidad de R2.
+Agregado C1 (huella 'SparkFun-Capacitor:C_0805_2012Metric').
+Agregado R3 (huella 'SparkFun-Resistor:R_0402_1005Metric').
+Indicador de referencia cambiado de REF** a R3.
+Valor R3 cambiado de R_0402_1005Metric a 1k.
+Asociación de símbolos R3 actualizada de  a /58419cf8-0382-451e-87fa-9297cabe991c.
+Actualizar campos R3.
+Se actualizó el nombre de la hoja R3 a '/'.
+Se actualizó el archivo de hoja R3 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de R3 a 'R_*'.
+R3 pin 2 conectado a /NET_TEMP_INT_FILT.
+R3 pin 1 conectado a /NET_TEMP_INT_DIV.
+Se actualizaron los metadatos de unidad de R3.
+Indicador de referencia cambiado de REF** a C1.
+Agregado R4 (huella 'SparkFun-Resistor:R_0402_1005Metric').
+Indicador de referencia cambiado de REF** a R4.
+Valor R4 cambiado de R_0402_1005Metric a 1k.
+Asociación de símbolos R4 actualizada de  a /a7723a2b-352d-4367-997a-362528bd109f.
+Actualizar campos R4.
+Se actualizó el nombre de la hoja R4 a '/'.
+Se actualizó el archivo de hoja R4 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de R4 a 'R_*'.
+R4 pin 1 conectado a /NET_TEMP_EXT_DIV.
+R4 pin 2 conectado a /NET_TEMP_EXT_FILT.
+Se actualizaron los metadatos de unidad de R4.
+Valor C1 cambiado de C_0805_2012Metric a 10uF.
+Agregado R5 (huella 'SparkFun-Resistor:R_0402_1005Metric').
+Indicador de referencia cambiado de REF** a R5.
+Valor R5 cambiado de R_0402_1005Metric a 10k.
+Asociación de símbolos R5 actualizada de  a /3319c6a0-3e7c-4e65-b16b-eed124d72bba.
+Actualizar campos R5.
+Se actualizó el nombre de la hoja R5 a '/'.
+Se actualizó el archivo de hoja R5 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de R5 a 'R_*'.
+R5 pin 1 conectado a /+3V3.
+R5 pin 2 conectado a /NET_STBY.
+Se actualizaron los metadatos de unidad de R5.
+Asociación de símbolos C1 actualizada de  a /d28bdcc9-22f2-40d2-8dcd-1e616402d41b.
+Agregado R6 (huella 'SparkFun-Resistor:R_0402_1005Metric').
+Indicador de referencia cambiado de REF** a R6.
+Valor R6 cambiado de R_0402_1005Metric a 330R.
+Asociación de símbolos R6 actualizada de  a /59017754-93ac-4200-9adb-343a8118174d.
+Actualizar campos R6.
+Se actualizó el nombre de la hoja R6 a '/'.
+Se actualizó el archivo de hoja R6 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de R6 a 'R_*'.
+R6 pin 2 conectado a /NET_Q1_GATE.
+R6 pin 1 conectado a /NET_VENT_GATE.
+Se actualizaron los metadatos de unidad de R6.
+Actualizar campos C1.
+Agregado R7 (huella 'SparkFun-Resistor:R_0402_1005Metric').
+Indicador de referencia cambiado de REF** a R7.
+Valor R7 cambiado de R_0402_1005Metric a 10k.
+Asociación de símbolos R7 actualizada de  a /c39d2313-1c66-40c5-b410-6103c4dd1fb4.
+Actualizar campos R7.
+Se actualizó el nombre de la hoja R7 a '/'.
+Se actualizó el archivo de hoja R7 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de R7 a 'R_*'.
+R7 pin 1 conectado a /PGND.
+R7 pin 2 conectado a /NET_Q1_GATE.
+Se actualizaron los metadatos de unidad de R7.
+Se actualizó el nombre de la hoja C1 a '/'.
+Agregado R9 (huella 'SparkFun-Resistor:R_0402_1005Metric').
+Indicador de referencia cambiado de REF** a R9.
+Valor R9 cambiado de R_0402_1005Metric a 10k.
+Asociación de símbolos R9 actualizada de  a /654b1512-eaa8-4f8a-a28d-79fe5cb3574d.
+Actualizar campos R9.
+Se actualizó el nombre de la hoja R9 a '/'.
+Se actualizó el archivo de hoja R9 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de R9 a 'R_*'.
+R9 pin 2 conectado a /+3V3.
+R9 pin 1 conectado a /NET_SW1.
+Se actualizaron los metadatos de unidad de R9.
+Se actualizó el archivo de hoja C1 a 'PCB.kicad_sch'.
+Agregado R10 (huella 'SparkFun-Resistor:R_0402_1005Metric').
+Indicador de referencia cambiado de REF** a R10.
+Valor R10 cambiado de R_0402_1005Metric a 10k.
+Asociación de símbolos R10 actualizada de  a /4734aacd-62b6-49d7-96fe-85ce4e4883e7.
+Actualizar campos R10.
+Se actualizó el nombre de la hoja R10 a '/'.
+Se actualizó el archivo de hoja R10 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de R10 a 'R_*'.
+R10 pin 1 conectado a /NET_SW2.
+R10 pin 2 conectado a /+3V3.
+Se actualizaron los metadatos de unidad de R10.
+Se actualizaron los filtros de huella de C1 a 'C_*'.
+Agregado R11 (huella 'SparkFun-Resistor:R_0402_1005Metric').
+Indicador de referencia cambiado de REF** a R11.
+Valor R11 cambiado de R_0402_1005Metric a 10k.
+Asociación de símbolos R11 actualizada de  a /433c2061-3094-4b3f-9d81-20513f9d12fd.
+Actualizar campos R11.
+Se actualizó el nombre de la hoja R11 a '/'.
+Se actualizó el archivo de hoja R11 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de R11 a 'R_*'.
+R11 pin 1 conectado a /NET_SW3.
+R11 pin 2 conectado a /+3V3.
+Se actualizaron los metadatos de unidad de R11.
+C1 pin 1 conectado a /+5V.
+Agregado R_LED1 (huella 'SparkFun-Resistor:R_0402_1005Metric').
+Indicador de referencia cambiado de REF** a R_LED1.
+Valor R_LED1 cambiado de R_0402_1005Metric a 1k.
+Asociación de símbolos R_LED1 actualizada de  a /b0000001-0000-4000-8000-000000000003.
+Actualizar campos R_LED1.
+Se actualizó el nombre de la hoja R_LED1 a '/'.
+Se actualizó el archivo de hoja R_LED1 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de R_LED1 a 'R_*'.
+R_LED1 pin 1 conectado a /+3V3.
+R_LED1 pin 2 conectado a /NET_LED_ANODE.
+Se actualizaron los metadatos de unidad de R_LED1.
+C1 pin 2 conectado a /AGND.
+Agregado SW1 (huella 'Button_Switch_THT:SW_DIP_SPSTx03_Slide_9.78x9.8mm_W7.62mm_P2.54mm').
+Indicador de referencia cambiado de REF** a SW1.
+Valor SW1 cambiado de SW_DIP_SPSTx03_Slide_9.78x9.8mm_W7.62mm_P2.54mm a SW_DIP_x03.
+Asociación de símbolos SW1 actualizada de  a /3c760929-8919-4f13-92a9-751186a496a8.
+Actualizar campos SW1.
+Se actualizó el nombre de la hoja SW1 a '/'.
+Se actualizó el archivo de hoja SW1 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de SW1 a 'SW?DIP?x3*'.
+SW1 pin 3 conectado a /NET_SW3.
+SW1 pin 2 conectado a /AGND.
+SW1 pin 6 conectado a /AGND.
+SW1 pin 1 conectado a /NET_SW1.
+SW1 pin 5 conectado a /NET_SW2.
+SW1 pin 4 conectado a /AGND.
+Se actualizaron los metadatos de unidad de SW1.
+Se actualizaron los metadatos de unidad de C1.
+Agregado TP1 (huella 'SparkFun-Connector:TestPoint-1.25mm').
+Indicador de referencia cambiado de Ref** a TP1.
+Valor TP1 cambiado de Val** a 1.25mm.
+Asociación de símbolos TP1 actualizada de  a /6e7a7608-9350-4a5a-9c0e-5b28a390c1f7.
+Actualizar campos TP1.
+Se actualizó el nombre de la hoja TP1 a '/'.
+Se actualizó el archivo de hoja TP1 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de TP1 a 'Pin* Test*'.
+Atributo de fabricación 'excluir de la lista de materiales' TP1 eliminado.
+Atributo de fabricación 'No colocar' TP1 eliminado.
+Atributo de fabricación 'excluir de los archivos de posición' TP1 eliminado.
+TP1 pin 1 conectado a /+3V3.
+Se actualizaron los metadatos de unidad de TP1.
+Agregado C2 (huella 'SparkFun-Capacitor:C_0805_2012Metric').
+Agregado TP2 (huella 'SparkFun-Connector:TestPoint-1.25mm').
+Indicador de referencia cambiado de Ref** a TP2.
+Valor TP2 cambiado de Val** a 1.25mm.
+Asociación de símbolos TP2 actualizada de  a /7cf0cb75-eb4c-40e1-9c13-e8be7d13fb0a.
+Actualizar campos TP2.
+Se actualizó el nombre de la hoja TP2 a '/'.
+Se actualizó el archivo de hoja TP2 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de TP2 a 'Pin* Test*'.
+Atributo de fabricación 'excluir de la lista de materiales' TP2 eliminado.
+Atributo de fabricación 'No colocar' TP2 eliminado.
+Atributo de fabricación 'excluir de los archivos de posición' TP2 eliminado.
+TP2 pin 1 conectado a /+5V.
+Se actualizaron los metadatos de unidad de TP2.
+Indicador de referencia cambiado de REF** a C2.
+Agregado TP3 (huella 'SparkFun-Connector:TestPoint-1.25mm').
+Indicador de referencia cambiado de Ref** a TP3.
+Valor TP3 cambiado de Val** a 1.25mm.
+Asociación de símbolos TP3 actualizada de  a /52612a82-b7ed-4682-a3ee-012e9091b870.
+Actualizar campos TP3.
+Se actualizó el nombre de la hoja TP3 a '/'.
+Se actualizó el archivo de hoja TP3 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de TP3 a 'Pin* Test*'.
+Atributo de fabricación 'excluir de la lista de materiales' TP3 eliminado.
+Atributo de fabricación 'No colocar' TP3 eliminado.
+Atributo de fabricación 'excluir de los archivos de posición' TP3 eliminado.
+TP3 pin 1 conectado a /+48V.
+Se actualizaron los metadatos de unidad de TP3.
+Valor C2 cambiado de C_0805_2012Metric a 10uF.
+Agregado TP4 (huella 'SparkFun-Connector:TestPoint-1.25mm').
+Indicador de referencia cambiado de Ref** a TP4.
+Valor TP4 cambiado de Val** a 1.25mm.
+Asociación de símbolos TP4 actualizada de  a /b828ddd2-cd7a-492e-87c3-f6cbdfa215c0.
+Actualizar campos TP4.
+Se actualizó el nombre de la hoja TP4 a '/'.
+Se actualizó el archivo de hoja TP4 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de TP4 a 'Pin* Test*'.
+Atributo de fabricación 'excluir de la lista de materiales' TP4 eliminado.
+Atributo de fabricación 'No colocar' TP4 eliminado.
+Atributo de fabricación 'excluir de los archivos de posición' TP4 eliminado.
+TP4 pin 1 conectado a /PGND.
+Se actualizaron los metadatos de unidad de TP4.
+Asociación de símbolos C2 actualizada de  a /933d6fc0-9052-48ae-83b3-e0a71c5a6fa6.
+Agregado TP5 (huella 'SparkFun-Connector:TestPoint-1.25mm').
+Indicador de referencia cambiado de Ref** a TP5.
+Valor TP5 cambiado de Val** a 1.25mm.
+Asociación de símbolos TP5 actualizada de  a /c405b527-ecb0-4578-9dbd-050128ab244f.
+Actualizar campos TP5.
+Se actualizó el nombre de la hoja TP5 a '/'.
+Se actualizó el archivo de hoja TP5 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de TP5 a 'Pin* Test*'.
+Atributo de fabricación 'excluir de la lista de materiales' TP5 eliminado.
+Atributo de fabricación 'No colocar' TP5 eliminado.
+Atributo de fabricación 'excluir de los archivos de posición' TP5 eliminado.
+TP5 pin 1 conectado a /AGND.
+Se actualizaron los metadatos de unidad de TP5.
+Actualizar campos C2.
+Agregado TP6 (huella 'SparkFun-Connector:TestPoint-1.25mm').
+Indicador de referencia cambiado de Ref** a TP6.
+Valor TP6 cambiado de Val** a 1.25mm.
+Asociación de símbolos TP6 actualizada de  a /166bb7a8-beb5-4abd-bdab-30b7fc2c1258.
+Actualizar campos TP6.
+Se actualizó el nombre de la hoja TP6 a '/'.
+Se actualizó el archivo de hoja TP6 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de TP6 a 'Pin* Test*'.
+Atributo de fabricación 'excluir de la lista de materiales' TP6 eliminado.
+Atributo de fabricación 'No colocar' TP6 eliminado.
+Atributo de fabricación 'excluir de los archivos de posición' TP6 eliminado.
+TP6 pin 1 conectado a /NET_TEMP_INT_FILT.
+Se actualizaron los metadatos de unidad de TP6.
+Se actualizó el nombre de la hoja C2 a '/'.
+Agregado TP7 (huella 'SparkFun-Connector:TestPoint-1.25mm').
+Indicador de referencia cambiado de Ref** a TP7.
+Valor TP7 cambiado de Val** a 1.25mm.
+Asociación de símbolos TP7 actualizada de  a /d493d83d-dc0c-4707-ae44-15421bc37380.
+Actualizar campos TP7.
+Se actualizó el nombre de la hoja TP7 a '/'.
+Se actualizó el archivo de hoja TP7 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de TP7 a 'Pin* Test*'.
+Atributo de fabricación 'excluir de la lista de materiales' TP7 eliminado.
+Atributo de fabricación 'No colocar' TP7 eliminado.
+Atributo de fabricación 'excluir de los archivos de posición' TP7 eliminado.
+TP7 pin 1 conectado a /NET_TEMP_EXT_FILT.
+Se actualizaron los metadatos de unidad de TP7.
+Se actualizó el archivo de hoja C2 a 'PCB.kicad_sch'.
+Agregado TP8 (huella 'SparkFun-Connector:TestPoint-1.25mm').
+Indicador de referencia cambiado de Ref** a TP8.
+Valor TP8 cambiado de Val** a 1.25mm.
+Asociación de símbolos TP8 actualizada de  a /fb19d9b8-8fd5-4841-a6f8-3b13481250b1.
+Actualizar campos TP8.
+Se actualizó el nombre de la hoja TP8 a '/'.
+Se actualizó el archivo de hoja TP8 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de TP8 a 'Pin* Test*'.
+Atributo de fabricación 'excluir de la lista de materiales' TP8 eliminado.
+Atributo de fabricación 'No colocar' TP8 eliminado.
+Atributo de fabricación 'excluir de los archivos de posición' TP8 eliminado.
+TP8 pin 1 conectado a /NET_Q1_GATE.
+Se actualizaron los metadatos de unidad de TP8.
+Se actualizaron los filtros de huella de C2 a 'C_*'.
+Agregado U1 (huella 'Jaguar_Custom:XIAO-RP2350-DIP').
+Asociación de símbolos U1 actualizada de  a /4cb626c4-8f9d-4d92-a70e-9198fd5f8646.
+Se actualizó el nombre de la hoja U1 a '/'.
+Se actualizó el archivo de hoja U1 a 'PCB.kicad_sch'.
+U1 pin 1 conectado a /NET_TEMP_INT_FILT.
+U1 pin 7 conectado a /NET_SW3.
+Agregar red unconnected-(U1-D12-Pad16).
+U1 pin 16 conectado a unconnected-(U1-D12-Pad16).
+U1 pin 10 conectado a /NET_VENT.
+Agregar red unconnected-(U1-VBAT-Pad23).
+U1 pin 23 conectado a unconnected-(U1-VBAT-Pad23).
+U1 pin 9 conectado a /NET_AIN1.
+U1 pin 5 conectado a /NET_SW1.
+Agregar red unconnected-(U1-D3-Pad4).
+U1 pin 4 conectado a unconnected-(U1-D3-Pad4).
+U1 pin 12 conectado a /+3V3.
+Agregar red unconnected-(U1-D11-Pad15).
+U1 pin 15 conectado a unconnected-(U1-D11-Pad15).
+U1 pin 11 conectado a /NET_MOTOR_EN.
+Agregar red unconnected-(U1-D16-Pad20).
+U1 pin 20 conectado a unconnected-(U1-D16-Pad20).
+U1 pin 6 conectado a /NET_SW2.
+Agregar red unconnected-(U1-D14-Pad18).
+U1 pin 18 conectado a unconnected-(U1-D14-Pad18).
+U1 pin 8 conectado a /NET_AIN2.
+U1 pin 24 conectado a /AGND.
+Agregar red unconnected-(U1-D17-Pad21).
+U1 pin 21 conectado a unconnected-(U1-D17-Pad21).
+Agregar red unconnected-(U1-D2-Pad3).
+U1 pin 3 conectado a unconnected-(U1-D2-Pad3).
+Agregar red unconnected-(U1-D18-Pad22).
+U1 pin 22 conectado a unconnected-(U1-D18-Pad22).
+Agregar red unconnected-(U1-D15-Pad19).
+U1 pin 19 conectado a unconnected-(U1-D15-Pad19).
+Agregar red unconnected-(U1-D13-Pad17).
+U1 pin 17 conectado a unconnected-(U1-D13-Pad17).
+U1 pin 13 conectado a /AGND.
+Agregar red unconnected-(U1-VBUS-Pad14).
+U1 pin 14 conectado a unconnected-(U1-VBUS-Pad14).
+U1 pin 2 conectado a /NET_TEMP_EXT_FILT.
+Se actualizaron los metadatos de unidad de U1.
+C2 pin 2 conectado a /AGND.
+Agregado U2 (huella 'SparkFun-Semiconductor-Standard:SOT23-5').
+Indicador de referencia cambiado de REF** a U2.
+Valor U2 cambiado de SOT23-5 a AP2112K-3.3.
+Asociación de símbolos U2 actualizada de  a /00dd7062-188b-4688-b8de-310698704570.
+Actualizar campos U2.
+Se actualizó el nombre de la hoja U2 a '/'.
+Se actualizó el archivo de hoja U2 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de U2 a 'SOT?23?5*'.
+Agregar red unconnected-(U2-NC-Pad4).
+U2 pin 4 conectado a unconnected-(U2-NC-Pad4).
+U2 pin 1 conectado a /+5V.
+U2 pin 2 conectado a /AGND.
+U2 pin 5 conectado a /NET_3V3_LDO.
+U2 pin 3 conectado a /+5V.
+Se actualizaron los metadatos de unidad de U2.
+C2 pin 1 conectado a /NET_3V3_LDO.
+Agregado U3 (huella 'Package_SO:SSOP-24_5.3x8.2mm_P0.65mm').
+Indicador de referencia cambiado de REF** a U3.
+Valor U3 cambiado de SSOP-24_5.3x8.2mm_P0.65mm a TB6612FNG.
+Asociación de símbolos U3 actualizada de  a /ab6aa0ed-42de-438a-b33a-988e8d7b6e38.
+Actualizar campos U3.
+Se actualizó el nombre de la hoja U3 a '/'.
+Se actualizó el archivo de hoja U3 a 'PCB.kicad_sch'.
+Se actualizaron los filtros de huella de U3 a 'SSOP*5.3x8.2mm*P0.65mm*'.
+Agregar red unconnected-(U3-BO2-Pad7).
+U3 pin 8 conectado a unconnected-(U3-BO2-Pad7).
+U3 pin 2 conectado a /NET_AO1.
+U3 pin 18 conectado a /AGND.
+U3 pin 21 conectado a /NET_AIN1.
+Agregar red unconnected-(U3-BO1-Pad11).
+U3 pin 11 conectado a unconnected-(U3-BO1-Pad11).
+U3 pin 5 conectado a /NET_AO2.
+U3 pin 19 conectado a /NET_STBY.
+U3 pin 16 conectado a /AGND.
+U3 pin 17 conectado a /AGND.
+Agregar red unconnected-(U3-BO2-Pad7)_1.
+U3 pin 7 conectado a unconnected-(U3-BO2-Pad7)_1.
+U3 pin 3 conectado a /PGND.
+U3 pin 20 conectado a /+3V3.
+U3 pin 15 conectado a /AGND.
+U3 pin 24 conectado a /+5V.
+Agregar red unconnected-(U3-BO1-Pad11)_1.
+U3 pin 12 conectado a unconnected-(U3-BO1-Pad11)_1.
+U3 pin 4 conectado a /PGND.
+U3 pin 6 conectado a /NET_AO2.
+U3 pin 22 conectado a /NET_AIN2.
+U3 pin 23 conectado a /NET_MOTOR_EN.
+U3 pin 14 conectado a /+5V.
+U3 pin 9 conectado a /PGND.
+U3 pin 10 conectado a /PGND.
+U3 pin 13 conectado a /+5V.
+U3 pin 1 conectado a /NET_AO1.
+Se actualizaron los metadatos de unidad de U3.
+Se actualizaron los metadatos de unidad de C2.
+Agregado U4 (huella 'Package_DIP:DIP-8_W7.62mm').
+Indicador de referencia cambiado de REF** a U4.
+Valor U4 cambiado de DIP-8_W7.62mm a TC4420.
+Asociación de símbolos U4 actualizada de  a /b0000001-0000-4000-8000-000000000004.
+Actualizar campos U4.
+Se actualizó el nombre de la hoja U4 a '/'.
+Se actualizó el archivo de hoja U4 a 'PCB.kicad_sch'.
+Agregar el atributo de fabricación 'no colocar' U4.
+U4 pin 4 conectado a /PGND.
+U4 pin 6 conectado a /NET_VENT_DRV.
+U4 pin 3 conectado a /NET_VENT.
+U4 pin 2 conectado a /PGND.
+U4 pin 8 conectado a /+5V.
+U4 pin 5 conectado a /+5V.
+U4 pin 7 conectado a /+5V.
+U4 pin 1 conectado a /PGND.
+Se actualizaron los metadatos de unidad de U4.
+
+
+Info: Número de avisos: 0, errores: 0.

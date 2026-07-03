@@ -1,0 +1,262 @@
+--- PARAGRAPHS ---
+Para 0: 
+Para 1: 1. Resumen Ejecutivo
+Para 2: El presente documento describe el plan de ejecución técnica de cuatro días calendario para la Fase 1 (Take-Home) de la evaluación técnica de Jaguar de México, correspondiente a la vacante de Ingeniero de Sistemas Embebidos Jr. El objetivo es diseñar e implementar un sistema completo de extracción de aire caliente para gabinete de telecomunicaciones, cubriendo firmware, esquemático KiCad, PCB y simulación Wokwi.
+Para 3: El cronograma fue estructurado siguiendo las mejores prácticas de la industria en desarrollo embebido: diseño top-down (arquitectura → firmware → hardware → documentación), validación continua mediante simulación y pruebas incrementales, y registro transparente del uso de inteligencia artificial como herramienta de apoyo.
+Para 4: 2. Contexto Técnico del Sistema
+Para 5: 2.1 Objetivo del sistema
+Para 6: Diseñar el circuito, PCB y firmware de un sistema de extracción de aire caliente para un gabinete de telecomunicaciones. El sistema compara la temperatura interna (TEMP_INT) contra la temperatura externa (TEMP_EXT) y activa o desactiva automáticamente los mecanismos de ventilación según corresponda.
+Para 7: 2.2 Lógica de control
+Para 8: 
+Para 9: 2.3 Componentes principales
+Para 10: 
+Para 11: 2.4 Mapa de GPIOs
+Para 12: 
+Para 13: 3. Metodología y Mejores Prácticas Aplicadas
+Para 14: 3.1 Arquitectura de firmware (top-down)
+Para 15: Siguiendo las mejores prácticas de sistemas embebidos industriales (Betasolutions, FreeCodeCamp), el firmware se estructura como una Máquina de Estados Finita (FSM) con estados bien definidos. Esto permite trazabilidad de comportamiento, manejo robusto de errores y facilidad de prueba.
+Para 16: INIT: configuración de periféricos, validación de hardware al encendido.
+Para 17: READING: adquisición periódica de temperatura con promedio móvil de 8 muestras (ADC 12-bit).
+Para 18: COOLING: TEMP_INT > TEMP_EXT — compuertas abiertas + ventilador ON.
+Para 19: IDLE: TEMP_INT ≤ TEMP_EXT — compuertas cerradas + ventilador OFF.
+Para 20: ERROR: lectura inválida, sensor desconectado o fuera de rango → estado seguro (todo OFF).
+Para 21: 3.2 Conversión NTC (Ecuación Beta)
+Para 22: El sensor NTC TT05-10KC8-1S-T105-1500 (R₀=10kΩ @ 25°C, B=3435K [corregido desde 3950K per datasheet TEWA/TME]) requiere un divisor de voltaje Vout = Vcc × R_ref / (R_ntc + R_ref) para convertir resistencia en voltaje ADC. La temperatura se calcula con la ecuación Beta (precisión ±0.5°C en rango operativo):
+Para 23: T(K) = 1 / [ (1/T₀) + (1/B) × ln(R_ntc / R₀) ]
+Para 24: Se aplica promedio móvil de 8 lecturas ADC y se filtran valores fuera del rango físico del sensor (−40°C a 105°C, Tmax per part number T105). Un ADC de 12-bit produce error < 0.05°C según AllAboutCircuits, suficiente para la aplicación.
+Para 25: 3.3 Etapa de potencia para ventilador 48V
+Para 26: El ventilador MR1238E48B-FSR opera a 48V DC. Los GPIOs del RP2350 son de 3.3V y no pueden alimentarlo directamente. Se implementa una etapa con MOSFET NMOS (ej. IRL520N) con resistencia de gate (100Ω), diodo flyback (1N4007) y pull-down en gate para estado seguro en ausencia de señal. El GPIO4 (VENT) controla el gate a través del resistor.
+Para 27: 3.4 PCB mixed-signal: separación analógica/digital
+Para 28: Siguiendo las guías de Analog Devices y PCBWay para diseño mixed-signal, el layout del PCB separa físicamente la sección de potencia (TB6612FNG + MOSFET de ventilador) de la sección de señal analógica (divisores NTC + entradas ADC). Se usa plano de GND unificado con punto estrella para evitar lazos de corriente que degraden las lecturas ADC.
+Para 29: 3.5 Histéresis y estado seguro
+Para 30: Se implementa histéresis de ±1°C alrededor del setpoint de temperatura para evitar oscilación rápida del actuador (chattering). El watchdog timer del RP2350 está habilitado con timeout de 8 segundos; al dispararse, el sistema entra en estado seguro (todo OFF) antes del reset. Durante el travel del actuador FIT0803 (~3s bloqueante), el WDT se alimenta cada 500ms desde hbridge._safe_sleep_ms() vía callback set_wdt_feed(), evitando reset accidental.
+Para 31: 
+Para 32: 4. Cronograma de Ejecución — 4 Días Calendario
+Para 33: Total estimado: ~29 horas de trabajo técnico distribuidas en 4 días. El orden sigue el principio top-down: arquitectura → firmware → simulación → hardware → documentación.
+Para 34: 
+Para 35: DÍA 1 — Firmware y Arquitectura del Sistema
+Para 36: 
+Para 37: Revisar datasheets completos: NTC TT05-10KC8-1S-T105-1500, TB6612FNG, FIT0803, MR1238E48B-FSR.
+Para 38: Calcular resistencia de referencia para divisor NTC: R_ref = 10kΩ (igual a R₀ para maximizar sensibilidad a 25°C).
+Para 39: Verificar mapeo GPIO en Seeed XIAO RP2350 vs Raspberry Pi Pico — encapsulados difieren.
+Para 40: Establecer ecuación Beta con B=3435K para conversión NTC→°C (corregido per datasheet TEWA/TME).
+Para 41: Definir tabla de setpoints DIP: 8 combinaciones de SW3-SW2-SW1 (40°C a 75°C en pasos de 5°C).
+Para 42: 
+Para 43: 
+Para 44: Estados FSM: INIT → READING → COOLING / IDLE → ERROR (estado seguro).
+Para 45: Condiciones de transición: TEMP_INT vs TEMP_EXT, histéresis ±1°C, timeout de lectura.
+Para 46: Definir estructura de datos: struct SystemState, buffers ADC circular (N=8 muestras).
+Para 47: Diseñar manejo de errores: sensor desconectado (<10°C o >130°C = inválido), ADC timeout.
+Para 48: Documentar diagrama de estados antes de codificar.
+Para 49: 
+Para 50: 
+Para 51: Módulo adc.py: lectura ADC GP26/GP27, promedio móvil N=8, conversión NTC→°C con Beta equation.
+Para 52: Módulo dip.py: lectura GP0/GP6/GP7 con pull-up interno, decodificación setpoint 3-bit.
+Para 53: Módulo hbridge.py: control TB6612FNG (AIN1/AIN2/MOTOR_EN), funciones open_damper(), close_damper(), stop_motor().
+Para 54: Módulo fan.py: control MOSFET ventilador GP4, funciones fan_on(), fan_off().
+Para 55: Módulo fsm.py: implementación FSM principal, watchdog timer RP2350 (8s timeout).
+Para 56: main.py: loop principal 1Hz, logging serial para debug, manejo de excepciones.
+Para 57: Prueba de compilación y ejecución básica en REPL.
+Para 58: 
+Para 59: 
+Para 60: DÍA 2 — Simulación en Wokwi
+Para 61: 
+Para 62: Abrir plantilla base: https://wokwi.com/projects/468449090390286337
+Para 63: Revisar componentes pre-integrados: Raspberry Pi Pico + TB6612FNG.
+Para 64: Hacer fork/copia del proyecto para extender sin modificar el original.
+Para 65: Verificar que los GPIOs de la plantilla coinciden con el mapa de señales del documento.
+Para 66: 
+Para 67: 
+Para 68: Agregar 2× componente Thermistor de Wokwi en GP26/ADC0 y GP27/ADC1 (simula NTC).
+Para 69: Agregar DIP switch de 3 posiciones en GP0, GP6, GP7 con resistencias pull-up 10kΩ.
+Para 70: Agregar LED rojo en GP4 como indicador visual de ventilador (VENT).
+Para 71: Agregar LEDs indicadores para AIN1, AIN2, MOTOR_EN (estado del puente H).
+Para 72: Verificar niveles lógicos 3.3V en todas las señales de control.
+Para 73: Cargar firmware MicroPython del Día 1 en la simulación.
+Para 74: 
+Para 75: 
+Para 76: Escenario 1: TEMP_INT > TEMP_EXT → validar AIN1=LOW, AIN2=HIGH, MOTOR_EN=HIGH, VENT=HIGH.
+Para 77: Escenario 2: TEMP_INT ≤ TEMP_EXT → validar AIN1=HIGH, AIN2=LOW, MOTOR_EN=HIGH, VENT=LOW.
+Para 78: Escenario 3: Simular lectura inválida (sensor desconectado) → MOTOR_EN=LOW, VENT=LOW.
+Para 79: Probar los 8 setpoints del DIP switch (SW3-SW2-SW1 = 000 a 111).
+Para 80: Validar histéresis: sistema no oscila al cruzar el umbral.
+Para 81: Capturar URL final del proyecto Wokwi (hacer público el proyecto).
+Para 82: Refinar firmware según comportamiento observado en simulación.
+Para 83: 
+Para 84: 
+Para 85: DÍA 3 — Esquemático y PCB en KiCad
+Para 86: 
+Para 87: Crear carpeta kicad/ dentro de la carpeta Jaguar MX del proyecto.
+Para 88: Abrir KiCad → File → New Project → guardar como jaguar_extractor dentro de kicad/.
+Para 89: Se generan automáticamente: jaguar_extractor.kicad_pro, .kicad_sch y .kicad_pcb vacíos.
+Para 90: 
+Para 91: 
+Para 92: Etapa de alimentación: entrada 5V → regulador LDO 3.3V (AP2112K-3.3), capacitores bulk y bypass.
+Para 93: Circuito acondicionador NTC (×2): divisor R_ref=10kΩ + filtro RC anti-aliasing (RC = 1kΩ + 100nF) en entrada ADC.
+Para 94: TB6612FNG: capacitores bypass en VM y VCC (100nF cerámico + 47µF electrolítico), pin STBY a 3.3V, conexiones AIN1/AIN2/PWMA.
+Para 95: Etapa potencia ventilador 48V: MOSFET NMOS IRL520N, gate resistor 100Ω, pull-down 10kΩ, diodo flyback 1N4007.
+Para 96: DIP switch 3 posiciones con pull-ups 10kΩ a 3.3V en GP0, GP6, GP7.
+Para 97: Protecciones: TVS SMBJ3.3A en entradas analógicas, fusible polímero 500mA en 3.3V.
+Para 98: Conector MCU: footprint para Seeed XIAO RP2350 (castellated pads) + header alternativo para Pico.
+Para 99: Bloques de terminales: TB para ventilador (48V), motor FIT0803 (5V), sensores NTC, alimentación.
+Para 100: Numeración de componentes, valores, tolerancias y notas de diseño en esquemático.
+Para 101: Orden de bloques (izquierda → derecha): [A] MCU (GPIOs) → [B] Alimentación AP2112K-3.3 → [C] NTC ×2 + filtro RC 1kΩ+100nF + TVS SMBJ3.3A → [D] TB6612FNG + caps → [E] MOSFET IRL520N + 1N4007 → [F] DIP switch + pull-ups.
+Para 102: Al terminar: correr ERC (Electrical Rules Check) — cero errores antes de pasar al PCB.
+Para 103: 
+Para 104: 
+Para 105: Stackup: 2 capas, FR4, 1.6mm, Cu 1oz.
+Para 106: Placement: zona potencia (TB6612FNG + MOSFET + terminales) separada físicamente de zona señal analógica (NTC + ADC).
+Para 107: Plano de GND en capa trasera, continuo bajo toda la PCB.
+Para 108: Trazas de potencia motor: ancho ≥1.5mm (corriente de stall FIT0803).
+Para 109: Trazas analógicas: mínimo 0.3mm, sin cruzar bajo componentes digitales.
+Para 110: Via stitching en plano de GND alrededor de zona analógica.
+Para 111: Serigrafía: identificación de conectores, polaridad, valores.
+Para 112: DRC: cero errores de clearance y cortocircuitos antes de exportar.
+Para 113: Orden de ruteo: (1) Importar netlist → (2) Board outline 80×60 mm → (3) Placement por zonas → (4) GND plane capa trasera (Fill Zone) → (5) Trazas potencia ≥1.5 mm → (6) Rail 48V aislado → (7) Señales control 0.5 mm → (8) Analógicas ≤0.3 mm → (9) Via stitching zona analógica → (10) DRC sin errores.
+Para 114: Exportar Gerbers o dejar proyecto KiCad completo (archivos .kicad_sch + .kicad_pcb).
+Para 115: 
+Para 116: 
+Para 117: 
+Para 118: Confirmar que existen kicad/jaguar_extractor.kicad_sch y kicad/jaguar_extractor.kicad_pcb en la carpeta del proyecto.
+Para 119: ERC sin errores en el esquemático — DRC sin errores en el PCB.
+Para 120: Generar PDF del esquemático: File → Plot → PDF (referencia visual para la entrega y defensa).
+Para 121: Empaquetado ZIP queda para el Día 4: estructura /kicad/ + /firmware/ + ETISEJr_JairMolina.md.
+Para 122: 
+Para 123: 
+Para 124: DÍA 4 — Documentación y Entrega Final
+Para 125: 
+Para 126: Q1: Desglose real de horas por entregable (firmware, esquemático, PCB, simulación, AI log).
+Para 127: Q2: Documenter bloqueantes técnicos y estrategias de resolución (ej. datasheet NTC, timing FIT0803).
+Para 128: Q3: Casos donde el output de AI fue incorrecto o incompleto y cómo se detectó y corrigió.
+Para 129: Q4: Decisión técnica más difícil y su justificación (ej. selección MOSFET, estrategia FSM).
+Para 130: Q5: Mejoras con más tiempo (PCB 4 capas, sensor digital I2C, PID de temperatura).
+Para 131: Q6: Score de confiabilidad industrial (1-10) con justificación técnica detallada.
+Para 132: 
+Para 133: 
+Para 134: Crear archivo ETISEJr_JairMolina.md con secciones: Simulación Wokwi, Cuestionario, Uso de AI.
+Para 135: Sección Wokwi: URL del proyecto + descripción de componentes equivalentes usados.
+Para 136: Sección AI: documentar cada uso de Claude — herramienta, propósito, prompt utilizado.
+Para 137: Incluir al menos 1 caso de output incorrecto de AI con corrección aplicada.
+Para 138: Revisar que todos los apartados del cuestionario estén respondidos completos.
+Para 139: 
+Para 140: 
+Para 141: Compilar firmware en entorno limpio y verificar que corre sin errores.
+Para 142: Verificar URL Wokwi accesible públicamente desde navegador sin sesión.
+Para 143: Abrir KiCad y verificar que los archivos abren sin errores de librería faltante.
+Para 144: Organizar estructura ZIP: /kicad/, /firmware/, ETISEJr_JairMolina.md.
+Para 145: Nombrar ZIP: ETISEJr_JairMolina.zip.
+Para 146: Enviar correo a software@jaguar.mx con asunto 'Evaluación Técnica — Jair Molina Arce'.
+Para 147: Preparar laptop para sesión en vivo: IDE abierto, Wokwi en browser, KiCad listo.
+Para 148: 
+Para 149: 
+Para 150: 
+Para 151: 5. Decisiones Técnicas Clave y Justificación
+Para 152: ► Lenguaje: MicroPython
+Para 153: MicroPython sobre C/C++ permite iteración rápida en el plazo de 4 días, acceso directo a periféricos RP2350 (machine.ADC, machine.Pin, machine.WDT) y legibilidad de código para la sesión en vivo. El ciclo de control a 1Hz no requiere el rendimiento de C.
+Para 154: ► Conversión NTC: ecuación Beta
+Para 155: La ecuación Beta (B=3435K, corregido desde 3950K per datasheet TEWA/TME) ofrece precisión de ±0.5°C en el rango 0–85°C, suficiente para control de temperatura de gabinete. La ecuación Steinhart-Hart completa requiere calibración de 3 puntos que no está disponible en el entorno de evaluación.
+Para 156: ► Resistencia de referencia NTC: 10kΩ
+Para 157: Igual a R₀ del sensor, esto maximiza la sensibilidad de la lectura ADC en el rango centrado en 25°C, reduciendo el error de cuantización en la zona de operación más común.
+Para 158: ► MOSFET NMOS para ventilador 48V
+Para 159: El IRL520N (Vgs(th)=2V, Id=10A, Vds=100V) es accionable directamente por el GPIO 3.3V del RP2350, soporta la corriente del ventilador y tiene encapsulado TO-220 soldable en PCB.
+Para 160: ► Histéresis ±1°C
+Para 161: Evita el chattering (conmutación rápida) del actuador FIT0803 al cruzar el setpoint de temperatura, aumentando la vida útil del mecanismo y reduciendo ruido eléctrico en el sistema.
+Para 162: ► Plano GND unificado en PCB
+Para 163: Analog Devices y las guías KiCad recomiendan GND unificado (en lugar de tierra partida) para señales mixtas de baja frecuencia, con punto estrella para separar retornos de potencia de los analógicos y evitar corrientes de lazo que degraden las lecturas ADC.
+Para 164: 6. Checklist de Entregables Fase 1
+Para 165: 
+Para 166: 7. Preparación para la Sesión en Vivo (Fase 2)
+Para 167: La sesión en vivo tiene duración de 2 horas. El candidato debe presentarse con:
+Para 168: Firmware cargado y probado en la laptop. Entorno de desarrollo (Thonny o VS Code + Pylance) listo.
+Para 169: Proyecto KiCad abierto en laptop, sin errores de librería faltante.
+Para 170: Wokwi accesible en browser (sin sesión iniciada, para demostrar acceso público).
+Para 171: Comprensión profunda de cada decisión técnica: listo para defender circuito de acondicionamiento, etapa de potencia, estructura FSM y criterios de layout PCB.
+Para 172: Cuestionario respondido por escrito; preparado para ampliar respuestas verbalmente.
+Para 173: Herramienta de AI (Claude) con log documentado; listo para mostrar conversaciones si se solicita.
+Para 174: 
+Para 175: Nota: Jaguar revelará una tarea técnica adicional al inicio de la sesión. No se requiere preparación específica para ella — evalúa criterio técnico en tiempo real.
+Para 176: 
+Para 177: 8. Mejoras y Optimizaciones Implementadas en la Simulación Wokwi (C++/Arduino)
+Para 178: Durante el desarrollo de la simulación en Wokwi (sketch.ino), se implementaron mejoras sustanciales para facilitar la evaluación técnica y cumplir rigurosamente con los requerimientos del PDF original:
+Para 179: 1. Parpadeo Dinámico del Ventilador: Para simular la máxima capacidad de extracción solicitada en los requerimientos, el LED indicador del ventilador parpadea a una frecuencia de 150ms cuando la temperatura interna es mayor o igual a 60°C, manteniendo un encendido fijo a temperaturas menores.
+Para 180: 2. Comandos vía Monitor Serial: Se implementó una interfaz de comandos por terminal para facilitar la demostración de la simulación sin la necesidad de manipular físicamente los componentes iterativamente:
+Para 181:   - SET:XX -> Fija manualmente la temperatura de activación (Setpoint), anulando la lectura del DIP switch.
+Para 182:   - TEMP:XX -> Inyecta una temperatura interna simulada de forma instantánea.
+Para 183:   - EXT:XX -> Fija de forma manual la temperatura exterior simulada.
+Para 184: 3. Lógica FSM No Bloqueante: Todo el código de la máquina de estados y las transiciones (como el tiempo de viaje de la compuerta de ~3 segundos) fue rediseñado usando millis() para garantizar que el loop principal nunca se bloquee, manteniendo la frecuencia de control a 1 Hz estricto.
+Para 185: 4. Remoción de inyecciones automáticas: Se eliminaron los retardos forzados (delays) que inyectaban temperatura al mover el DIP switch, delegando esta función a los comandos Serial para una simulación térmica más pura y controlable.
+
+--- TABLES ---
+Table 0:
+ EVALUACIÓN TÉCNICA Ingeniero de Sistemas Embebidos Jr. Sistema de Extracción de Aire Caliente para Gabinete de Telecomunicaciones ──────────────────────────────────────── Candidato: Ing. Jair Molina Arce Fecha de inicio: 30 de June de 2026 Herramienta de apoyo: Claude (Anthropic) — uso documentado en sección AI Log
+Table 1:
+Condición | Acción sobre compuertas | Acción sobre ventilador
+TEMP_INT > TEMP_EXT | Abrir (AIN1=LOW, AIN2=HIGH, MOTOR_EN=HIGH) | Encender (VENT=HIGH)
+TEMP_INT ≤ TEMP_EXT | Cerrar (AIN1=HIGH, AIN2=LOW, MOTOR_EN=HIGH) | Apagar (VENT=LOW)
+Lectura inválida / error | Motor detenido (MOTOR_EN=LOW) | Apagar (VENT=LOW)
+Table 2:
+Bloque | Componente | Nota técnica clave
+Microcontrolador (sim) | Raspberry Pi Pico (RP2040) | Plantilla Wokwi provista por Jaguar
+Microcontrolador (físico) | Seeed XIAO RP2350 | Verificar mapeo GPIO vs Pico antes de sesión en vivo
+Puente H | TB6612FNG | STBY debe mantenerse HIGH; VM alimentado separado de VCC
+Actuador compuertas | FIT0803 (lineal, rated 6V, operado a 5V per Jaguar) | Rated 6V; operado a 5V (≈5.8 mm/s) → travel ≈1.7s; ACTUATOR_TRAVEL_MS=3000ms (margen ×1.75)
+Sensor temperatura ×2 | NTC TT05-10KC8-1S-T105-1500 | R₀=10kΩ @ 25°C, Beta=3435K (corregido — datasheet TEWA); requiere divisor de voltaje
+Ventilador | MR1238E48B-FSR | 48V — GPIO no puede alimentarlo directo; requiere MOSFET etapa potencia
+Table 3:
+Señal | GPIO | Tipo | Descripción
+TEMP_INT | GPIO26 / ADC0 | Entrada analógica | Temperatura interna del gabinete
+TEMP_EXT | GPIO27 / ADC1 | Entrada analógica | Temperatura externa
+SW1 | GPIO6 | Entrada digital (pull-up) | Bit 0 del setpoint DIP
+SW2 | GPIO7 | Entrada digital (pull-up) | Bit 1 del setpoint DIP
+SW3 | GPIO0 | Entrada digital (pull-up) | Bit 2 del setpoint DIP
+AIN1 | GPIO2 | Salida digital | Dirección 1 puente H
+AIN2 | GPIO1 | Salida digital | Dirección 2 puente H
+MOTOR_EN | GPIO3 | Salida digital | Habilitación TB6612FNG
+VENT | GPIO4 | Salida digital | Control ventilador (via MOSFET)
+Table 4:
+DÍA 1 Firmware & Arquitectura | DÍA 2 Simulación Wokwi | DÍA 3 KiCad Esquemático & PCB | DÍA 4 Documentación & Entrega
+~8 horas | ~8 horas | ~8 horas | ~5 horas
+Table 5:
+▸ Análisis técnico (2h) — Mañana
+Table 6:
+▸ Diseño de máquina de estados (2h) — Tarde
+Table 7:
+▸ Firmware completo — MicroPython (4h) — Tarde/Noche
+Table 8:
+✅  ENTREGABLE: 📁 /firmware/ — Código fuente MicroPython funcional + README
+Table 9:
+▸ Setup plantilla base Jaguar (1h) — Mañana
+Table 10:
+▸ Extensión del circuito Wokwi (3h) — Mañana/Tarde
+Table 11:
+▸ Testing completo de escenarios (4h) — Tarde/Noche
+Table 12:
+✅  ENTREGABLE: 🔗 URL Wokwi funcional y pública + firmware refinado
+Table 13:
+▸ PASO 1 — Crear proyecto KiCad (~5 min)
+Table 14:
+▸ PASO 2 — Esquemático completo en KiCad (5h) — Mañana/Tarde
+Table 15:
+▸ PASO 3 — PCB Layout y Ruteo (3h) — Tarde/Noche
+Table 16:
+▸ PASO 4 — Verificar y cerrar (~15 min)
+Table 17:
+✅  ENTREGABLE: 📁 /kicad/ — Esquemático (.kicad_sch) + PCB (.kicad_pcb) completos
+Table 18:
+▸ Cuestionario técnico (2h) — Mañana
+Table 19:
+▸ Registro de uso de IA y documentación (1.5h) — Tarde
+Table 20:
+▸ Revisión final y empaque (1.5h) — Tarde/Noche
+Table 21:
+✅  ENTREGABLE: 📦 ETISEJr_JairMolina.zip → software@jaguar.mx
+Table 22:
+Entregable | Contenido | Ubicación en ZIP | Estado
+Firmware | Código MicroPython + README | /firmware/ | ☐
+Esquemático KiCad | Diseño eléctrico completo | /kicad/*.kicad_sch | ☐
+PCB KiCad | Layout + ruteo completo | /kicad/*.kicad_pcb | ☐
+Simulación Wokwi | URL proyecto extendido | En .md (sección Wokwi) | ☐
+Archivo .md | Wokwi + Cuestionario + AI log | ETISEJr_JairMolina.md | ☐
+ZIP final | Estructura completa | ETISEJr_JairMolina.zip | ☐
+Table 23:
+ Preparado por: Ing. Jair Molina Arce Candidato — Ingeniero de Sistemas Embebidos Jr.  |  30/06/2026
