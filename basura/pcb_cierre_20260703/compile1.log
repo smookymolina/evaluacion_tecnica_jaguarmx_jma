@@ -1,0 +1,147 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(ETISEJr_JairMolina_Documentacion.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-10-24>
+(C:\Program Files\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Program Files\MiKTeX\tex/latex/base\size11.clo))
+(C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty)
+(C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+(C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
+
+Package babel Warning: Configuration files are deprecated, as
+(babel)                they can break document portability.
+(babel)                Reported on input line 4172.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg)
+(C:\Program Files\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex)
+(C:\Program Files\MiKTeX\tex/latex/babel-spanish\spanish.ldf))
+(C:\Program Files\MiKTeX\tex/latex/lm\lmodern.sty)
+(C:\Program Files\MiKTeX\tex/latex/microtype\microtype.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+(C:\Program Files\MiKTeX\tex/latex/microtype\microtype-pdftex.def)
+(C:\Program Files\MiKTeX\tex/latex/microtype\microtype.cfg))
+(C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def)))
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/latex/colortbl\colortbl.sty
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty))
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty)
+(C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty)
+(C:\Program Files\MiKTeX\tex/latex/enumitem\enumitem.sty)
+(C:\Program Files\MiKTeX\tex/latex/titlesec\titlesec.sty)
+(C:\Program Files\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty)
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty)
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/latex/caption\ltcaption.sty))
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/latex/float\float.sty)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty)
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.s
+ty) (C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty)
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty)))
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty)
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestri
+ng.sty
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty)))
+(C:\Program Files\MiKTeX\tex/generic/stringenc\stringenc.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def)
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty))
+) (C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck
+.sty
+(C:\Users\GIRTEC\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter
+.sty))) (C:\Program Files\MiKTeX\tex/latex/lm\t1lmr.fd)
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def)
+(ETISEJr_JairMolina_Documentacion.aux)
+(C:\Program Files\MiKTeX\tex/latex/microtype\mt-cmr.cfg)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg))
+(ETISEJr_JairMolina_Documentacion.out) (ETISEJr_JairMolina_Documentacion.out)
+(C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd)
+(C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd)
+(C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd)
+(C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd)
+(C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd) [1{C:/Users/GIRTEC/AppData/Loc
+al/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/
+lm/lm-ec.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+(C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.117 \clearpage
+                 [1{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C
+:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
+(ETISEJr_JairMolina_Documentacion.toc) [2]
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+[]|\T1/lmr/m/n/10 (+20) Abrir (\T1/lmtt/m/n/10 AIN1=LOW\T1/lmr/m/n/10 (+20) , \
+T1/lmtt/m/n/10 AIN2=HIGH\T1/lmr/m/n/10 (+20) ,
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+[]|\T1/lmr/m/n/10 (+20) Cerrar (\T1/lmtt/m/n/10 AIN1=HIGH\T1/lmr/m/n/10 (+20) ,
+ \T1/lmtt/m/n/10 AIN2=LOW\T1/lmr/m/n/10 (+20) ,
+
+Underfull \hbox (badness 1052) in paragraph at lines 170--170
+[]|\T1/lmr/m/n/10 (+20) Operado a 5V ($\OMS/lmsy/m/n/10 ^^Y$\T1/lmr/m/n/10 (+20
+) 5.8mm/s); re-co-rri-do $\OMS/lmsy/m/n/10 ^^Y$\T1/lmr/m/n/10 (+20) 1.7s;
+[3{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}]
+Underfull \hbox (badness 1917) in paragraph at lines 218--218
+[]|\T1/lmr/m/n/10 (+20) Cuestionario téc-ni-co, AI log, em-pa-que-ta-do
+[4] [5{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [6] [7]
+[8 <./img/esquematico.pdf>] [9] [10 <./img/top.png> <./img/bottom.png>]
+Underfull \hbox (badness 2351) in paragraph at lines 404--404
+[]|\T1/lmr/m/n/9 (+20) Sugirió pla-nos AGND/DGND se-pa-ra-dos,
+[11] [12] [13] [14] (ETISEJr_JairMolina_Documentacion.aux) )
+(see the transcript file for additional information)<C:/Program Files/MiKTeX/fo
+nts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/l
+mbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/ty
+pe1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Program Files/M
+iKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
+ic/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Pr
+ogram Files/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX/font
+s/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr9.
+pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files
+/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/p
+ublic/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C
+:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
+Output written on ETISEJr_JairMolina_Documentacion.pdf (15 pages, 591633 bytes)
+.
+Transcript written on ETISEJr_JairMolina_Documentacion.log.

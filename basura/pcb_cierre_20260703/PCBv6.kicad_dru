@@ -95,3 +95,12 @@
   (constraint clearance (min 0.2mm))
   (condition "A.Reference == 'U3' && B.Reference == 'U3'")
 )
+
+# ── EXCEPCIÓN: pines del propio Q1 (TO-220, pitch 2.54mm) ──
+# Gate (lógica) y Drain (48V) del MOSFET están a 0.54mm entre sí por el
+# encapsulado; la regla HV_to_Logic_Isolation (0.6mm) aplica al RUTEO, no a
+# los pines internos del dispositivo. Exención acotada a pares de pads de Q1.
+(rule "Q1_intra"
+  (constraint clearance (min 0.4mm))
+  (condition "A.Reference == 'Q1' && B.Reference == 'Q1'")
+)

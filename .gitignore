@@ -3,3 +3,5 @@ scratch/
 __pycache__/
 *.pyc
 .pio/
+.history/
+basura/pcb_cierre_20260703/kicad_PCB_history/

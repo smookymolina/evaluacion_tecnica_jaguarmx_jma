@@ -348,10 +348,10 @@ con ella:
   \item Pistas de potencia dimensionadas a $\geq$1.5\,mm para las corrientes de \emph{stall} del actuador y del ventilador.
 \end{itemize}
 
-\subsection{Placement v4 orientado a ruteo manual}
+\subsection{Diseño final ruteado PCB v6}
 Sobre la placa de $80\times55$\,mm (área útil $X$: 110.5--190.5\,mm; $Y$: 70.4--125.4\,mm)
 se generó un placement optimizado de los 53 footprints mediante el script
-\texttt{optimize\_v4.py}, con verificación automática de: presencia de los 53 refs,
+de optimización, con verificación automática de: presencia de los 53 refs,
 cumplimiento de lados lógico/potencia, NT1 en $X=150$, límites de placa y ausencia de
 solapes de courtyard con margen de 0.5\,mm. El flujo de potencia de 5\,V se lee en línea
 recta (J7 $\rightarrow$ C1/C3 $\rightarrow$ U2 $\rightarrow$ C4/C2 $\rightarrow$ F1),
@@ -360,14 +360,14 @@ U4 $\rightarrow$ J9 $\rightarrow$ Q1 concentra la red de gate del MOSFET.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.92\textwidth]{img/pcb_render_top.png}
-  \caption{Vista superior del PCB v4 (render KiCad): bloque lógico/analógico a la izquierda, potencia a la derecha, NT1 al centro.}
+  \includegraphics[width=0.92\textwidth]{img/top.png}
+  \caption{Vista superior (Top Layer) del PCB v6 ruteado: bloque lógico/analógico a la izquierda, potencia a la derecha, NT1 al centro.}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.92\textwidth]{img/pcb_render_iso.png}
-  \caption{Vista isométrica del PCB v4. Se aprecian el DIP switch y conectores JST al borde izquierdo, el electrolítico de 48\,V, el TB6612FNG (SSOP-24) y el MOSFET TO-220 en el dominio de potencia.}
+  \includegraphics[width=0.92\textwidth]{img/bottom.png}
+  \caption{Vista inferior (Bottom Layer) del PCB v6 ruteado. Se aprecian los planos de tierra divididos (AGND y PGND) y el ruteo de potencia.}
 \end{figure}
 
 % =====================================================================

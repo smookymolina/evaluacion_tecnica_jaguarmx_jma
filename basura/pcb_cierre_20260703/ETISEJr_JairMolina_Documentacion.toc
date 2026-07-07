@@ -1,0 +1,30 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{Resumen Ejecutivo}{1}{Doc-Start}%
+\contentsline {section}{\numberline {1}Introducción y Alcance}{3}{section.1}%
+\contentsline {section}{\numberline {2}Requisitos del Sistema}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Lógica de control}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Componentes principales}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Mapa de GPIOs}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Metodología y Cronograma de Ejecución}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Distribución real de horas por entregable}{4}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Arquitectura del Firmware}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Máquina de estados finitos (FSM)}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Adquisición analógica y conversión NTC}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Watchdog y control síncrono del actuador}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Bloqueos técnicos resueltos}{6}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Simulación en Wokwi}{6}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Equivalencias de componentes}{6}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Interacción avanzada}{6}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Diseño del Esquemático}{7}{section.6}%
+\contentsline {section}{\numberline {7}Diseño del PCB}{9}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Criterios de layout aplicados}{9}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Diseño final ruteado PCB v6}{9}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Decisiones Técnicas Clave}{11}{section.8}%
+\contentsline {section}{\numberline {9}Uso de Inteligencia Artificial (AI Log)}{11}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Caso documentado de salida incorrecta de la IA}{12}{subsection.9.1}%
+\contentsline {section}{\numberline {10}Análisis de Confiabilidad}{12}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Fortalezas}{12}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Debilidades identificadas (camino al 10/10)}{12}{subsection.10.2}%
+\contentsline {section}{\numberline {11}Mejoras Futuras}{13}{section.11}%
+\contentsline {section}{\numberline {12}Checklist de Entregables y Preparación de Fase 2}{13}{section.12}%
+\contentsline {section}{\numberline {13}Conclusiones}{13}{section.13}%

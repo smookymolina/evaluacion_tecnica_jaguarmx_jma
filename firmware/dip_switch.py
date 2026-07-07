@@ -10,7 +10,7 @@ DIP Switch de 3 posiciones con pull-up interno (lógica invertida):
 
 Mapa de GPIOs:
   SW1 → GPIO6  (bit 0, LSB)
-  SW2 → GPIO8  (bit 1)
+  SW2 → GPIO7  (bit 1)
   SW3 → GPIO0  (bit 2, MSB)
 
 Tabla de setpoints (°C):
