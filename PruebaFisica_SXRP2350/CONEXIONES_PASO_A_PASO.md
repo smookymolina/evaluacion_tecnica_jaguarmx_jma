@@ -54,7 +54,7 @@ Vista superior, con el conector USB-C hacia arriba:
 | AIN2 (TB6612FNG) | GPIO1 | D7 |
 | AIN1 (TB6612FNG) | GPIO2 | D8 |
 | VENT (gate MOSFET) | GPIO4 | D9 |
-| MOTOR_EN (PWMA) | GPIO3 | D10 |
+| MOTOR_EN (STBY) | GPIO3 | D10 |
 
 > Advertencia: en el XIAO la serigrafía NO es el número de GPIO (D9 = GPIO4, D10 = GPIO3). Cablear siempre por esta tabla, no por intuición del Pico.
 
@@ -133,8 +133,8 @@ Conexiones del módulo:
 | GND | Nodo común de GND | — |
 | AIN1 | **D8** (GPIO2) | Dirección 1 |
 | AIN2 | **D7** (GPIO1) | Dirección 2 |
-| PWMA | **D10** (GPIO3) | MOTOR_EN — habilitación canal A |
-| **STBY** | **3V3** | **Crítico: si queda flotante o a GND el motor NUNCA se mueve** |
+| STBY | **D10** (GPIO3) | MOTOR_EN — habilitación del puente |
+| **PWMA** | **3V3 (fijo)** | **Crítico: nunca a un GPIO; si queda flotante o a GND el motor NUNCA se mueve** |
 | AO1 | Cable 1 del FIT0803 | — |
 | AO2 | Cable 2 del FIT0803 | — |
 

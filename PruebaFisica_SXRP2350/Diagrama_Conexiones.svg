@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1320" width="1920" height="1320">
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .title  { font-size: 24px; font-weight: bold; fill: #111; }
+      .sub    { font-size: 13px; fill: #555; }
+      .blkb   { fill: #E8F1FB; stroke: #1565C0; stroke-width: 2; }
+      .blko   { fill: #FFF3E0; stroke: #E65100; stroke-width: 2; }
+      .btb    { font-size: 15px; font-weight: bold; fill: #0D47A1; }
+      .bto    { font-size: 14px; font-weight: bold; fill: #BF360C; }
+      .pin    { font-size: 12px; fill: #333; }
+      .nte    { font-size: 11px; fill: #555; }
+      .sig    { stroke: #283593; stroke-width: 2; fill: none; }
+      .sigl   { font-size: 12px; fill: #283593; }
+      .pwr    { stroke: #D32F2F; stroke-width: 3; fill: none; }
+      .pwr48  { stroke: #D32F2F; stroke-width: 4.5; fill: none; }
+      .pwl    { font-size: 12px; font-weight: bold; fill: #D32F2F; }
+      .gnd    { stroke: #212121; stroke-width: 3; fill: none; }
+      .gndl   { font-size: 12px; font-weight: bold; fill: #212121; }
+      .plate  { stroke: #E65100; stroke-width: 3; fill: none; }
+      .cmp    { font-size: 12px; fill: #BF360C; }
+      .warnb  { fill: #FFF9C4; stroke: #D32F2F; stroke-width: 2; }
+      .warnt  { font-size: 13px; font-weight: bold; fill: #C62828; }
+      .warni  { font-size: 12px; fill: #212121; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1920" height="1320" fill="#FFFFFF"/>
+
+  <!-- ============ TITULO ============ -->
+  <text class="title" x="960" y="45" text-anchor="middle">Diagrama de Conexión — Sistema de Extracción de Aire Caliente — Seeed XIAO RP2350</text>
+  <text class="sub" x="960" y="66" text-anchor="middle">Prueba física — Gabinete de telecomunicaciones — Jaguar de México</text>
+
+  <!-- ============ LEYENDA ============ -->
+  <rect x="60" y="70" width="345" height="150" fill="#FAFAFA" stroke="#9E9E9E" stroke-width="1.5"/>
+  <text x="75" y="92" font-size="13" font-weight="bold" fill="#111">Leyenda:</text>
+  <rect x="75" y="102" width="26" height="14" class="blkb"/>
+  <text class="pin" x="110" y="113">Provisto por Jaguar de México</text>
+  <rect x="75" y="126" width="26" height="14" class="blko"/>
+  <text class="pin" x="110" y="137">Agregado (acondicionamiento / potencia)</text>
+  <line x1="75" y1="158" x2="101" y2="158" class="pwr"/>
+  <text class="pin" x="110" y="162">Alimentación (48V / 5V / 3V3)</text>
+  <line x1="75" y1="180" x2="101" y2="180" class="gnd"/>
+  <text class="pin" x="110" y="184">GND / PGND — tierra en estrella</text>
+  <line x1="75" y1="202" x2="101" y2="202" class="sig"/>
+  <text class="pin" x="110" y="206">Señal / control</text>
+
+  <!-- ============ NOTA CRITICA ============ -->
+  <rect x="1400" y="70" width="470" height="130" class="warnb"/>
+  <text class="warnt" x="1415" y="94">⚠ REGLAS CRÍTICAS</text>
+  <text class="warni" x="1415" y="116">• PWMA fijo a 3.3V — nunca conectar a un GPIO.</text>
+  <text class="warni" x="1415" y="136">• El Gate del MOSFET solo recibe señal de GPIO4 vía R_G;</text>
+  <text class="warni" x="1415" y="152">&#160;&#160;nunca un riel de alimentación directo.</text>
+  <text class="warni" x="1415" y="172">• 5V/VBUS del XIAO sin alimentación externa (solo USB-C).</text>
+  <text class="warni" x="1415" y="190">• La línea de 48V nunca toca el LDO (solo entra al buck).</text>
+
+  <!-- ============ CABLEADO: ALIMENTACION (rojo) ============ -->
+  <!-- Riel 3V3: LDO OUT -> subida -> PWMA/VCC TB6612 y ramal oeste -->
+  <polyline class="pwr" points="1130,1120 1160,1120 1160,510 1180,510"/>
+  <polyline class="pwr" points="1160,560 1180,560"/>
+  <polyline class="pwr" points="1160,1000 110,1000 110,230 260,230 260,270"/>
+  <polyline class="pwr" points="820,1000 820,730"/>
+  <polyline class="pwr" points="110,500 260,500 260,540"/>
+  <!-- Riel 5V: buck VOUT -> LDO IN + subida a VM -->
+  <polyline class="pwr" points="750,1120 900,1120"/>
+  <polyline class="pwr" points="830,1120 830,1030 1440,1030 1440,280 1280,280 1280,300"/>
+  <!-- Riel 48V: fuente -> canal inferior -> buck VIN y ventilador -->
+  <polyline class="pwr48" points="290,1100 290,1070 1870,1070 1870,480 1560,480 1560,550 1600,550"/>
+  <polyline class="pwr48" points="460,1070 460,1120 520,1120"/>
+  <!-- Retorno ventilador -> Drain Q1 -->
+  <polyline class="pwr48" points="1600,610 1560,610 1530,610 1530,760"/>
+
+  <!-- ============ CABLEADO: GND (negro) ============ -->
+  <!-- Bus GND logico izquierdo -->
+  <polyline class="gnd" points="60,470 60,1240"/>
+  <polyline class="gnd" points="260,470 60,470"/>
+  <polyline class="gnd" points="175,393 175,470"/>
+  <polyline class="gnd" points="260,455 260,470"/>
+  <polyline class="gnd" points="260,740 60,740"/>
+  <polyline class="gnd" points="175,663 175,740"/>
+  <polyline class="gnd" points="260,725 260,740"/>
+  <polyline class="gnd" points="150,915 60,915"/>
+  <!-- GND XIAO -->
+  <polyline class="gnd" points="890,730 890,1240"/>
+  <!-- GND TB6612 -->
+  <polyline class="gnd" points="1180,610 1140,610 1140,1240"/>
+  <!-- C3 lado GND -->
+  <polyline class="gnd" points="1142,585 1140,585"/>
+  <!-- Source Q1 (PGND) -->
+  <polyline class="gnd" points="1530,880 1530,1240"/>
+  <!-- R_PD a GND -->
+  <polyline class="gnd" points="1450,960 1450,1240"/>
+  <!-- Fuente 48V retorno -->
+  <polyline class="gnd" points="290,1190 290,1240"/>
+  <!-- Buck GND -->
+  <polyline class="gnd" points="635,1190 635,1240"/>
+  <!-- LDO GND -->
+  <polyline class="gnd" points="1015,1190 1015,1240"/>
+  <!-- Capacitores lado GND -->
+  <polyline class="gnd" points="480,1158 480,1240"/>
+  <polyline class="gnd" points="780,1158 780,1240"/>
+  <polyline class="gnd" points="1190,1158 1190,1240"/>
+  <!-- BUS ESTRELLA -->
+  <polyline class="gnd" points="60,1240 1530,1240" stroke-width="5"/>
+
+  <!-- ============ CABLEADO: SEÑALES (azul oscuro) ============ -->
+  <!-- Divisores NTC -> ADC -->
+  <polyline class="sig" points="260,330 260,360"/>
+  <polyline class="sig" points="260,360 260,385"/>
+  <polyline class="sig" points="260,360 700,360 700,350 780,350"/>
+  <polyline class="sig" points="260,360 175,360 175,385"/>
+  <polyline class="sig" points="260,600 260,630"/>
+  <polyline class="sig" points="260,630 260,655"/>
+  <polyline class="sig" points="260,630 690,630 690,400 780,400"/>
+  <polyline class="sig" points="260,630 175,630 175,655"/>
+  <!-- DIP -> GPIOs -->
+  <polyline class="sig" points="380,875 720,875 720,470 780,470"/>
+  <polyline class="sig" points="380,915 740,915 740,520 780,520"/>
+  <polyline class="sig" points="380,955 760,955 760,570 780,570"/>
+  <!-- XIAO -> TB6612 -->
+  <polyline class="sig" points="1000,350 1180,350"/>
+  <polyline class="sig" points="1000,400 1180,400"/>
+  <polyline class="sig" points="1000,450 1180,450"/>
+  <!-- GPIO4 -> R_G -> Gate -->
+  <polyline class="sig" points="1000,620 1080,620 1080,820 1360,820"/>
+  <polyline class="sig" points="1420,820 1480,820"/>
+  <polyline class="sig" points="1450,820 1450,900"/>
+  <!-- AO1/AO2 -> FIT0803 -->
+  <polyline class="sig" points="1380,360 1500,360"/>
+  <polyline class="sig" points="1380,420 1500,420"/>
+  <polyline class="sig" points="1470,360 1470,378"/>
+  <polyline class="sig" points="1470,386 1470,420"/>
+  <!-- 5V/VBUS sin conexion -->
+  <polyline class="sig" points="960,730 960,760" stroke-dasharray="4,3"/>
+  <circle cx="960" cy="766" r="5" fill="#FFFFFF" stroke="#D32F2F" stroke-width="2"/>
+
+  <!-- ============ BLOQUES AZULES (Jaguar) ============ -->
+  <!-- XIAO RP2350 -->
+  <rect x="780" y="300" width="220" height="430" class="blkb"/>
+  <text class="btb" x="890" y="326" text-anchor="middle">Seeed XIAO RP2350</text>
+  <text class="pin" x="790" y="354">GPIO26/ADC0</text>
+  <text class="pin" x="790" y="404">GPIO27/ADC1</text>
+  <text class="pin" x="790" y="474">GPIO6</text>
+  <text class="pin" x="790" y="524">GPIO7</text>
+  <text class="pin" x="790" y="574">GPIO0</text>
+  <text class="pin" x="990" y="354" text-anchor="end">GPIO2</text>
+  <text class="pin" x="990" y="404" text-anchor="end">GPIO1</text>
+  <text class="pin" x="990" y="454" text-anchor="end">GPIO3</text>
+  <text class="pin" x="990" y="624" text-anchor="end">GPIO4</text>
+  <text class="pin" x="820" y="718" text-anchor="middle">3V3</text>
+  <text class="pin" x="890" y="718" text-anchor="middle">GND</text>
+  <text class="pin" x="960" y="718" text-anchor="middle">5V/VBUS</text>
+  <text class="nte" x="890" y="660" text-anchor="middle">Alimentación: USB-C</text>
+  <text class="nte" x="890" y="676" text-anchor="middle">Pull-ups internos en GPIO6/7/0</text>
+
+  <!-- TB6612FNG -->
+  <rect x="1180" y="300" width="200" height="340" class="blkb"/>
+  <text class="btb" x="1280" y="345" text-anchor="middle">TB6612FNG</text>
+  <text class="btb" x="1280" y="363" text-anchor="middle" font-size="13">(Puente H)</text>
+  <text class="pin" x="1268" y="316" text-anchor="end">VM</text>
+  <text class="pin" x="1190" y="354">AIN1</text>
+  <text class="pin" x="1190" y="404">AIN2</text>
+  <text class="pin" x="1190" y="454">STBY</text>
+  <text class="pin" x="1190" y="514">PWMA</text>
+  <text class="pin" x="1190" y="564">VCC</text>
+  <text class="pin" x="1190" y="614">GND</text>
+  <text class="pin" x="1370" y="364" text-anchor="end">AO1</text>
+  <text class="pin" x="1370" y="424" text-anchor="end">AO2</text>
+
+  <!-- FIT0803 -->
+  <rect x="1500" y="320" width="200" height="140" class="blkb"/>
+  <text class="btb" x="1600" y="345" text-anchor="middle">FIT0803</text>
+  <text class="btb" x="1600" y="363" text-anchor="middle" font-size="13">Actuador Lineal 5V</text>
+  <text class="pin" x="1510" y="364">M+</text>
+  <text class="pin" x="1510" y="424">M−</text>
+  <text class="nte" x="1605" y="404" text-anchor="middle">fin de carrera interno</text>
+  <text class="nte" x="1600" y="444" text-anchor="middle">potencia vía AO1/AO2 (VM = 5V)</text>
+
+  <!-- Ventilador -->
+  <rect x="1600" y="520" width="200" height="120" class="blkb"/>
+  <text class="btb" x="1705" y="558" text-anchor="middle" font-size="14">Ventilador</text>
+  <text class="btb" x="1705" y="578" text-anchor="middle" font-size="13">MR1238E48B-FSR</text>
+  <text class="btb" x="1705" y="598" text-anchor="middle" font-size="13">(48V)</text>
+  <text class="pin" x="1610" y="554">+</text>
+  <text class="pin" x="1610" y="614">−</text>
+
+  <!-- DIP switch -->
+  <rect x="150" y="800" width="230" height="180" class="blkb"/>
+  <text class="btb" x="265" y="825" text-anchor="middle" font-size="14">DIP Switch ×3</text>
+  <text class="btb" x="265" y="843" text-anchor="middle" font-size="12">(selección de setpoint)</text>
+  <line x1="205" y1="875" x2="205" y2="955" class="sig"/>
+  <line x1="205" y1="915" x2="150" y2="915" class="sig"/>
+  <g class="sig">
+    <circle cx="205" cy="875" r="3.5" fill="#283593"/><circle cx="243" cy="875" r="3.5" fill="#283593"/>
+    <line x1="205" y1="875" x2="240" y2="862"/>
+    <line x1="247" y1="875" x2="380" y2="875"/>
+    <circle cx="205" cy="915" r="3.5" fill="#283593"/><circle cx="243" cy="915" r="3.5" fill="#283593"/>
+    <line x1="205" y1="915" x2="240" y2="902"/>
+    <line x1="247" y1="915" x2="380" y2="915"/>
+    <circle cx="205" cy="955" r="3.5" fill="#283593"/><circle cx="243" cy="955" r="3.5" fill="#283593"/>
+    <line x1="205" y1="955" x2="240" y2="942"/>
+    <line x1="247" y1="955" x2="380" y2="955"/>
+  </g>
+  <text class="pin" x="160" y="869">SW1</text>
+  <text class="pin" x="160" y="909">SW2</text>
+  <text class="pin" x="160" y="949">SW3</text>
+  <text class="nte" x="265" y="973" text-anchor="middle">común → GND lógico</text>
+
+  <!-- Fuente 48V -->
+  <rect x="180" y="1100" width="220" height="90" class="blkb"/>
+  <text class="btb" x="290" y="1138" text-anchor="middle" font-size="14">Fuente Externa</text>
+  <text class="btb" x="290" y="1158" text-anchor="middle" font-size="14">48V DC</text>
+  <text class="pin" x="298" y="1117">+48V</text>
+  <text class="pin" x="298" y="1184">GND</text>
+
+  <!-- ============ BLOQUES NARANJAS (agregados) ============ -->
+  <!-- Buck -->
+  <rect x="520" y="1100" width="230" height="90" class="blko"/>
+  <text class="bto" x="635" y="1138" text-anchor="middle">Convertidor Buck DC-DC</text>
+  <text class="bto" x="635" y="1158" text-anchor="middle">48V → 5V</text>
+  <text class="pin" x="530" y="1116">VIN</text>
+  <text class="pin" x="740" y="1116" text-anchor="end">VOUT</text>
+  <text class="pin" x="635" y="1182" text-anchor="middle">GND</text>
+
+  <!-- LDO -->
+  <rect x="900" y="1100" width="230" height="90" class="blko"/>
+  <text class="bto" x="1015" y="1138" text-anchor="middle">Regulador LDO</text>
+  <text class="bto" x="1015" y="1158" text-anchor="middle">AP2112K-3.3 (5V → 3.3V)</text>
+  <text class="pin" x="910" y="1116">IN</text>
+  <text class="pin" x="1120" y="1116" text-anchor="end">OUT</text>
+  <text class="pin" x="1015" y="1182" text-anchor="middle">GND</text>
+
+  <!-- MOSFET Q1 -->
+  <rect x="1480" y="760" width="100" height="120" class="blko"/>
+  <text class="bto" x="1530" y="796" text-anchor="middle">Q1</text>
+  <text class="bto" x="1530" y="814" text-anchor="middle" font-size="12">IRLZ44N</text>
+  <text class="bto" x="1530" y="830" text-anchor="middle" font-size="11">(NMOS logic-level)</text>
+  <text class="pin" x="1490" y="816">G</text>
+  <text class="pin" x="1540" y="778">D</text>
+  <text class="pin" x="1540" y="872">S</text>
+
+  <!-- Resistencias -->
+  <rect x="246" y="270" width="28" height="60" class="blko"/>
+  <text class="cmp" x="284" y="304">R1 10kΩ</text>
+  <rect x="246" y="540" width="28" height="60" class="blko"/>
+  <text class="cmp" x="284" y="574">R2 10kΩ</text>
+  <rect x="1360" y="808" width="60" height="24" class="blko"/>
+  <text class="cmp" x="1390" y="800" text-anchor="middle">R_G 100Ω</text>
+  <rect x="1438" y="900" width="24" height="60" class="blko"/>
+  <text class="cmp" x="1468" y="934">R_PD 10kΩ</text>
+
+  <!-- NTCs (azules) -->
+  <rect x="240" y="385" width="40" height="70" class="blkb"/>
+  <text class="pin" x="260" y="425" text-anchor="middle" font-weight="bold">t°</text>
+  <text class="pin" x="288" y="412">NTC TT05-10KC8-1S</text>
+  <text class="btb" x="288" y="430" font-size="13">TEMP_INT</text>
+  <rect x="240" y="655" width="40" height="70" class="blkb"/>
+  <text class="pin" x="260" y="695" text-anchor="middle" font-weight="bold">t°</text>
+  <text class="pin" x="288" y="682">NTC TT05-10KC8-1S</text>
+  <text class="btb" x="288" y="700" font-size="13">TEMP_EXT</text>
+
+  <!-- Capacitores (placas) -->
+  <line x1="160" y1="385" x2="190" y2="385" class="plate"/>
+  <line x1="160" y1="393" x2="190" y2="393" class="plate"/>
+  <text class="cmp" x="152" y="383" text-anchor="end">C1 0.1µF</text>
+  <line x1="160" y1="655" x2="190" y2="655" class="plate"/>
+  <line x1="160" y1="663" x2="190" y2="663" class="plate"/>
+  <text class="cmp" x="152" y="653" text-anchor="end">C2 0.1µF</text>
+  <line x1="1150" y1="575" x2="1150" y2="595" class="plate"/>
+  <line x1="1142" y1="575" x2="1142" y2="595" class="plate"/>
+  <polyline class="pwr" points="1160,585 1150,585"/>
+  <text class="cmp" x="1128" y="604" text-anchor="end">C3 0.1µF</text>
+  <line x1="1455" y1="378" x2="1485" y2="378" class="plate"/>
+  <line x1="1455" y1="386" x2="1485" y2="386" class="plate"/>
+  <text class="cmp" x="1448" y="388" text-anchor="end">C4 0.1µF</text>
+  <line x1="465" y1="1150" x2="495" y2="1150" class="plate"/>
+  <line x1="465" y1="1158" x2="495" y2="1158" class="plate"/>
+  <polyline class="pwr" points="480,1120 480,1150"/>
+  <text class="cmp" x="470" y="1215" text-anchor="end">C7 100µF/100V</text>
+  <line x1="765" y1="1150" x2="795" y2="1150" class="plate"/>
+  <line x1="765" y1="1158" x2="795" y2="1158" class="plate"/>
+  <polyline class="pwr" points="780,1120 780,1150"/>
+  <text class="cmp" x="770" y="1215" text-anchor="end">C8 10µF/25V</text>
+  <line x1="1175" y1="1150" x2="1205" y2="1150" class="plate"/>
+  <line x1="1175" y1="1158" x2="1205" y2="1158" class="plate"/>
+  <polyline class="pwr" points="1160,1120 1190,1120 1190,1150"/>
+  <text class="cmp" x="1200" y="1215">C9 10µF/10V</text>
+
+  <!-- Diodo flyback D1 -->
+  <polyline class="pwr48" points="1560,550 1560,565"/>
+  <polyline class="pwr48" points="1560,590 1560,610"/>
+  <line x1="1547" y1="565" x2="1573" y2="565" stroke="#E65100" stroke-width="3.5"/>
+  <polygon points="1547,591 1573,591 1560,566" fill="#E65100"/>
+  <text class="cmp" x="1544" y="576" text-anchor="end">D1 SS54</text>
+  <text class="cmp" x="1544" y="591" text-anchor="end">flyback (cátodo a +48V)</text>
+
+  <!-- ============ ETIQUETAS DE SEÑAL ============ -->
+  <text class="sigl" x="480" y="352" text-anchor="middle">V_DIV_INT → GPIO26/ADC0</text>
+  <text class="sigl" x="470" y="622" text-anchor="middle">V_DIV_EXT → GPIO27/ADC1</text>
+  <text class="sigl" x="545" y="867" text-anchor="middle">SW1 → GPIO6 (pull-up interno)</text>
+  <text class="sigl" x="555" y="907" text-anchor="middle">SW2 → GPIO7 (pull-up interno)</text>
+  <text class="sigl" x="565" y="947" text-anchor="middle">SW3 → GPIO0 (pull-up interno)</text>
+  <text class="sigl" x="1090" y="342" text-anchor="middle">GPIO2 → AIN1</text>
+  <text class="sigl" x="1090" y="392" text-anchor="middle">GPIO1 → AIN2</text>
+  <text class="sigl" x="1090" y="442" text-anchor="middle">GPIO3 → STBY (MOTOR_EN)</text>
+  <text class="sigl" x="1220" y="845" text-anchor="middle">GPIO4 → R_G → Gate (VENT)</text>
+  <text class="sigl" x="1410" y="352" text-anchor="middle">AO1</text>
+  <text class="sigl" x="1410" y="412" text-anchor="middle">AO2</text>
+  <text class="sigl" x="972" y="770" fill="#D32F2F">NC — no usar</text>
+  <text class="sigl" x="972" y="786" fill="#D32F2F">como entrada</text>
+
+  <!-- ============ ETIQUETAS DE ALIMENTACION ============ -->
+  <text class="pwl" x="1150" y="505" text-anchor="end">3V3 (fijo) → PWMA</text>
+  <text class="pwl" x="1150" y="553" text-anchor="end">3V3 → VCC</text>
+  <text class="pwl" x="1290" y="272">5V → VM</text>
+  <text class="pwl" x="600" y="992">3V3</text>
+  <text class="pwl" x="828" y="870" text-anchor="end">3V3</text>
+  <text class="pwl" x="1100" y="1022">5V</text>
+  <text class="pwl" x="350" y="1060">+48V</text>
+  <text class="pwl" x="1000" y="1060">48V</text>
+  <text class="pwl" x="1700" y="472">+48V</text>
+  <text class="pwl" transform="rotate(-90 1514 690)" x="1514" y="690" text-anchor="middle">− ventilador → Drain Q1</text>
+  <text class="pwl" transform="rotate(-90 96 620)" x="96" y="620" text-anchor="middle">3V3</text>
+
+  <!-- ============ ETIQUETAS DE GND ============ -->
+  <text class="gndl" transform="rotate(-90 42 850)" x="42" y="850" text-anchor="middle">GND lógico</text>
+  <text class="gndl" x="905" y="990">GND</text>
+  <text class="gndl" x="1545" y="1000">S → PGND</text>
+  <text class="gndl" x="500" y="1232" text-anchor="middle">GND lógico</text>
+  <text class="gndl" x="1360" y="1232" text-anchor="middle">PGND (potencia)</text>
+  <text class="gndl" x="795" y="1278" text-anchor="middle" font-size="15">TIERRA EN ESTRELLA — punto único de unión de GND lógico y PGND (fuente 48V, buck, LDO, XIAO, TB6612FNG, MOSFET/ventilador)</text>
+
+  <!-- ============ NODOS (puntos de conexión) ============ -->
+  <g fill="#283593">
+    <circle cx="260" cy="360" r="4.5"/>
+    <circle cx="260" cy="630" r="4.5"/>
+    <circle cx="1450" cy="820" r="4.5"/>
+    <circle cx="1470" cy="360" r="4.5"/>
+    <circle cx="1470" cy="420" r="4.5"/>
+  </g>
+  <g fill="#D32F2F">
+    <circle cx="460" cy="1070" r="5.5"/>
+    <circle cx="1560" cy="550" r="5.5"/>
+    <circle cx="1560" cy="610" r="5.5"/>
+    <circle cx="830" cy="1120" r="4.5"/>
+    <circle cx="780" cy="1120" r="4.5"/>
+    <circle cx="480" cy="1120" r="4.5"/>
+    <circle cx="1160" cy="1120" r="4.5"/>
+    <circle cx="1160" cy="1000" r="4.5"/>
+    <circle cx="820" cy="1000" r="4.5"/>
+    <circle cx="1160" cy="585" r="4.5"/>
+    <circle cx="1160" cy="560" r="4.5"/>
+    <circle cx="110" cy="500" r="4.5"/>
+  </g>
+  <g fill="#212121">
+    <circle cx="175" cy="470" r="4.5"/>
+    <circle cx="175" cy="740" r="4.5"/>
+    <circle cx="60" cy="740" r="4.5"/>
+    <circle cx="60" cy="915" r="4.5"/>
+    <circle cx="1140" cy="585" r="4.5"/>
+    <circle cx="290" cy="1240" r="5.5"/>
+    <circle cx="480" cy="1240" r="5.5"/>
+    <circle cx="635" cy="1240" r="5.5"/>
+    <circle cx="780" cy="1240" r="5.5"/>
+    <circle cx="890" cy="1240" r="5.5"/>
+    <circle cx="1015" cy="1240" r="5.5"/>
+    <circle cx="1140" cy="1240" r="5.5"/>
+    <circle cx="1190" cy="1240" r="5.5"/>
+    <circle cx="1450" cy="1240" r="5.5"/>
+    <circle cx="1530" cy="1240" r="5.5"/>
+  </g>
+</svg>

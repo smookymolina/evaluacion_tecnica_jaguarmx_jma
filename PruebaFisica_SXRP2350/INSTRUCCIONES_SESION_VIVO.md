@@ -20,7 +20,7 @@ Verificado contra la variante oficial `seeed_xiao_rp2350` del core Arduino-Pico:
 | `AIN2` (TB6612FNG) | `GPIO1` | **D7** |
 | `AIN1` (TB6612FNG) | `GPIO2` | **D8** |
 | `VENT` (MOSFET) | `GPIO4` | **D9** |
-| `MOTOR_EN` (PWMA) | `GPIO3` | **D10** |
+| `MOTOR_EN` (STBY) | `GPIO3` | **D10** |
 
 Nota: D3 del XIAO es **GPIO5** (no GPIO29 como en otras placas XIAO) — no se usa en este proyecto, pero no asumir equivalencias con el Pico.
 
@@ -65,7 +65,7 @@ Firmware alternativo para demostrar el ciclo completo sin depender de condicione
 
 ## 6. Checklist de Verificación en Sitio (antes de energizar 48 V)
 1. **Divisores NTC:** confirmar con multímetro que cada divisor es 3.3 V — R 10 kΩ — nodo ADC — NTC — GND. A ~25 °C ambiente el nodo debe medir ≈ 1.65 V y la telemetría debe reportar la temperatura ambiente real (±2 °C).
-2. **TB6612FNG:** verificar que **STBY está a nivel alto** (el firmware no lo controla; si queda flotante o a GND el motor no se moverá aunque AIN1/AIN2/PWMA sean correctos). VM = 5 V para el FIT0803, VCC = 3.3 V.
+2. **TB6612FNG:** verificar que **PWMA está cableado fijo a 3V3** (el firmware no lo controla; si queda flotante o a GND el motor no se moverá aunque AIN1/AIN2/STBY sean correctos). STBY lo maneja GPIO3 (MOTOR_EN). VM = 5 V para el FIT0803, VCC = 3.3 V.
 3. **Ventilador 48 V:** confirmar que el gate del MOSFET tiene pull-down a GND (con el XIAO en reset/bootloader el GPIO4 queda en alta impedancia y el ventilador no debe arrancar solo).
 4. **DIP switch:** los 3 polos conmutan a GND (el firmware usa pull-ups internos; posición ON = bit 1). Verificar continuidad de cada polo a su pin antes de confiar en el setpoint.
 5. **Travel del actuador:** el FIT0803 a 5 V recorre ~1.7 s; el firmware corta a los 3 s. El actuador tiene fin de carrera interno, así que el margen extra es seguro, pero confirmar en la primera apertura que llega al extremo.

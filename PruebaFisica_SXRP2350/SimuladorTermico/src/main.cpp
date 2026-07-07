@@ -58,7 +58,7 @@ constexpr int PIN_SW2      = 7;   // DIP bit 1,       pull-up interno
 constexpr int PIN_SW3      = 0;   // DIP bit 2 (MSB), pull-up interno
 constexpr int PIN_AIN1     = 2;   // TB6612FNG AIN1 (dirección 1)
 constexpr int PIN_AIN2     = 1;   // TB6612FNG AIN2 (dirección 2)
-constexpr int PIN_MOTOR_EN = 3;   // TB6612FNG PWMA (habilitación canal A)
+constexpr int PIN_MOTOR_EN = 3;   // TB6612FNG STBY (habilitación; PWMA fijo a 3V3)
 constexpr int PIN_VENT     = 4;   // MOSFET NMOS — ventilador 48V
 
 // ---------------------------------------------------------------------
@@ -228,7 +228,7 @@ void startMotorTravel(bool abrir) {
   digitalWrite(PIN_MOTOR_EN, LOW);             // Deshabilitar antes de cambiar dirección
   digitalWrite(PIN_AIN1, abrir ? LOW : HIGH);  // Abrir:  AIN1=0, AIN2=1 (extiende)
   digitalWrite(PIN_AIN2, abrir ? HIGH : LOW);  // Cerrar: AIN1=1, AIN2=0 (retrae)
-  digitalWrite(PIN_MOTOR_EN, HIGH);            // PWMA=1 habilita el canal A
+  digitalWrite(PIN_MOTOR_EN, HIGH);            // STBY=1 habilita el puente
   motorPhase = abrir ? MOTOR_OPENING : MOTOR_CLOSING;
   motor_start_ms = millis();
 }
