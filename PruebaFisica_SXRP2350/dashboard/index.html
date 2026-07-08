@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaguar MX · Telemetría de Extracción</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root{
+  --bg-0:#05070d;
+  --bg-1:#0a0e18;
+  --glass:rgba(20,26,42,.55);
+  --glass-brd:rgba(255,255,255,.08);
+  --glass-brd-strong:rgba(255,255,255,.16);
+  --txt:#e8ecf4;
+  --txt-dim:#8a94ad;
+  --cyan:#3fd8ff;
+  --ice:#7ee3ff;
+  --hot:#ff7a45;
+  --red:#ff4d5e;
+  --green:#37e0a0;
+  --amber:#ffc247;
+  --violet:#8b7bff;
+  --font:'Inter',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:var(--font);
+  color:var(--txt);
+  background:var(--bg-0);
+  overflow-x:hidden;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+/* Fondo ambiental animado */
+.aurora{position:fixed;inset:0;z-index:-1;overflow:hidden;background:
+  radial-gradient(1200px 700px at 80% -10%, rgba(63,216,255,.10), transparent 60%),
+  radial-gradient(900px 600px at 10% 110%, rgba(139,123,255,.10), transparent 60%),
+  linear-gradient(180deg,var(--bg-1),var(--bg-0));}
+.aurora::before,.aurora::after{content:'';position:absolute;border-radius:50%;filter:blur(80px);opacity:.5;}
+.aurora::before{width:520px;height:520px;top:-160px;right:-120px;background:radial-gradient(circle,rgba(63,216,255,.35),transparent 70%);animation:drift 22s ease-in-out infinite;}
+.aurora::after{width:460px;height:460px;bottom:-160px;left:-100px;background:radial-gradient(circle,rgba(255,122,69,.22),transparent 70%);animation:drift 28s ease-in-out infinite reverse;}
+@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,60px)}}
+
+.wrap{max-width:1180px;margin:0 auto;padding:28px 22px 60px;}
+
+/* Header */
+header{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:26px;}
+.brand{display:flex;align-items:center;gap:14px;}
+.logo{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;
+  background:linear-gradient(145deg,rgba(63,216,255,.25),rgba(139,123,255,.18));
+  border:1px solid var(--glass-brd-strong);font-size:24px;box-shadow:0 8px 30px rgba(63,216,255,.15);}
+.brand h1{font-size:19px;font-weight:700;letter-spacing:-.02em;}
+.brand p{font-size:12px;color:var(--txt-dim);font-weight:500;margin-top:2px;}
+.spacer{flex:1}
+
+.status-pill{display:flex;align-items:center;gap:9px;padding:9px 15px;border-radius:100px;
+  background:var(--glass);border:1px solid var(--glass-brd);backdrop-filter:blur(14px);
+  font-size:13px;font-weight:600;}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--txt-dim);box-shadow:0 0 0 0 rgba(0,0,0,0);transition:.3s;}
+.dot.on{background:var(--green);box-shadow:0 0 12px var(--green);animation:pulse 2s infinite;}
+.dot.err{background:var(--red);box-shadow:0 0 12px var(--red);}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+.btn{cursor:pointer;border:none;font-family:var(--font);font-weight:600;font-size:14px;
+  padding:12px 22px;border-radius:13px;color:#04121b;transition:.2s;
+  background:linear-gradient(135deg,var(--ice),var(--cyan));
+  box-shadow:0 8px 26px rgba(63,216,255,.30);letter-spacing:-.01em;display:inline-flex;align-items:center;gap:9px;}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(63,216,255,.45);}
+.btn:active{transform:translateY(0)}
+.btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--glass-brd-strong);box-shadow:none;}
+.btn.ghost:hover{background:rgba(255,255,255,.05);box-shadow:none;}
+.btn:disabled{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none;}
+
+/* Grid KPIs */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:18px;}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}}
+
+.card{position:relative;overflow:hidden;border-radius:20px;padding:22px;
+  background:var(--glass);border:1px solid var(--glass-brd);backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);box-shadow:0 12px 40px rgba(0,0,0,.35);}
+.card::after{content:'';position:absolute;inset:0;border-radius:20px;pointer-events:none;
+  background:linear-gradient(160deg,rgba(255,255,255,.06),transparent 40%);}
+.card .lbl{font-size:12px;font-weight:600;color:var(--txt-dim);text-transform:uppercase;letter-spacing:.08em;display:flex;align-items:center;gap:7px;}
+.card .val{font-family:var(--mono);font-weight:700;letter-spacing:-.02em;line-height:1;margin-top:14px;transition:color .5s;}
+.big{font-size:44px;}
+.card .sub{font-size:12.5px;color:var(--txt-dim);margin-top:10px;font-weight:500;}
+.accent-bar{position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--cyan);transition:background .5s;box-shadow:2px 0 16px currentColor;}
+
+/* Termómetro mini */
+.thermo{height:6px;border-radius:6px;background:rgba(255,255,255,.08);margin-top:16px;overflow:hidden;}
+.thermo>i{display:block;height:100%;border-radius:6px;width:0;transition:width .6s cubic-bezier(.2,.7,.2,1),background .5s;}
+
+/* Ventilador */
+.fan-wrap{display:flex;align-items:center;gap:16px;margin-top:10px;}
+.fan{width:58px;height:58px;flex:none;color:var(--txt-dim);transition:color .4s;}
+.fan svg{width:100%;height:100%;}
+.fan.spin svg{animation:spin 1.1s linear infinite;color:var(--cyan);filter:drop-shadow(0 0 8px rgba(63,216,255,.6));}
+@keyframes spin{to{transform:rotate(360deg)}}
+.fan-state{font-family:var(--mono);font-size:26px;font-weight:700;}
+
+/* Compuerta */
+.damper{display:flex;gap:5px;margin-top:14px;align-items:flex-end;height:34px;}
+.damper i{flex:1;background:rgba(255,255,255,.10);border-radius:3px;transition:.5s;height:60%;}
+.damper.open i{background:var(--green);box-shadow:0 0 10px rgba(55,224,160,.5);height:100%;}
+.damper.moving i{background:var(--amber);animation:blink 1s ease-in-out infinite;}
+@keyframes blink{0%,100%{opacity:.35}50%{opacity:1}}
+.damper i:nth-child(2){transition-delay:.06s}
+.damper i:nth-child(3){transition-delay:.12s}
+.damper i:nth-child(4){transition-delay:.18s}
+.damper i:nth-child(5){transition-delay:.24s}
+
+/* Fila inferior */
+.row2{display:grid;grid-template-columns:1.35fr 1fr;gap:18px;}
+@media(max-width:820px){.row2{grid-template-columns:1fr}}
+
+.console{border-radius:20px;background:rgba(6,9,16,.7);border:1px solid var(--glass-brd);
+  backdrop-filter:blur(18px);padding:0;display:flex;flex-direction:column;min-height:340px;}
+.console h3,.panel h3{font-size:12px;font-weight:600;color:var(--txt-dim);text-transform:uppercase;letter-spacing:.09em;
+  padding:16px 20px;border-bottom:1px solid var(--glass-brd);display:flex;align-items:center;gap:8px;}
+.log{flex:1;overflow-y:auto;padding:12px 20px;font-family:var(--mono);font-size:12px;line-height:1.7;max-height:300px;}
+.log div{white-space:pre-wrap;word-break:break-word;opacity:0;animation:fade .3s forwards;}
+@keyframes fade{to{opacity:1}}
+.log .tlm{color:var(--ice)}
+.log .fsm{color:var(--violet)}
+.log .warn{color:var(--amber)}
+.log .sys{color:var(--txt-dim)}
+.log .tx{color:var(--green)}
+.log::-webkit-scrollbar{width:8px}.log::-webkit-scrollbar-thumb{background:rgba(255,255,255,.12);border-radius:8px}
+
+.panel{border-radius:20px;background:var(--glass);border:1px solid var(--glass-brd);backdrop-filter:blur(18px);display:flex;flex-direction:column;}
+.panel .body{padding:18px 20px;display:flex;flex-direction:column;gap:14px;}
+.field{display:flex;flex-direction:column;gap:7px;}
+.field label{font-size:12px;color:var(--txt-dim);font-weight:600;}
+.inrow{display:flex;gap:8px;}
+input[type=text],input[type=number]{flex:1;background:rgba(0,0,0,.35);border:1px solid var(--glass-brd);
+  border-radius:11px;padding:11px 14px;color:var(--txt);font-family:var(--mono);font-size:14px;outline:none;transition:.2s;}
+input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(63,216,255,.15);}
+.mini{padding:11px 15px;font-size:13px;border-radius:11px;}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:2px;}
+.chip{cursor:pointer;font-size:12px;font-family:var(--mono);padding:7px 12px;border-radius:9px;
+  background:rgba(255,255,255,.05);border:1px solid var(--glass-brd);color:var(--txt-dim);transition:.2s;}
+.chip:hover{color:var(--txt);border-color:var(--glass-brd-strong);background:rgba(255,255,255,.09);}
+.note{font-size:11.5px;color:var(--txt-dim);line-height:1.6;}
+.gpio{display:flex;gap:8px;margin-top:2px;}
+.gpio span{flex:1;text-align:center;font-family:var(--mono);font-size:11px;padding:8px 4px;border-radius:9px;background:rgba(0,0,0,.3);border:1px solid var(--glass-brd);color:var(--txt-dim);}
+.gpio span b{display:block;font-size:15px;color:var(--txt);margin-top:3px;}
+
+.hint{margin-top:22px;font-size:12px;color:var(--txt-dim);text-align:center;line-height:1.7;}
+.hint code{font-family:var(--mono);color:var(--ice);background:rgba(63,216,255,.08);padding:2px 7px;border-radius:6px;}
+
+/* Stack tecnológico */
+.tech{margin-top:26px;border-radius:20px;background:var(--glass);border:1px solid var(--glass-brd);backdrop-filter:blur(18px);overflow:hidden;}
+.tech .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--glass-brd);}
+@media(max-width:760px){.tech .tgrid{grid-template-columns:1fr}}
+.tcol{background:rgba(12,16,26,.55);padding:18px 20px;}
+.tcol h4{font-size:11px;font-weight:700;color:var(--txt-dim);text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px;display:flex;align-items:center;gap:7px;}
+.tcol ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.tcol li{display:flex;flex-direction:column;gap:2px;}
+.tcol li b{font-size:13.5px;font-weight:600;color:var(--txt);}
+.tcol li span{font-size:11.5px;color:var(--txt-dim);line-height:1.4;}
+.tbadges{display:flex;flex-wrap:wrap;gap:7px;padding:16px 20px;border-top:1px solid var(--glass-brd);background:rgba(6,9,16,.4);}
+.tbadge{font-family:var(--mono);font-size:11px;font-weight:500;padding:6px 11px;border-radius:8px;
+  background:linear-gradient(135deg,rgba(63,216,255,.12),rgba(139,123,255,.10));
+  border:1px solid var(--glass-brd);color:var(--ice);}
+</style>
+</head>
+<body>
+<div class="aurora"></div>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <div class="logo">🐆</div>
+      <div>
+        <h1>Extracción de Aire Caliente</h1>
+        <p>Jaguar de México · XIAO RP2350 · Telemetría en vivo</p>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="status-pill"><span class="dot" id="dot"></span><span id="connLbl">Desconectado</span></div>
+    <button class="btn" id="connectBtn">🔌 Conectar Dispositivo Serial</button>
+  </header>
+
+  <!-- KPIs -->
+  <div class="grid">
+    <div class="card">
+      <div class="accent-bar" id="accInt"></div>
+      <div class="lbl">🌡️ Temp. Interna</div>
+      <div class="val big" id="tInt" style="color:var(--txt-dim)">--<span style="font-size:22px">°C</span></div>
+      <div class="thermo"><i id="barInt"></i></div>
+      <div class="sub" id="tIntSub">Sensor NTC · ADC0</div>
+    </div>
+
+    <div class="card">
+      <div class="accent-bar" id="accExt" style="background:var(--ice)"></div>
+      <div class="lbl">❄️ Temp. Externa</div>
+      <div class="val big" id="tExt" style="color:var(--txt-dim)">--<span style="font-size:22px">°C</span></div>
+      <div class="thermo"><i id="barExt"></i></div>
+      <div class="sub" id="tExtSub">Sensor NTC · ADC1</div>
+    </div>
+
+    <div class="card">
+      <div class="accent-bar" id="accDamp" style="background:var(--txt-dim)"></div>
+      <div class="lbl">🚪 Compuertas</div>
+      <div class="val" id="dampTxt" style="font-size:26px;color:var(--txt-dim)">--</div>
+      <div class="damper" id="damper"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="sub" id="dampSub">Actuador FIT0803</div>
+    </div>
+
+    <div class="card">
+      <div class="accent-bar" id="accFan" style="background:var(--txt-dim)"></div>
+      <div class="lbl">🌀 Ventilador</div>
+      <div class="fan-wrap">
+        <div class="fan" id="fan">
+          <svg viewBox="0 0 100 100" fill="currentColor">
+            <circle cx="50" cy="50" r="8"/>
+            <path d="M50 42c-3-14 2-30 8-38 8 6 10 22 2 34-3 4-7 5-10 4z"/>
+            <path d="M58 50c14-3 30 2 38 8-6 8-22 10-34 2-4-3-5-7-4-10z"/>
+            <path d="M50 58c3 14-2 30-8 38-8-6-10-22-2-34 3-4 7-5 10-4z"/>
+            <path d="M42 50c-14 3-30-2-38-8 6-8 22-10 34-2 4 3 5 7 4 10z"/>
+          </svg>
+        </div>
+        <div class="fan-state" id="fanTxt" style="color:var(--txt-dim)">--</div>
+      </div>
+      <div class="sub" id="fanSub">MR1238E48B · 48V</div>
+    </div>
+  </div>
+
+  <!-- Estado FSM + Setpoint -->
+  <div class="grid" style="grid-template-columns:1fr 1fr;margin-bottom:18px;">
+    <div class="card">
+      <div class="accent-bar" id="accFsm" style="background:var(--violet)"></div>
+      <div class="lbl">⚙️ Estado del Sistema (FSM)</div>
+      <div class="val" id="fsm" style="font-size:34px;color:var(--txt-dim)">--</div>
+      <div class="sub" id="fsmSub">Esperando conexión…</div>
+    </div>
+    <div class="card">
+      <div class="accent-bar" style="background:var(--amber)"></div>
+      <div class="lbl">🎯 Setpoint · GPIOs Puente H</div>
+      <div class="val" id="sp" style="font-size:34px">--<span style="font-size:18px">°C</span></div>
+      <div class="gpio">
+        <span>AIN1<b id="ain1">–</b></span>
+        <span>AIN2<b id="ain2">–</b></span>
+        <span>STBY<b id="en">–</b></span>
+        <span>Uptime<b id="up">–</b></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Consola + Controles -->
+  <div class="row2">
+    <div class="console">
+      <h3>📡 Flujo de Telemetría <span class="spacer" style="flex:1"></span></h3>
+      <div class="log" id="log"><div class="sys">// La consola mostrará la telemetría y logs de la FSM al conectar…</div></div>
+    </div>
+
+    <div class="panel">
+      <h3>🎛️ Control Manual (Demo)</h3>
+      <div class="body">
+        <div class="field">
+          <label>Comando directo</label>
+          <div class="inrow">
+            <input type="text" id="cmdIn" placeholder="ej. TEMP:65" spellcheck="false">
+            <button class="btn mini" id="sendBtn" disabled>Enviar</button>
+          </div>
+          <div class="chips">
+            <span class="chip" data-cmd="TEMP:65">TEMP:65</span>
+            <span class="chip" data-cmd="EXT:25">EXT:25</span>
+            <span class="chip" data-cmd="SET:50">SET:50</span>
+            <span class="chip" data-cmd="TEMP:AUTO">TEMP:AUTO</span>
+            <span class="chip" data-cmd="EXT:AUTO">EXT:AUTO</span>
+            <span class="chip" data-cmd="SET:0">SET:AUTO</span>
+          </div>
+        </div>
+        <p class="note"><b>SET:</b>&lt;°C&gt; fija setpoint · <b>TEMP:</b>&lt;°C&gt; fuerza temp. interna · <b>EXT:</b>&lt;°C&gt; fuerza temp. externa · usa <code>AUTO</code> para volver al sensor NTC.</p>
+        <p class="note" id="secNote" style="color:var(--amber)">⚠️ Requiere Chrome/Edge de escritorio (Web Serial API). Firmware a 115200 baudios.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="hint">Al pulsar <b>Conectar</b>, selecciona el puerto <code>COM</code> del XIAO RP2350. El dashboard parsea la línea <code>TLM …</code> emitida cada segundo por el firmware.</p>
+
+  <!-- Tecnologías usadas -->
+  <div class="tech">
+    <h3 style="padding:16px 20px;border-bottom:1px solid var(--glass-brd);font-size:12px;font-weight:600;color:var(--txt-dim);text-transform:uppercase;letter-spacing:.09em;">🧰 Tecnologías utilizadas</h3>
+    <div class="tgrid">
+      <div class="tcol">
+        <h4>🖥️ Frontend / Dashboard</h4>
+        <ul>
+          <li><b>HTML5 + CSS3</b><span>Glassmorphism, grid responsivo, animaciones CSS (aspas, aurora)</span></li>
+          <li><b>JavaScript (Vanilla ES6+)</b><span>Sin frameworks ni build; un solo archivo autónomo</span></li>
+          <li><b>Web Serial API</b><span>Lectura/escritura del puerto COM a 115200 bd desde el navegador</span></li>
+          <li><b>Tipografía Inter / JetBrains Mono</b><span>UI moderna + números monoespaciados</span></li>
+        </ul>
+      </div>
+      <div class="tcol">
+        <h4>🔌 Firmware / Embebido</h4>
+        <ul>
+          <li><b>Seeed XIAO RP2350</b><span>MCU dual-core; ADC 12 bits para NTC internos/externos</span></li>
+          <li><b>C++ (Arduino / PlatformIO)</b><span>FSM no bloqueante a 1 Hz, watchdog HW, filtro trimmed-mean</span></li>
+          <li><b>TB6612FNG + FIT0803</b><span>Puente H para actuador de compuertas</span></li>
+          <li><b>MOSFET NMOS + MR1238E48B</b><span>Conmutación del ventilador de 48 V</span></li>
+        </ul>
+      </div>
+      <div class="tcol">
+        <h4>🌐 IoT / Backend</h4>
+        <ul>
+          <li><b>Python 3</b><span>Puente Serial → MQTT con perfiles multi-extractor</span></li>
+          <li><b>pyserial</b><span>Lectura del puerto serial con reintentos</span></li>
+          <li><b>paho-mqtt</b><span>Publicación MQTT con reconexión automática y LWT</span></li>
+          <li><b>MQTT + JSON</b><span>Payload industrial en <code>jaguar/telemetry/data</code></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tbadges">
+      <span class="tbadge">HTML5</span>
+      <span class="tbadge">CSS3</span>
+      <span class="tbadge">JavaScript ES6+</span>
+      <span class="tbadge">Web Serial API</span>
+      <span class="tbadge">C++17</span>
+      <span class="tbadge">Arduino / PlatformIO</span>
+      <span class="tbadge">RP2350</span>
+      <span class="tbadge">Python 3</span>
+      <span class="tbadge">pyserial</span>
+      <span class="tbadge">paho-mqtt</span>
+      <span class="tbadge">MQTT</span>
+      <span class="tbadge">JSON</span>
+    </div>
+  </div>
+
+</div>
+
+<script>
+"use strict";
+const $=id=>document.getElementById(id);
+const BAUD=115200;
+let port=null, reader=null, writer=null, keepReading=false, buffer="";
+
+/* ---------- utilidades UI ---------- */
+function lerp(a,b,t){return a+(b-a)*t;}
+// color frío→caliente relativo al setpoint (o a 20–80°C si no hay SP)
+function tempColor(t,sp){
+  const lo=(sp?sp-15:20), hi=(sp?sp+10:80);
+  let f=Math.max(0,Math.min(1,(t-lo)/(hi-lo)));
+  // cian(63,216,255) → ámbar(255,194,71) → rojo(255,77,94)
+  let r,g,b;
+  if(f<.5){const k=f/.5; r=lerp(63,255,k);g=lerp(216,194,k);b=lerp(255,71,k);}
+  else{const k=(f-.5)/.5; r=lerp(255,255,k);g=lerp(194,77,k);b=lerp(71,94,k);}
+  return `rgb(${r|0},${g|0},${b|0})`;
+}
+function tempPct(t){return Math.max(4,Math.min(100,((t-10)/(90-10))*100));}
+
+function log(text,cls){
+  const el=$("log"); const d=document.createElement("div");
+  d.className=cls||""; d.textContent=text; el.appendChild(d);
+  while(el.children.length>250) el.removeChild(el.firstChild);
+  el.scrollTop=el.scrollHeight;
+}
+function fmtUp(ms){const s=Math.floor(ms/1000);const m=Math.floor(s/60);
+  return m>0?`${m}m${String(s%60).padStart(2,"0")}`:`${s}s`;}
+
+/* ---------- parseo de telemetría ---------- */
+const FSM_STYLE={
+  INIT:{c:"var(--violet)",t:"Inicializando · safe state"},
+  READING:{c:"var(--cyan)",t:"Evaluando sensores NTC"},
+  COOLING:{c:"var(--hot)",t:"Enfriamiento activo"},
+  IDLE:{c:"var(--green)",t:"En reposo · dentro de rango"},
+  ERROR:{c:"var(--red)",t:"Fallo de sensor · safe state"},
+  LOCKOUT:{c:"var(--red)",t:"Bloqueo · requiere mantenimiento"}
+};
+
+function handleLine(line){
+  line=line.trim(); if(!line) return;
+
+  // Clasificación para la consola
+  let cls="sys";
+  if(line.includes(" TLM ")) cls="tlm";
+  else if(line.includes("WARN")||line.includes("invalida")||line.includes("SAFE")||line.includes("LOCKOUT")) cls="warn";
+  else if(line.includes("FSM[")) cls="fsm";
+  log(line,cls);
+
+  if(!line.includes(" TLM ")) return;
+
+  const m={
+    ts:  /\[(\d+)\]/.exec(line),
+    est: /EST=(\w+)/.exec(line),
+    int: /INT=(-?\d+\.?\d*)C/.exec(line),
+    ext: /EXT=(-?\d+\.?\d*)C/.exec(line),
+    sp:  /SP=(\d+)C/.exec(line),
+    vent:/VENT=(ON|OFF)/.exec(line),
+    comp:/COMPUERTA=(\w+)/.exec(line),
+    a1:  /AIN1=(\d)/.exec(line),
+    a2:  /AIN2=(\d)/.exec(line),
+    en:  /EN=(\d)/.exec(line),
+  };
+  const sp = m.sp?+m.sp[1]:null;
+  updateUI({
+    ts: m.ts?+m.ts[1]:null,
+    est: m.est?m.est[1]:null,
+    tInt: m.int?parseFloat(m.int[1]):null,
+    tExt: m.ext?parseFloat(m.ext[1]):null,
+    sp,
+    vent: m.vent?m.vent[1]:null,
+    comp: m.comp?m.comp[1]:null,
+    ovInt: /INT=[^ ]*\(OVR\)/.test(line),
+    ovExt: /EXT=[^ ]*\(OVR\)/.test(line),
+    a1:m.a1?m.a1[1]:"–", a2:m.a2?m.a2[1]:"–", en:m.en?m.en[1]:"–",
+  });
+}
+
+function updateUI(d){
+  // Temperatura interna
+  if(d.tInt!=null){
+    const c=tempColor(d.tInt,d.sp);
+    $("tInt").innerHTML=d.tInt.toFixed(1)+'<span style="font-size:22px">°C</span>';
+    $("tInt").style.color=c; $("accInt").style.color=c; $("accInt").style.background=c;
+    const b=$("barInt"); b.style.width=tempPct(d.tInt)+"%"; b.style.background=c;
+    $("tIntSub").textContent=(d.ovInt?"⚡ Override manual":"Sensor NTC · ADC0")+(d.sp?` · umbral ${d.sp}°C`:"");
+  }
+  // Temperatura externa
+  if(d.tExt!=null){
+    const c=tempColor(d.tExt,d.sp);
+    $("tExt").innerHTML=d.tExt.toFixed(1)+'<span style="font-size:22px">°C</span>';
+    $("tExt").style.color=c;
+    const b=$("barExt"); b.style.width=tempPct(d.tExt)+"%"; b.style.background=c;
+    $("tExtSub").textContent=d.ovExt?"⚡ Override manual":"Sensor NTC · ADC1";
+  }
+  // Setpoint + GPIOs
+  if(d.sp!=null) $("sp").innerHTML=d.sp+'<span style="font-size:18px">°C</span>';
+  $("ain1").textContent=d.a1; $("ain2").textContent=d.a2; $("en").textContent=d.en;
+  if(d.ts!=null) $("up").textContent=fmtUp(d.ts);
+
+  // Ventilador
+  if(d.vent!=null){
+    const on=d.vent==="ON";
+    $("fan").classList.toggle("spin",on);
+    $("fanTxt").textContent=d.vent; $("fanTxt").style.color=on?"var(--cyan)":"var(--txt-dim)";
+    $("accFan").style.background=on?"var(--cyan)":"var(--txt-dim)";
+  }
+  // Compuertas
+  if(d.comp!=null){
+    const dm=$("damper"); dm.className="damper";
+    const moving=(d.comp==="ABRIENDO"||d.comp==="CERRANDO");
+    const open=(d.comp==="ABIERTA");
+    if(open) dm.classList.add("open"); if(moving) dm.classList.add("moving");
+    $("dampTxt").textContent=d.comp;
+    const col=open?"var(--green)":moving?"var(--amber)":"var(--txt-dim)";
+    $("dampTxt").style.color=col; $("accDamp").style.background=col;
+    $("dampSub").textContent=moving?"Actuador en movimiento (~3 s)":"Actuador FIT0803";
+  }
+  // FSM
+  if(d.est!=null){
+    const s=FSM_STYLE[d.est]||{c:"var(--txt)",t:d.est};
+    $("fsm").textContent=d.est; $("fsm").style.color=s.c;
+    $("accFsm").style.background=s.c; $("fsmSub").textContent=s.t;
+  }
+}
+
+/* ---------- Web Serial ---------- */
+async function connect(){
+  if(!("serial" in navigator)){
+    log("// ERROR: Web Serial API no disponible. Usa Chrome o Edge de escritorio.","warn");
+    $("secNote").textContent="❌ Este navegador no soporta Web Serial API. Abre en Chrome/Edge.";
+    return;
+  }
+  try{
+    port=await navigator.serial.requestPort();
+    await port.open({baudRate:BAUD});
+    writer=port.writable.getWriter();
+    keepReading=true;
+    setConn(true);
+    log("// Conectado a "+BAUD+" baudios. Esperando telemetría…","sys");
+    readLoop();
+  }catch(e){ log("// Conexión cancelada o fallida: "+e.message,"warn"); }
+}
+
+async function readLoop(){
+  const dec=new TextDecoder();
+  while(port && port.readable && keepReading){
+    reader=port.readable.getReader();
+    try{
+      while(true){
+        const {value,done}=await reader.read();
+        if(done) break;
+        buffer+=dec.decode(value,{stream:true});
+        let idx;
+        while((idx=buffer.indexOf("\n"))>=0){
+          const line=buffer.slice(0,idx).replace(/\r$/,"");
+          buffer=buffer.slice(idx+1);
+          handleLine(line);
+        }
+      }
+    }catch(e){ if(keepReading) log("// Error de lectura: "+e.message,"warn"); }
+    finally{ try{reader.releaseLock();}catch(_){} }
+  }
+}
+
+async function disconnect(){
+  keepReading=false;
+  try{ if(reader) await reader.cancel(); }catch(_){}
+  try{ if(writer){ writer.releaseLock(); writer=null; } }catch(_){}
+  try{ if(port) await port.close(); }catch(_){}
+  port=null; setConn(false); log("// Desconectado.","sys");
+}
+
+async function send(cmd){
+  if(!writer){ log("// No conectado.","warn"); return; }
+  try{
+    await writer.write(new TextEncoder().encode(cmd+"\n"));
+    log("→ "+cmd,"tx");
+  }catch(e){ log("// Error al enviar: "+e.message,"warn"); }
+}
+
+function setConn(on){
+  $("dot").className="dot"+(on?" on":"");
+  $("connLbl").textContent=on?"Conectado · "+BAUD+" bd":"Desconectado";
+  const b=$("connectBtn");
+  b.innerHTML=on?"⏹ Desconectar":"🔌 Conectar Dispositivo Serial";
+  b.classList.toggle("ghost",on);
+  $("sendBtn").disabled=!on;
+}
+
+/* ---------- eventos ---------- */
+$("connectBtn").onclick=()=> port?disconnect():connect();
+$("sendBtn").onclick=()=>{ const v=$("cmdIn").value.trim(); if(v){send(v);$("cmdIn").value="";} };
+$("cmdIn").addEventListener("keydown",e=>{ if(e.key==="Enter") $("sendBtn").click(); });
+document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>send(c.dataset.cmd));
+if(!("serial" in navigator)) $("secNote").textContent="❌ Web Serial API no disponible en este navegador. Usa Chrome o Edge de escritorio.";
+</script>
+</body>
+</html>
