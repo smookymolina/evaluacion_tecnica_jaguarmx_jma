@@ -21,6 +21,13 @@ from datetime import datetime
 
 import paho.mqtt.client as mqtt       # pip install paho-mqtt
 
+# Consola de Windows (cp1252) no puede encodear los iconos (🔌🔥🌀):
+# forzamos UTF-8 en stdout para evitar UnicodeEncodeError al imprimir.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except (AttributeError, ValueError):  # Python < 3.7 o stream no reconfigurable
+    pass
+
 # =====================================================================
 # CONFIGURACIÓN  (debe coincidir con serial_mqtt_bridge.py)
 # =====================================================================
